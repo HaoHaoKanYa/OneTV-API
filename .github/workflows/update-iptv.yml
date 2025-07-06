@@ -2,9 +2,8 @@ name: Update OneTV-API
 
 on:
   schedule:
-    # 每天北京时间 6:00 和 18:00 运行 (UTC时间 22:00 和 10:00)
+    # 每天北京时间 6:00 运行 (UTC时间 22:00)
     - cron: '0 22 * * *'
-    - cron: '0 10 * * *'
   workflow_dispatch:  # 允许手动触发
   push:
     branches: [ main ]
@@ -64,7 +63,46 @@ jobs:
           echo "重新尝试推送..."
           git push
         fi
-        
+
+    - name: Upload M3U file to Supabase Storage
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        echo "🚀 开始上传 onetv_api_result.m3u 到 Supabase Storage..."
+
+        # 检查文件是否存在
+        if [ -f "output/onetv_api_result.m3u" ]; then
+          echo "📁 找到文件: output/onetv_api_result.m3u"
+
+          # 上传文件到Supabase Storage
+          response=$(curl -s -w "%{http_code}" -X POST \
+            "${{ secrets.SUPABASE_URL }}/storage/v1/object/iptv-sources/onetv_api_result.m3u" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            -H "Content-Type: application/x-mpegURL" \
+            -H "x-upsert: true" \
+            --data-binary @output/onetv_api_result.m3u)
+
+          # 获取HTTP状态码
+          http_code="${response: -3}"
+          response_body="${response%???}"
+
+          # 检查上传结果
+          if [ "$http_code" = "200" ] || [ "$http_code" = "201" ]; then
+            echo "✅ onetv_api_result.m3u 上传成功！"
+            echo "🌐 访问URL: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/iptv-sources/onetv_api_result.m3u"
+          else
+            echo "❌ 上传失败，HTTP状态码: $http_code"
+            echo "📄 响应内容: $response_body"
+            exit 1
+          fi
+        else
+          echo "⚠️  文件不存在: output/onetv_api_result.m3u"
+          echo "📋 当前目录内容:"
+          ls -la output/ || echo "output目录不存在"
+          exit 1
+        fi
+
+        echo "🎉 Supabase Storage 上传流程完成！"
+
     - name: Upload results as artifact
       uses: actions/upload-artifact@v4
       with:
