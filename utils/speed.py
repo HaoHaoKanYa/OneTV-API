@@ -4,6 +4,7 @@ import json
 import re
 import subprocess
 from time import time
+
 from urllib.parse import quote, urljoin
 
 import m3u8
@@ -14,6 +15,7 @@ import utils.constants as constants
 from utils.config import config
 from utils.tools import get_resolution_value
 from utils.types import TestResult, ChannelTestResult, TestResultCacheData
+from typing import Union, Optional
 
 http.cookies._is_legal_key = lambda _: True
 cache: TestResultCacheData = {}
@@ -72,8 +74,7 @@ async def get_speed_with_download(url: str, headers: dict = None, session: Clien
 
 
 async def get_headers(url: str, headers: dict = None, session: ClientSession = None, timeout: int = 5) -> \
-        CIMultiDictProxy[str] | dict[
-            any, any]:
+        CIMultiDictProxy[str] | dict:
     """
     Get the headers of the url
     """
@@ -119,7 +120,7 @@ async def get_url_content(url: str, headers: dict = None, session: ClientSession
         return content
 
 
-def check_m3u8_valid(headers: CIMultiDictProxy[str] | dict[any, any]) -> bool:
+def check_m3u8_valid(headers: CIMultiDictProxy[str] | dict) -> bool:
     """
     Check if the m3u8 url is valid
     """
@@ -252,7 +253,7 @@ async def ffmpeg_url(url, timeout=speed_test_timeout):
         return res
 
 
-async def get_resolution_ffprobe(url: str, headers: dict = None, timeout: int = speed_test_timeout) -> str | None:
+async def get_resolution_ffprobe(url: str, headers: dict = None, timeout: int = speed_test_timeout) -> Optional[str]:
     """
     Get the resolution of the url by ffprobe
     """

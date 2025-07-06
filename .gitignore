@@ -38,3 +38,7 @@ Thumbs.db
 
 # Documentation folder (not for version control)
 MD/
+
+# Python installer files
+python-*.exe
+*.exe

@@ -397,10 +397,11 @@ class ConfigManager:
         """
         self.config = configparser.ConfigParser()
         user_config_path = resource_path("config/user_config.ini")
+        onetv_api_config_path = resource_path("config/onetv_api_config.ini")
         default_config_path = resource_path("config/config.ini")
 
-        # user config overwrites default config
-        config_files = [default_config_path, user_config_path]
+        # config priority: default_config < user_config < onetv_api_config
+        config_files = [default_config_path, user_config_path, onetv_api_config_path]
         for config_file in config_files:
             if os.path.exists(config_file):
                 with open(config_file, "r", encoding="utf-8") as f:

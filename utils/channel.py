@@ -788,7 +788,7 @@ def sort_channel_result(channel_data, result=None, filter_host=False, ipv6_suppo
             )
             for item in total_result:
                 logger.info(
-                    f"Name: {name}, URL: {item.get('url')}, IPv_Type: {item.get("ipv_type")}, Location: {item.get('location')}, ISP: {item.get('isp')}, Date: {item["date"]}, Delay: {item.get('delay') or -1} ms, Speed: {item.get('speed') or 0:.2f} M/s, Resolution: {item.get('resolution')}"
+                    f"Name: {name}, URL: {item.get('url')}, IPv_Type: {item.get('ipv_type')}, Location: {item.get('location')}, ISP: {item.get('isp')}, Date: {item['date']}, Delay: {item.get('delay') or -1} ms, Speed: {item.get('speed') or 0:.2f} M/s, Resolution: {item.get('resolution')}"
                 )
     logger.handlers.clear()
     return channel_result
@@ -829,7 +829,8 @@ def process_write_content(
     open_url_info = config.open_url_info
     for cate, channel_obj in data.items():
         custom_print(f"\n{cate}:", end=" ")
-        content += f"{'\n\n' if not first_cate else ''}{cate},#genre#"
+        newlines = '\n\n' if not first_cate else ''
+        content += f"{newlines}{cate},#genre#"
         first_cate = False
         channel_obj_keys = channel_obj.keys()
         names_len = len(list(channel_obj_keys))
@@ -875,7 +876,7 @@ def process_write_content(
         update_time_item_url = update_time_item["url"]
         if open_url_info and update_time_item["extra_info"]:
             update_time_item_url = add_url_info(update_time_item_url, update_time_item["extra_info"])
-        value = f"{rtmp_url}{update_time_item["id"]}" if rtmp_url else update_time_item_url
+        value = f"{rtmp_url}{update_time_item['id']}" if rtmp_url else update_time_item_url
         if config.update_time_position == "top":
             content = f"🕘️更新时间,#genre#\n{now},{value}\n\n{content}"
         else:

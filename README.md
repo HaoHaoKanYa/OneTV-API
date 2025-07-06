@@ -180,9 +180,36 @@ https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/source.json
 
 ## 快速上手
 
-### 工作流
+### 工作流（推荐）
 
-Fork 本项目并开启工作流更新，具体步骤请见[详细教程](./docs/tutorial.md)
+由于网络环境限制，推荐使用GitHub Actions来自动运行OneTV-API：
+
+1. **Fork本项目到您的GitHub账户**
+
+2. **启用GitHub Actions**：
+   - 进入您的仓库设置
+   - 点击 "Actions" 选项卡
+   - 启用 "Allow all actions and reusable workflows"
+
+3. **自动运行时间**：
+   - 每天北京时间 6:00 和 18:00 自动运行
+   - 配置文件修改时也会自动运行
+
+4. **手动触发**：
+   - 进入 "Actions" 选项卡
+   - 选择 "Update OneTV-API" 工作流
+   - 点击 "Run workflow" 按钮
+
+5. **查看结果**：
+   - 运行完成后，结果文件会自动提交到仓库
+   - 也可以在 "Actions" 页面下载运行结果
+
+6. **获取播放列表链接**：
+   ```
+   https://raw.githubusercontent.com/您的用户名/OneTV-API/main/output/onetv_api_result.m3u
+   ```
+
+更多详细步骤请见[详细教程](./docs/tutorial.md)
 
 ### 命令行
 
