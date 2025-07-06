@@ -17,7 +17,10 @@ venv.bak/
 .venv/
 
 # Output files (keep generated M3U files for public access)
-# output/  # Commented out to allow M3U files in repository
+# output/
+
+# Exclude English README from version control
+README_en.md  # Commented out to allow M3U files in repository
 *.log
 *.pkl
 cache.pkl
