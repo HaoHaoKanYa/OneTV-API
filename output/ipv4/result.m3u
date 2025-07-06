@@ -1,0 +1,275 @@
+#EXTM3U x-tvg-url="http://localhost:8000/epg/epg.gz"
+#EXTINF:-1 tvg-name="登录点赞后更多精彩" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/登录点赞后更多精彩.png" group-title="🕘️更新时间",2025-07-06 17:30:25
+https://gitee.com/vv2029/SuCai/raw/master/output.m3u8
+#EXTINF:-1 tvg-name="登录点赞后更多精彩" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/登录点赞后更多精彩.png" group-title="公众号【壹来了】",登录点赞后更多精彩
+https://gitee.com/vv2029/SuCai/raw/master/output.m3u8
+#EXTINF:-1 tvg-name="登录点赞后更多精彩" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/登录点赞后更多精彩.png" group-title="公众号【壹来了】",登录点赞后更多精彩
+https://gitee.com/vv2029/SuCai/raw/master/output.m3u8
+#EXTINF:-1 tvg-name="轮播频道-无线新闻台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/轮播频道-无线新闻台.png" group-title="公众号【壹来了】",轮播频道-无线新闻台
+http://php.jdshipin.com/TVOD/iptv.php?id=tvbxw
+#EXTINF:-1 tvg-name="轮播频道-无线新闻台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/轮播频道-无线新闻台.png" group-title="公众号【壹来了】",轮播频道-无线新闻台
+http://php.jdshipin.com/TVOD/iptv.php?id=tvbxw
+#EXTINF:-1 tvg-name="网络收集随时失效" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/网络收集随时失效.png" group-title="公众号【壹来了】",网络收集随时失效
+https://gitee.com/vv2029/SuCai/raw/master/gonggao_2/gonggao_2.m3u8
+#EXTINF:-1 tvg-name="网络收集随时失效" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/网络收集随时失效.png" group-title="公众号【壹来了】",网络收集随时失效
+https://gitee.com/vv2029/SuCai/raw/master/gonggao_2/gonggao_2.m3u8
+#EXTINF:-1 tvg-name="广州综合" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广州综合.png" group-title="地方频道",广州综合
+https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=dce137597806f62ae6fdfc40328a336e&txTime=191b5fc1c86
+#EXTINF:-1 tvg-name="广州综合" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广州综合.png" group-title="地方频道",广州综合
+https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=dce137597806f62ae6fdfc40328a336e&txTime=191b5fc1c86
+#EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广州新闻.png" group-title="地方频道",广州新闻
+https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=520177bc9dd6916a7d6fa86bdb3f8830&txTime=191b5f5b230
+#EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广州新闻.png" group-title="地方频道",广州新闻
+https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=520177bc9dd6916a7d6fa86bdb3f8830&txTime=191b5f5b230
+#EXTINF:-1 tvg-name="广州影视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广州影视.png" group-title="地方频道",广州影视
+https://tencentplay.gztv.com/live/yingshi.m3u8?txSecret=2b09d952702fe2c67ddad695faa4c27c&txTime=191b5db5ed0
+#EXTINF:-1 tvg-name="广州影视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广州影视.png" group-title="地方频道",广州影视
+https://tencentplay.gztv.com/live/yingshi.m3u8?txSecret=2b09d952702fe2c67ddad695faa4c27c&txTime=191b5db5ed0
+#EXTINF:-1 tvg-name="广州法治" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广州法治.png" group-title="地方频道",广州法治
+https://tencentplay.gztv.com/live/fazhi.m3u8?txSecret=4400d75d2114b2db07d86eda8f8218ee&txTime=191b60ce0f6
+#EXTINF:-1 tvg-name="广州法治" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广州法治.png" group-title="地方频道",广州法治
+https://tencentplay.gztv.com/live/fazhi.m3u8?txSecret=4400d75d2114b2db07d86eda8f8218ee&txTime=191b60ce0f6
+#EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广东珠江.png" group-title="地方频道",广东珠江
+http://cdn2.163189.xyz/live/gdzj/stream.m3u8
+#EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广东珠江.png" group-title="地方频道",广东珠江
+http://121.33.239.242:9901/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="广东珠江" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广东珠江.png" group-title="地方频道",广东珠江
+http://cdn2.163189.xyz/live/gdzj/stream.m3u8
+#EXTINF:-1 tvg-name="大湾区卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/大湾区卫视.png" group-title="地方频道",大湾区卫视
+http://39.135.32.24:6610/PLTV/77777777/224/3221225748/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 tvg-name="大湾区卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/大湾区卫视.png" group-title="地方频道",大湾区卫视
+http://39.135.32.24:6610/PLTV/77777777/224/3221225748/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 tvg-name="梧州教育生活" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/梧州教育生活.png" group-title="地方频道",梧州教育生活
+http://live.wzrtv.cn:80/jysh1/sd/live.m3u8
+#EXTINF:-1 tvg-name="梧州教育生活" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/梧州教育生活.png" group-title="地方频道",梧州教育生活
+http://live.wzrtv.cn:80/jysh1/sd/live.m3u8
+#EXTINF:-1 tvg-name="梧州新闻综合" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/梧州新闻综合.png" group-title="地方频道",梧州新闻综合
+http://live.wzrtv.cn:80/xwzh1/sd/live.m3u8
+#EXTINF:-1 tvg-name="梧州新闻综合" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/梧州新闻综合.png" group-title="地方频道",梧州新闻综合
+http://live.wzrtv.cn:80/xwzh1/sd/live.m3u8
+#EXTINF:-1 tvg-name="英雄联盟赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/英雄联盟赛事频道.png" group-title="电竞频道",英雄联盟赛事频道
+http://1.94.31.214:35455/huya/660000
+#EXTINF:-1 tvg-name="英雄联盟赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/英雄联盟赛事频道.png" group-title="电竞频道",英雄联盟赛事频道
+https://live.metshop.top/huya/660000
+#EXTINF:-1 tvg-name="英雄联盟赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/英雄联盟赛事频道.png" group-title="电竞频道",英雄联盟赛事频道
+https://live.iill.top/huya/660000
+#EXTINF:-1 tvg-name="英雄联盟赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/英雄联盟赛事频道.png" group-title="电竞频道",英雄联盟赛事频道
+http://1.94.31.214:35455/huya/660000
+#EXTINF:-1 tvg-name="王者荣耀赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/王者荣耀赛事频道.png" group-title="电竞频道",王者荣耀赛事频道
+http://1.94.31.214:35455/huya/660002
+#EXTINF:-1 tvg-name="王者荣耀赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/王者荣耀赛事频道.png" group-title="电竞频道",王者荣耀赛事频道
+https://live.metshop.top/huya/660002
+#EXTINF:-1 tvg-name="王者荣耀赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/王者荣耀赛事频道.png" group-title="电竞频道",王者荣耀赛事频道
+http://1.94.31.214:35455/huya/660002
+#EXTINF:-1 tvg-name="无畏契约赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无畏契约赛事频道.png" group-title="电竞频道",无畏契约赛事频道
+http://1.94.31.214:35455/huya/660679
+#EXTINF:-1 tvg-name="无畏契约赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无畏契约赛事频道.png" group-title="电竞频道",无畏契约赛事频道
+https://live.metshop.top/huya/660679
+#EXTINF:-1 tvg-name="无畏契约赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无畏契约赛事频道.png" group-title="电竞频道",无畏契约赛事频道
+http://1.94.31.214:35455/huya/660679
+#EXTINF:-1 tvg-name="穿越火线赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/穿越火线赛事频道.png" group-title="电竞频道",穿越火线赛事频道
+http://1.94.31.214:35455/huya/660101
+#EXTINF:-1 tvg-name="穿越火线赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/穿越火线赛事频道.png" group-title="电竞频道",穿越火线赛事频道
+https://live.metshop.top/huya/660101
+#EXTINF:-1 tvg-name="穿越火线赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/穿越火线赛事频道.png" group-title="电竞频道",穿越火线赛事频道
+http://1.94.31.214:35455/huya/660101
+#EXTINF:-1 tvg-name="DOTA2赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/DOTA2赛事频道.png" group-title="电竞频道",DOTA2赛事频道
+http://1.94.31.214:35455/huya/476318
+#EXTINF:-1 tvg-name="DOTA2赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/DOTA2赛事频道.png" group-title="电竞频道",DOTA2赛事频道
+https://live.metshop.top/huya/476318
+#EXTINF:-1 tvg-name="DOTA2赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/DOTA2赛事频道.png" group-title="电竞频道",DOTA2赛事频道
+http://1.94.31.214:35455/huya/476318
+#EXTINF:-1 tvg-name="斯诺克赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/斯诺克赛事频道.png" group-title="电竞频道",斯诺克赛事频道
+http://1.94.31.214:35455/huya/880214
+#EXTINF:-1 tvg-name="斯诺克赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/斯诺克赛事频道.png" group-title="电竞频道",斯诺克赛事频道
+https://live.metshop.top/huya/880214
+#EXTINF:-1 tvg-name="斯诺克赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/斯诺克赛事频道.png" group-title="电竞频道",斯诺克赛事频道
+http://1.94.31.214:35455/huya/880214
+#EXTINF:-1 tvg-name="和平精英赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/和平精英赛事频道.png" group-title="电竞频道",和平精英赛事频道
+http://1.94.31.214:35455/huya/660006
+#EXTINF:-1 tvg-name="和平精英赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/和平精英赛事频道.png" group-title="电竞频道",和平精英赛事频道
+https://live.metshop.top/huya/660006
+#EXTINF:-1 tvg-name="和平精英赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/和平精英赛事频道.png" group-title="电竞频道",和平精英赛事频道
+http://1.94.31.214:35455/huya/660006
+#EXTINF:-1 tvg-name="赛车竞速赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/赛车竞速赛事频道.png" group-title="电竞频道",赛车竞速赛事频道
+http://1.94.31.214:35455/huya/660117
+#EXTINF:-1 tvg-name="赛车竞速赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/赛车竞速赛事频道.png" group-title="电竞频道",赛车竞速赛事频道
+https://live.metshop.top/huya/660117
+#EXTINF:-1 tvg-name="赛车竞速赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/赛车竞速赛事频道.png" group-title="电竞频道",赛车竞速赛事频道
+http://1.94.31.214:35455/huya/660117
+#EXTINF:-1 tvg-name="英雄手游赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/英雄手游赛事频道.png" group-title="电竞频道",英雄手游赛事频道
+http://1.94.31.214:35455/huya/667812
+#EXTINF:-1 tvg-name="英雄手游赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/英雄手游赛事频道.png" group-title="电竞频道",英雄手游赛事频道
+https://live.metshop.top/huya/667812
+#EXTINF:-1 tvg-name="英雄手游赛事频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/英雄手游赛事频道.png" group-title="电竞频道",英雄手游赛事频道
+http://1.94.31.214:35455/huya/667812
+#EXTINF:-1 tvg-name="广东体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广东体育.png" group-title="体育频道",广东体育
+http://218.15.183.23:9901/tsfile/live/23012_1.m3u8
+#EXTINF:-1 tvg-name="广东体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广东体育.png" group-title="体育频道",广东体育
+http://cdn2.163189.xyz/live/gdty/stream.m3u8
+#EXTINF:-1 tvg-name="广东体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广东体育.png" group-title="体育频道",广东体育
+http://ar-ca2.jdiptv.cc/live/gdty.m3u8?kdstime=1738154159&kdssign=96e817e2e78149b3f512ed47a4411ea7
+#EXTINF:-1 tvg-name="广东体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广东体育.png" group-title="体育频道",广东体育
+http://ar-ca2.jdiptv.cc//live/gdty.m3u8?kdstime=1738154154&kdssign=69e180bce2320371553d00e70fe3b947
+#EXTINF:-1 tvg-name="广东体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/广东体育.png" group-title="体育频道",广东体育
+http://218.15.183.23:9901/tsfile/live/23012_1.m3u8
+#EXTINF:-1 tvg-name="五星体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/五星体育.png" group-title="体育频道",五星体育
+http://36.105.100.208:35455/itv/5000000010000017540.m3u8?cdn=bestzb
+#EXTINF:-1 tvg-name="澳门体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门体育.png" group-title="体育频道",澳门体育
+http://103.233.191.132:1935/ch4/sport_ch4.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门体育.png" group-title="体育频道",澳门体育
+http://103.233.191.132:1935/ch4/sport_ch4.live/playlist.m3u8
+#EXTINF:-1 tvg-name="ESPN" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/ESPN.png" group-title="体育频道",ESPN
+http://212.102.60.231/ESPN_NEWS/index.m3u8
+#EXTINF:-1 tvg-name="纬来体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/纬来体育.png" group-title="体育频道",纬来体育
+rtmp://116.93.98.236/sat/tv721
+#EXTINF:-1 tvg-name="纬来体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/纬来体育.png" group-title="体育频道",纬来体育
+rtmp://9hv9.mine.nu/sat/tv721.flv
+#EXTINF:-1 tvg-name="咪咕体育1" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/咪咕体育1.png" group-title="体育频道",咪咕体育1
+http://39.135.134.67/000000001000/3000000001000031494/index.m3u8
+#EXTINF:-1 tvg-name="咪咕体育1" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/咪咕体育1.png" group-title="体育频道",咪咕体育1
+http://39.135.134.67/000000001000/3000000001000031494/index.m3u8
+#EXTINF:-1 tvg-name="咪咕体育2" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/咪咕体育2.png" group-title="体育频道",咪咕体育2
+http://39.134.67.108/PLTV/88888888/224/3221225897/1.m3u8
+#EXTINF:-1 tvg-name="咪咕体育2" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/咪咕体育2.png" group-title="体育频道",咪咕体育2
+http://39.134.67.108/PLTV/88888888/224/3221225897/1.m3u8
+#EXTINF:-1 tvg-name="咪咕体育3" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/咪咕体育3.png" group-title="体育频道",咪咕体育3
+http://39.135.133.158:80/wh7f454c46tw2296044788_494569294/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8
+#EXTINF:-1 tvg-name="咪咕体育3" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/咪咕体育3.png" group-title="体育频道",咪咕体育3
+http://39.135.133.158:80/wh7f454c46tw2296044788_494569294/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226147/index.m3u8
+#EXTINF:-1 tvg-name="有线18台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/有线18台.png" group-title="体育频道",有线18台
+http://60.248.77.83/sat/hk021.flv
+#EXTINF:-1 tvg-name="NBA" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/NBA.png" group-title="体育频道",NBA
+http://fl2.moveonjoy.com/NBA_TV/index.m3u8
+#EXTINF:-1 tvg-name="NBA" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/NBA.png" group-title="体育频道",NBA
+http://fl2.moveonjoy.com/NBA_TV/index.m3u8
+#EXTINF:-1 tvg-name="凤凰卫视中文台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰卫视中文台.png" group-title="香港频道",凤凰卫视中文台
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzw
+#EXTINF:-1 tvg-name="凤凰卫视中文台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰卫视中文台.png" group-title="香港频道",凤凰卫视中文台
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhzw
+#EXTINF:-1 tvg-name="凤凰卫视资讯台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰卫视资讯台.png" group-title="香港频道",凤凰卫视资讯台
+http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
+#EXTINF:-1 tvg-name="凤凰卫视资讯台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰卫视资讯台.png" group-title="香港频道",凤凰卫视资讯台
+http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
+#EXTINF:-1 tvg-name="凤凰香港卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰香港卫视.png" group-title="香港频道",凤凰香港卫视
+http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8?wsSession=b6c3072decdb3fc5d0341c77-173815575219340&wsIPSercert=b28a1800853382f7eb24673ad65dde26
+#EXTINF:-1 tvg-name="凤凰香港卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰香港卫视.png" group-title="香港频道",凤凰香港卫视
+http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8?wsSession=b6c3072decdb3fc5d0341c77-173815575219340&wsIPSercert=b28a1800853382f7eb24673ad65dde26
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/翡翠台.png" group-title="香港频道",翡翠台
+http://php.jdshipin.com:8880/smt.php?id=jade_twn
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/翡翠台.png" group-title="香港频道",翡翠台
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无线新闻.png" group-title="香港频道",无线新闻
+http://php.jdshipin.com/TVOD/iptv.php?id=tvbxw
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无线新闻.png" group-title="香港频道",无线新闻
+http://php.jdshipin.com:8880/PLTV/iptv.php?id=tvbxw
+#EXTINF:-1 tvg-name="VIUTV" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/VIUTV.png" group-title="香港频道",VIUTV
+http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
+#EXTINF:-1 tvg-name="VIUTV" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/VIUTV.png" group-title="香港频道",VIUTV
+http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
+#EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无线财经台.png" group-title="香港频道",无线财经台
+rtmp://116.93.98.236/sat/hk011.flv
+#EXTINF:-1 tvg-name="无线财经台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/无线财经台.png" group-title="香港频道",无线财经台
+rtmp://116.93.98.236/sat/hk031.flv
+#EXTINF:-1 tvg-name="TVB娱乐台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVB娱乐台.png" group-title="香港频道",TVB娱乐台
+http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
+#EXTINF:-1 tvg-name="TVB星河" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVB星河.png" group-title="香港频道",TVB星河
+http://php.jdshipin.com:8880/smt.php?id=Xinhe
+#EXTINF:-1 tvg-name="TVB星河" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVB星河.png" group-title="香港频道",TVB星河
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=xinghe
+#EXTINF:-1 tvg-name="TVB星河" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVB星河.png" group-title="香港频道",TVB星河
+https://stream1.freetv.fun/db266a0db0c0ceb78963becb87d0ec13ff182280a05dc63c3ad2008a8b7193b7.ctv
+#EXTINF:-1 tvg-name="翡翠台备用" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/翡翠台备用.png" group-title="香港频道",翡翠台备用
+http://php.jdshipin.com/TVOD/iptv.php?id=huali2
+#EXTINF:-1 tvg-name="MYTVSUPER" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/MYTVSUPER.png" group-title="香港频道",MYTVSUPER
+http://jiaojirentv.top/2020/yy.php?id=1354926666
+#EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVB Plus.png" group-title="香港频道",TVB Plus
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=j2
+#EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVB Plus.png" group-title="香港频道",TVB Plus
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=j2
+#EXTINF:-1 tvg-name="千禧经典台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/千禧经典台.png" group-title="香港频道",千禧经典台
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=tvbc
+#EXTINF:-1 tvg-name="TVB亚洲武侠" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVB亚洲武侠.png" group-title="香港频道",TVB亚洲武侠
+http://php.jdshipin.com/TVOD/iptv.php?id=yzwx
+#EXTINF:-1 tvg-name="TVB亚洲武侠" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVB亚洲武侠.png" group-title="香港频道",TVB亚洲武侠
+http://php.jdshipin.com/TVOD/iptv.php?id=yzwx
+#EXTINF:-1 tvg-name="TVBJ1" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVBJ1.png" group-title="香港频道",TVBJ1
+http://php.jdshipin.com/TVOD/iptv.php?id=j1
+#EXTINF:-1 tvg-name="香港面包台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/香港面包台.png" group-title="香港频道",香港面包台
+https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
+#EXTINF:-1 tvg-name="香港面包台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/香港面包台.png" group-title="香港频道",香港面包台
+https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
+#EXTINF:-1 tvg-name="HOY77" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/HOY77.png" group-title="香港频道",HOY77
+http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
+#EXTINF:-1 tvg-name="HOY资讯台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/HOY资讯台.png" group-title="香港频道",HOY资讯台
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=hoytv
+#EXTINF:-1 tvg-name="RHK33" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/RHK33.png" group-title="香港频道",RHK33
+https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8
+#EXTINF:-1 tvg-name="RHK34" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/RHK34.png" group-title="香港频道",RHK34
+https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/stream02/streamPlaylist.m3u8
+#EXTINF:-1 tvg-name="RHK35" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/RHK35.png" group-title="香港频道",RHK35
+https://rthktv35-live.akamaized.net/hls/live/2101643/RTHKTV35/stream02/streamPlaylist.m3u8
+#EXTINF:-1 tvg-name="美亚C+" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/美亚C+.png" group-title="香港频道",美亚C+
+http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
+#EXTINF:-1 tvg-name="美亚C+" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/美亚C+.png" group-title="香港频道",美亚C+
+http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
+#EXTINF:-1 tvg-name="亚太电视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/亚太电视.png" group-title="香港频道",亚太电视
+http://play2.one-tv.com/live/onetv.m3u8
+#EXTINF:-1 tvg-name="凤凰电影台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/凤凰电影台.png" group-title="香港频道",凤凰电影台
+http://122.224.58.42:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 tvg-name="新传媒8频道" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/新传媒8频道.png" group-title="香港频道",新传媒8频道
+http://50.7.234.10:8278/TV8/playlist.m3u8?tid=MDFD8437455184374551&ct=19225&tsum=ea08ca3d3651a75f499af2fc429eee35
+#EXTINF:-1 tvg-name="澳视澳门" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳视澳门.png" group-title="澳门频道",澳视澳门
+http://php.jdshipin.com/TVOD/iptv.php?id=asam
+#EXTINF:-1 tvg-name="澳视澳门" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳视澳门.png" group-title="澳门频道",澳视澳门
+http://php.jdshipin.com/TVOD/iptv.php?id=asam
+#EXTINF:-1 tvg-name="澳门葡语" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门葡语.png" group-title="澳门频道",澳门葡语
+http://103.233.191.132:1935/ch2/ch2.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门葡语" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门葡语.png" group-title="澳门频道",澳门葡语
+http://103.233.191.132:1935/ch2/ch2.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门资讯" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门资讯.png" group-title="澳门频道",澳门资讯
+http://103.233.191.133:1935/ch5/info_ch5.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门资讯" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门资讯.png" group-title="澳门频道",澳门资讯
+http://103.233.191.133:1935/ch5/info_ch5.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门综艺" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门综艺.png" group-title="澳门频道",澳门综艺
+http://103.233.191.134:1935/ch6/hd_ch6.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门综艺" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门综艺.png" group-title="澳门频道",澳门综艺
+http://103.233.191.134:1935/ch6/hd_ch6.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门MACAU" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门MACAU.png" group-title="澳门频道",澳门MACAU
+http://103.233.191.132:1935/ch3/ch3.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门MACAU" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门MACAU.png" group-title="澳门频道",澳门MACAU
+http://103.233.191.132:1935/ch3/ch3.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门体育.png" group-title="澳门频道",澳门体育
+http://103.233.191.132:1935/ch4/sport_ch4.live/playlist.m3u8
+#EXTINF:-1 tvg-name="澳门体育" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/澳门体育.png" group-title="澳门频道",澳门体育
+http://103.233.191.132:1935/ch4/sport_ch4.live/playlist.m3u8
+#EXTINF:-1 tvg-name="TVBS新闻台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVBS新闻台.png" group-title="台湾频道",TVBS新闻台
+http://61.221.215.25:8800/hls/9/index.m3u8
+#EXTINF:-1 tvg-name="华视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/华视.png" group-title="台湾频道",华视
+http://116.93.98.236:8080/sat/tv111.flv
+#EXTINF:-1 tvg-name="民视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/民视.png" group-title="台湾频道",民视
+http://116.93.98.236:8080/sat/tv051.flv
+#EXTINF:-1 tvg-name="台视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/台视.png" group-title="台湾频道",台视
+http://116.93.98.236:8080/sat/tv071.flv
+#EXTINF:-1 tvg-name="中视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/中视.png" group-title="台湾频道",中视
+http://116.93.98.236:8080/sat/tv091.flv
+#EXTINF:-1 tvg-name="TVBS亚洲" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/TVBS亚洲.png" group-title="台湾频道",TVBS亚洲
+http://extraott.com/live/6772191932/1654508883/33015.m3u8
+#EXTINF:-1 tvg-name="星光影视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/星光影视.png" group-title="台湾频道",星光影视
+http://ali.hlspull.yximgs.com/live/zxcvbnm9852.flv
+#EXTINF:-1 tvg-name="纬来日本台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/纬来日本台.png" group-title="台湾频道",纬来日本台
+rtmp://f13h.mine.nu/sat/tv771
+#EXTINF:-1 tvg-name="大爱一台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/大爱一台.png" group-title="台湾频道",大爱一台
+https://pulltv1.wanfudaluye.com/live/tv1.m3u8
+#EXTINF:-1 tvg-name="大爱二台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/大爱二台.png" group-title="台湾频道",大爱二台
+https://pulltv2.wanfudaluye.com/live/tv2.m3u8
+#EXTINF:-1 tvg-name="大立电视台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/大立电视台.png" group-title="台湾频道",大立电视台
+http://www.dalitv.com.tw:4568/live/dali/index.m3u8
+#EXTINF:-1 tvg-name="纬来电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/纬来电影.png" group-title="台湾频道",纬来电影
+http://50.7.234.10:8278/videolandmovie/playlist.m3u8?ct=18335&tid=ma2dac66da407&tsum=9a5a39559f64a71081ef9b3a85f2886c
+#EXTINF:-1 tvg-name="龙华电影" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/龙华电影.png" group-title="台湾频道",龙华电影
+http://37.27.111.214:8080/live/19/hls.m3u8
+#EXTINF:-1 tvg-name="龙华洋片" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/龙华洋片.png" group-title="台湾频道",龙华洋片
+http://sg6.jdiptv.cc/live/lhyp.m3u8?kdstime=1738166081&kdssign=640c9c1e5a7b68bb158b76021c7fca28
+#EXTINF:-1 tvg-name="纬来戏剧" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/纬来戏剧.png" group-title="台湾频道",纬来戏剧
+http://jp1.jdiptv.cc/live/wlxj.m3u8?kdstime=1738165836&kdssign=0341f77aa16de3bfff4212ce4718bd14

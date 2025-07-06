@@ -16,8 +16,8 @@ env.bak/
 venv.bak/
 .venv/
 
-# Output files
-output/
+# Output files (keep generated M3U files for public access)
+# output/  # Commented out to allow M3U files in repository
 *.log
 *.pkl
 cache.pkl
