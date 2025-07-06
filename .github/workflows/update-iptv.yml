@@ -56,7 +56,14 @@ jobs:
         git config --local user.name "ONETV-API"
         git add .
         git commit -m "🤖 自动更新 OneTV-API 结果 $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
+
+        # 尝试推送，如果失败则先拉取远程更改
+        if ! git push; then
+          echo "推送失败，正在拉取远程更改..."
+          git pull --rebase origin main
+          echo "重新尝试推送..."
+          git push
+        fi
         
     - name: Upload results as artifact
       uses: actions/upload-artifact@v4

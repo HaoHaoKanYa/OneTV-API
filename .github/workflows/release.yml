@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -49,9 +51,6 @@ jobs:
           name: ${{ env.name }}-v${{ env.version }}
           path: dist\${{ env.name }}-v${{ env.version }}.zip
 
-      - name: Install jq
-        run: choco install jq
-
       - name: Get changelog
         id: get_changelog
         run: |
@@ -60,27 +59,24 @@ jobs:
           $changelog = [regex]::Match($changelog, "(?s)## v$version.*?(?=## v)").Value
           $changelog = $changelog -replace "(?s)^## v$version.*?\n", ""
           $changelog = $changelog.Trim()
-          $changelog | jq -Rs '.' | ForEach-Object { echo "changelog=$_"; echo "changelog=$_" >> $env:GITHUB_ENV }
+          if ([string]::IsNullOrWhiteSpace($changelog)) {
+            $changelog = "Release v$version"
+          }
+          # 将换行符转换为\n，避免多行字符串问题
+          $changelog = $changelog -replace "`r`n", "\n" -replace "`n", "\n"
+          echo "changelog<<EOF" >> $env:GITHUB_ENV
+          echo $changelog >> $env:GITHUB_ENV
+          echo "EOF" >> $env:GITHUB_ENV
         shell: pwsh
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release and Upload Assets
+        uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ env.version }}
-          release_name: v${{ env.version }}
-          body: ${{ fromJSON(env.changelog) }}
+          tag_name: v${{ env.version }}
+          name: v${{ env.version }}
+          body: ${{ env.changelog }}
           draft: false
           prerelease: false
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
+          files: dist/${{ env.name }}-v${{ env.version }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: dist/${{ env.name }}-v${{ env.version }}.zip
-          asset_name: ${{ env.name }}-v${{ env.version }}.zip
-          asset_content_type: application/zip
