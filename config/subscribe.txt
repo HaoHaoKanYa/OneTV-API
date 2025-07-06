@@ -1,7 +1,8 @@
 # 这是订阅源列表，每行一个订阅地址
 # This is a list of subscription sources, with one subscription address per line
 
-https://raw.githubusercontent.com/HaoHaoKanYa/iptv-database/master/result.txt
+# 原有订阅源（保留）
+https://raw.githubusercontent.com/Guovin/iptv-database/master/result.txt
 https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u
 https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u
 https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
@@ -11,3 +12,52 @@ https://raw.githubusercontent.com/asdjkl6/tv/tv/.m3u/整套直播源/测试/整�
 https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u
 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv6.txt
 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+
+# 央视高清专用源
+https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u
+https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
+https://raw.githubusercontent.com/joevess/IPTV/main/iptv.m3u
+https://raw.githubusercontent.com/SPX372928/MyIPTV/main/IPTV.m3u
+https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.m3u
+https://raw.githubusercontent.com/mlvjfchen/TV/main/iptv_list.m3u
+https://raw.githubusercontent.com/zwc456baby/iptv_alive/master/live.m3u
+
+# 卫视高清专用源
+https://raw.githubusercontent.com/ssili126/tv/main/itvlist.m3u
+https://raw.githubusercontent.com/qwerttvv/Beijing-IPTV/master/IPTV-Unicom.m3u
+https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
+https://raw.githubusercontent.com/ljhnick/IPTV/main/IPTV.m3u
+https://raw.githubusercontent.com/wcb1969/iptv/main/IPTV.m3u
+https://raw.githubusercontent.com/Meroser/IPTV/main/IPTV.m3u
+https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/live.txt
+
+# 海外台流畅源
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV.m3u
+https://raw.githubusercontent.com/hououinkami/AppleTV/main/IPTV.m3u
+https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u
+https://raw.githubusercontent.com/iptv-org/iptv/master/streams/hk.m3u
+https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tw.m3u
+https://raw.githubusercontent.com/iptv-org/iptv/master/streams/mo.m3u
+
+# 综合高质量源
+https://raw.githubusercontent.com/drangjchen/IPTV/main/IPTV.m3u
+https://raw.githubusercontent.com/cymz6/AutoIPTV-Hotel/main/lives.m3u
+https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V4.m3u
+https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u
+https://raw.githubusercontent.com/jiuqi9997/KaiYuanHuiShou/main/TVBox/IPTV.m3u
+https://raw.githubusercontent.com/whpsky/iptv/main/chinatv.m3u
+https://raw.githubusercontent.com/Troray/IPTV/main/TVBox.m3u
+
+# 运营商IPTV优质源
+https://raw.githubusercontent.com/qingwen07/awesome-iptv/main/tvbox_live_all.m3u
+https://raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.m3u
+https://raw.githubusercontent.com/wwb521/live/main/tv.m3u
+https://raw.githubusercontent.com/gaotianliuyun/gao/master/list.m3u
+https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/bestv.m3u
+
+# 专业维护的稳定源
+https://raw.githubusercontent.com/Fairy8o/IPTV/main/PDX-V6.m3u
+https://raw.githubusercontent.com/sparkssssssssss/IPTV/main/IPTV.m3u
+https://raw.githubusercontent.com/zhanghongguang/zhanghongguang.github.io/main/IPTV.m3u
+https://raw.githubusercontent.com/Supprise0901/TVBox_live/main/live.txt
+https://raw.githubusercontent.com/wwb521/live/main/tv.txt
