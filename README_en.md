@@ -1,339 +1,537 @@
 <div align="center">
-  <img src="./static/images/logo.png" alt="logo"/>
+  <img src="./static/images/logo.png" alt="OneTV-API Logo"/>
   <h1 align="center">OneTV-API</h1>
 </div>
 
-<div align="center">A highly customizable IPTV interface update project 📺, with customizable channel menus, automatic live stream acquisition, speed testing, and validation to generate usable results, achieving 『✨instant playback experience🚀』</div>
+<div align="center">
+  <h3>🚀 Intelligent IPTV Live Source Management System</h3>
+  <p>A high-performance IPTV interface update tool developed with Python, focused on providing stable and fast live streaming services</p>
+</div>
+
 <br>
+
 <p align="center">
   <a href="https://github.com/HaoHaoKanYa/OneTV-API/releases/latest">
-    <img src="https://img.shields.io/github/v/release/HaoHaoKanYa/OneTV-API" />
+    <img src="https://img.shields.io/github/v/release/HaoHaoKanYa/OneTV-API?style=flat-square&logo=github" alt="Latest Release"/>
   </a>
   <a href="https://www.python.org/">
-    <img src="https://img.shields.io/badge/python-%20%3D%203.13-47c219" />
+    <img src="https://img.shields.io/badge/Python-3.11+-blue?style=flat-square&logo=python" alt="Python Version"/>
   </a>
-  <a href="https://github.com/HaoHaoKanYa/OneTV-API/releases/latest">
-    <img src="https://img.shields.io/github/downloads/HaoHaoKanYa/OneTV-API/total" />
+  <a href="https://github.com/HaoHaoKanYa/OneTV-API/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/HaoHaoKanYa/OneTV-API?style=flat-square" alt="License"/>
   </a>
-  <a href="https://hub.docker.com/repository/docker/haohaokanya/onetv-api">
-    <img src="https://img.shields.io/docker/pulls/haohaokanya/onetv-api" />
+  <a href="https://github.com/HaoHaoKanYa/OneTV-API/stargazers">
+    <img src="https://img.shields.io/github/stars/HaoHaoKanYa/OneTV-API?style=flat-square&logo=github" alt="GitHub Stars"/>
   </a>
-  <a href="https://github.com/HaoHaoKanYa/OneTV-API/fork">
-    <img src="https://img.shields.io/github/forks/HaoHaoKanYa/OneTV-API" />
+  <a href="https://github.com/HaoHaoKanYa/OneTV-API/network/members">
+    <img src="https://img.shields.io/github/forks/HaoHaoKanYa/OneTV-API?style=flat-square&logo=github" alt="GitHub Forks"/>
   </a>
 </p>
 
-[中文](./README.md) | English
+<p align="center">
+  <a href="./README.md">中文</a> |
+  <a href="#quick-start">Quick Start</a> |
+  <a href="#features">Features</a> |
+  <a href="#documentation">Documentation</a>
+</p>
 
-🎉💻 [OneTV-Web](https://github.com/HaoHaoKanYa/OneTV-Web): IPTV live stream management platform, supports online playback and
-other features, under development...
+---
 
-💖 [Channel Alias Collection Plan](https://github.com/HaoHaoKanYa/OneTV-API/discussions)
+## 📖 Project Overview
 
-- [✅ Features](#features)
-- [🔗 Latest results](#latest-results)
-- [⚙️ Config parameter](#Config)
+OneTV-API is a professional IPTV live source management system designed to provide users with high-quality, stable television live streaming services. This project adopts modern technical architecture, supports multiple deployment methods, and can automatically acquire, test, and optimize live sources to ensure the best viewing experience.
+
+### 🎯 Design Philosophy
+
+- **Stability First**: Ensure the availability and stability of live sources through multiple testing mechanisms
+- **User Experience**: Simple configuration with support for personalized customization
+- **Automated Operations**: GitHub Actions automated updates without manual intervention
+- **Open Source Transparency**: Completely open source with community-driven continuous improvement
+
+## 📋 Table of Contents
+
 - [🚀 Quick Start](#quick-start)
-    - [Workflow](#workflow)
-    - [Command Line](#command-line)
-    - [GUI Software](#gui-software)
-    - [Docker](#docker)
-- [📖 Detailed Tutorial](./docs/tutorial_en.md)
-- [🗓️ Changelog](./CHANGELOG.md)
-- [❤️ Appreciate](#appreciate)
-- [👀 Follow the public account](#follow)
-- [⭐️ Star History](#star-history)
-- [📣 Disclaimer](#disclaimer)
-- [⚖️ License](#license)
+- [✨ Features](#features)
+- [📺 Live Source Access](#live-source-access)
+- [⚙️ Configuration](#configuration)
+- [🛠️ Deployment Methods](#deployment-methods)
+  - [GitHub Actions (Recommended)](#github-actions-recommended)
+  - [Local Running](#local-running)
+  - [Docker Deployment](#docker-deployment)
+- [📖 Documentation](#documentation)
+- [🤝 Contributing](#contributing)
+- [📄 License](#license)
 
-> [!IMPORTANT]
-> 1. The default data sources, such as subscription sources, come from open-source projects on GitHub and are for
-     demonstration purposes only. They may have stability issues.
-> 2. This project does not guarantee or explain the stability of the interface results.
-> 3. To achieve optimal stability, it is recommended to maintain the data sources yourself.
+## 🚀 Quick Start
+
+### Method 1: GitHub Actions (Recommended)
+
+1. **Fork this project** to your GitHub account
+2. **Enable Actions**: Go to repository settings → Actions → Allow all actions
+3. **Auto-run**: Automatically updates at 6:00 and 18:00 Beijing time daily
+4. **Get results**:
+   ```
+   https://raw.githubusercontent.com/YourUsername/OneTV-API/main/output/onetv_api_result.m3u
+   ```
+
+### Method 2: One-Click Deploy
+
+[![Deploy to GitHub](https://img.shields.io/badge/Deploy%20to-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/HaoHaoKanYa/OneTV-API/fork)
+
+> [!TIP]
+> GitHub Actions method is recommended for its high automation and no local environment configuration required
+
+## ✨ Features
+
+### 🎯 Core Features
+
+| Feature Module | Description | Status |
+|----------------|-------------|--------|
+| 🔄 **Auto Update** | GitHub Actions scheduled automatic live source updates | ✅ |
+| 🚀 **Smart Speed Test** | Multi-threaded concurrent testing, filtering optimal live sources | ✅ |
+| 📺 **Multi-Source Aggregation** | Support for local sources, subscription sources, multicast sources, etc. | ✅ |
+| 🎨 **Personalized Customization** | Custom channel templates with channel alias support | ✅ |
+| 📊 **Quality Assurance** | Resolution detection, speed filtering, stability verification | ✅ |
+| 🌐 **Multi-Protocol Support** | IPv4/IPv6 dual-stack support, RTMP streaming | ✅ |
+
+### 🛡️ Technical Advantages
+
+- **High Performance**: Asynchronous concurrent processing, supporting large-scale live source testing
+- **High Availability**: Multiple fault tolerance mechanisms ensuring stable service operation
+- **Easy Deployment**: Support for GitHub Actions, Docker, local running and other deployment methods
+- **Easy Maintenance**: Modular design with configuration file management
+- **Cross-Platform**: Support for Windows, Linux, macOS and other operating systems
+
+## 📺 Live Source Access
+
+### 🔗 Online Playlists
+
+> [!NOTE]
+> The following links are automatically updated live sources, updated daily at 6:00 and 18:00 Beijing time
+
+#### Main Playlists
+
+| Type | Link | Description |
+|------|------|-------------|
+| **Recommended** | `https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/output/onetv_api_result.m3u` | Curated channels, quality first |
+| Complete List | `https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/output/result.m3u` | Contains all available channels |
+
+#### Categorized Playlists
+
+| Protocol Type | Link | Use Case |
+|---------------|------|----------|
+| IPv4 Only | `https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/output/ipv4/result.m3u` | IPv4 network environment |
+| IPv6 Only | `https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/output/ipv6/result.m3u` | IPv6 network environment |
+
+### 📱 How to Use
+
+1. **Copy playlist link**
+2. **Add to IPTV player** (such as VLC, Kodi, Perfect Player, etc.)
+3. **Start watching**
+
+### 🌍 CDN Acceleration
+
+If GitHub access is slow, you can use the following CDN acceleration address:
+
+```
+https://cdn.jsdelivr.net/gh/HaoHaoKanYa/OneTV-API@main/output/onetv_api_result.m3u
+```
+
+## ⚙️ Configuration
+
+### 📝 Configuration Files
+
+The project supports personalized customization through configuration files, main configuration files are located in the `config/` directory:
+
+- `onetv_api_config.ini` - Main configuration file
+- `onetv_api_demo.txt` - Channel template file
+- `local.txt` - Local live sources
+- `whitelist.txt` - Whitelist channels
+- `subscribe.txt` - Subscription source list
+
+### 🔧 Core Configuration Items
 
 <details>
-  <summary>Default Data Sources</summary>
+<summary>Click to expand detailed configuration instructions</summary>
 
-📍Subscription sources are from:
+#### Basic Settings
 
-- [HaoHaoKanYa/iptv-database](https://github.com/HaoHaoKanYa/iptv-database)
-- [iptv-org/iptv](https://github.com/iptv-org/iptv)
-- [suxuang/myIPTV](https://github.com/suxuang/myIPTV)
-- [kimwang1978/collect-tv-txt](https://github.com/kimwang1978/collect-tv-txt)
-- [asdjkl6/tv](https://github.com/asdjkl6/tv)
-- [fanmingming/live](https://github.com/fanmingming/live)
-- [vbskycn/iptv](https://github.com/vbskycn/iptv)
+| Configuration Item | Description | Default Value | Recommended Value |
+|-------------------|-------------|---------------|-------------------|
+| `open_speed_test` | Enable speed testing | `True` | `True` |
+| `open_filter_speed` | Enable speed filtering | `True` | `True` |
+| `min_speed` | Minimum speed requirement (M/s) | `0.5` | `1.0` |
+| `speed_test_timeout` | Speed test timeout (seconds) | `10` | `15` |
 
-📍Channel icons are from:
+#### Network Settings
 
-- [fanmingming/live](https://github.com/fanmingming/live)
+| Configuration Item | Description | Default Value | Recommended Value |
+|-------------------|-------------|---------------|-------------------|
+| `ipv_type` | IP protocol type | `全部` | `全部` |
+| `ipv4_num` | IPv4 interface count | `5` | `3` |
+| `ipv6_num` | IPv6 interface count | `5` | `3` |
+
+#### Source Settings
+
+| Configuration Item | Description | Default Value | Recommended Value |
+|-------------------|-------------|---------------|-------------------|
+| `open_local` | Enable local sources | `True` | `True` |
+| `open_subscribe` | Enable subscription sources | `False` | `True` |
+| `local_num` | Local source interface count | `10` | `5` |
+| `subscribe_num` | Subscription source interface count | `10` | `5` |
 
 </details>
 
-## Features
+### 📋 Channel Template Configuration
 
-- ✅ Customizable templates, support for aliases, and generation of desired channels
-- ✅ Supports RTMP streaming (live/hls) to enhance playback experience
-- ✅ Supports multiple source acquisition methods: local source, multicast source, hotel source, subscription source,
-  keyword search
-- ✅ Support for playback interface retrieval and generation
-- ✅ Supports EPG functionality, displaying channel preview content
-- ✅ Interface speed verification, obtain delay, speed, resolution, filter invalid interface
-- ✅ Preferences: IPv4, IPv6, interface source sorting priority and quantity configuration, whitelist, blacklist,
-  location, and ISP filtering
-- ✅ Scheduled execution at 6:00 AM and 18:00 PM Beijing time daily
-- ✅ Supports various execution methods: workflows, command line, GUI software, Docker(amd64/arm64/arm v7)
-- ✨ For more features, see [Config parameter](#Config)
+Support for custom channel templates, format as follows:
 
-## Latest results
+```
+Channel Group,#genre#
+Channel Name,Channel Link
+Channel Name,Channel Link
 
-> [!IMPORTANT]\
-> The following addresses may not be stable for access within China. It is recommended to prepend a proxy address for
-> use. You can reply with `cdn` in the public account to obtain it.
-
-### Live Sources
-
-- Default
-
-```bash
-https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/output/result.m3u
+Another Group,#genre#
+Channel Name,Channel Link
 ```
 
-- IPv6
+### 🎯 Personalized Customization
 
-```bash
-https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/output/ipv6/result.m3u
-```
+1. **Modify channel template**: Edit `config/onetv_api_demo.txt`
+2. **Add local sources**: Edit `config/local.txt`
+3. **Set whitelist**: Edit `config/whitelist.txt`
+4. **Adjust configuration**: Edit `config/onetv_api_config.ini`
 
-- IPv4
+## 🛠️ Deployment Methods
 
-```bash
-https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/output/ipv4/result.m3u
-```
+### GitHub Actions (Recommended)
 
-### VOD source
+> [!TIP]
+> This is the simplest and most stable deployment method, requiring no local environment configuration
 
-```bash
-https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/source.json
-```
+#### 🚀 Quick Deployment
 
-## Config
+1. **Fork Project**
+   ```bash
+   # Click the Fork button in the top right corner of the page
+   # Or visit: https://github.com/HaoHaoKanYa/OneTV-API/fork
+   ```
 
-| Configuration Item     | Description                                                                                                                                                                                                                                                                                                                                                                                                                      | Default Value     |
-|:-----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
-| open_driver            | Enable browser execution, If there are no updates, this mode can be enabled, which consumes more performance                                                                                                                                                                                                                                                                                                                     | False             |
-| open_epg               | Enable EPG function, support channel display preview content                                                                                                                                                                                                                                                                                                                                                                     | True              |
-| open_empty_category    | Enable the No Results Channel Category, which will automatically categorize channels without results to the bottom                                                                                                                                                                                                                                                                                                               | False             |
-| open_filter_resolution | Enable resolution filtering, interfaces below the minimum resolution (min_resolution) will be filtered, GUI users need to manually install FFmpeg, the program will automatically call FFmpeg to obtain the interface resolution, it is recommended to enable, although it will increase the time-consuming of the speed measurement stage, but it can more effectively distinguish whether the interface can be played          | True              |
-| open_filter_speed      | Enable speed filtering, interfaces with speed lower than the minimum speed (min_speed) will be filtered                                                                                                                                                                                                                                                                                                                          | True              |
-| open_hotel             | Enable the hotel source function, after closing it all hotel source working modes will be disabled                                                                                                                                                                                                                                                                                                                               | False             |
-| open_hotel_foodie      | Enable Foodie hotel source work mode                                                                                                                                                                                                                                                                                                                                                                                             | True              |
-| open_hotel_fofa        | Enable FOFA、ZoomEye hotel source work mode                                                                                                                                                                                                                                                                                                                                                                                       | False             |
-| open_local             | Enable local source function, will use the data in the template file and the local source file                                                                                                                                                                                                                                                                                                                                   | True              |
-| open_m3u_result        | Enable the conversion to generate m3u file type result links, supporting the display of channel icons                                                                                                                                                                                                                                                                                                                            | True              |
-| open_multicast         | Enable the multicast source function, after disabling it all multicast sources will stop working                                                                                                                                                                                                                                                                                                                                 | False             |
-| open_multicast_foodie  | Enable Foodie multicast source work mode                                                                                                                                                                                                                                                                                                                                                                                         | True              |
-| open_multicast_fofa    | Enable FOFA multicast source work mode                                                                                                                                                                                                                                                                                                                                                                                           | False             |
-| open_online_search     | Enable keyword search source feature                                                                                                                                                                                                                                                                                                                                                                                             | False             |
-| open_request           | Enable query request, the data is obtained from the network (only for hotel sources and multicast sources)                                                                                                                                                                                                                                                                                                                       | False             |
-| open_rtmp              | Enable RTMP push function, need to install FFmpeg, use local bandwidth to improve the interface playback experience                                                                                                                                                                                                                                                                                                              | False             |
-| open_service           | Enable page service, used to control whether to start the result page service; if deployed on platforms like Qinglong with dedicated scheduled tasks, the function can be turned off after updates are completed and the task is stopped                                                                                                                                                                                         | True              |
-| open_speed_test        | Enable speed test functionality to obtain response time, rate, and resolution                                                                                                                                                                                                                                                                                                                                                    | True              |
-| open_subscribe         | Enable subscription source feature                                                                                                                                                                                                                                                                                                                                                                                               | True              |
-| open_supply            | Enable compensation mechanism mode, used to control when the number of channel interfaces is insufficient, automatically add interfaces that do not meet the conditions (such as lower than the minimum rate) but may be available to the result, thereby avoiding the result being empty                                                                                                                                        | True              |
-| open_update            | Enable updates, if disabled then only the result page service is run                                                                                                                                                                                                                                                                                                                                                             | True              |
-| open_update_time       | Enable show update time                                                                                                                                                                                                                                                                                                                                                                                                          | True              |
-| open_url_info          | Enable to display interface description information, used to control whether to display interface source, resolution, protocol type and other information, the content after the $ symbol, the playback software uses this information to describe the interface, if some players (such as PotPlayer) do not support parsing and cannot play, you can turn it off                                                                | False             |
-| open_use_cache         | Enable the use of local cache data, applicable to the query request failure scenario (only for hotel sources and multicast sources)                                                                                                                                                                                                                                                                                              | True              |
-| open_history           | Enable the use of historical update results (including the interface for template and result files) and merge them into the current update                                                                                                                                                                                                                                                                                       | True              |
-| open_headers           | Enable to use the request header verification information contained in M3U, used for speed measurement and other operations. Note: Only a few players support playing this type of interface with verification information, which is turned off by default                                                                                                                                                                       | False             |
-| app_port               | Page service port, used to control the port number of the page service                                                                                                                                                                                                                                                                                                                                                           | 8000              |
-| cdn_url                | CDN proxy acceleration address, used for accelerated access to subscription sources, channel icons and other resources                                                                                                                                                                                                                                                                                                           |                   |
-| final_file             | Generated result file path                                                                                                                                                                                                                                                                                                                                                                                                       | output/result.txt |
-| hotel_num              | The number of preferred hotel source interfaces in the results                                                                                                                                                                                                                                                                                                                                                                   | 10                |
-| hotel_page_num         | Number of pages to retrieve for hotel regions                                                                                                                                                                                                                                                                                                                                                                                    | 1                 |
-| hotel_region_list      | List of hotel source regions, 'all' indicates all regions                                                                                                                                                                                                                                                                                                                                                                        | all               |
-| isp                    | Interface operator, used to control the result to only include the filled operator type, supports keyword filtering, separated by English commas, not filled in means no operator specified                                                                                                                                                                                                                                      |                   |
-| ipv4_num               | The preferred number of IPv4 interfaces in the result                                                                                                                                                                                                                                                                                                                                                                            | 5                 |
-| ipv6_num               | The preferred number of IPv6 interfaces in the result                                                                                                                                                                                                                                                                                                                                                                            | 5                 |
-| ipv6_support           | It is forced to consider that the current network supports IPv6 and skip the check                                                                                                                                                                                                                                                                                                                                               | False             |
-| ipv_type               | The protocol type of interface in the generated result, optional values: ipv4, ipv6, all                                                                                                                                                                                                                                                                                                                                         | all               |
-| ipv_type_prefer        | Interface protocol type preference, prioritize interfaces of this type in the results, optional values: ipv4, ipv6, auto                                                                                                                                                                                                                                                                                                         | ipv6,ipv4         |
-| location               | Interface location, used to control the result to only include the filled location type, supports keyword filtering, separated by English commas, not filled in means no location specified, it is recommended to use the location close to the user, which can improve the playback experience                                                                                                                                  |                   |
-| local_file             | Local source file path                                                                                                                                                                                                                                                                                                                                                                                                           | config/local.txt  |
-| local_num              | Preferred number of local source interfaces in the result                                                                                                                                                                                                                                                                                                                                                                        | 10                |
-| min_resolution         | Minimum interface resolution, requires enabling open_filter_resolution to take effect                                                                                                                                                                                                                                                                                                                                            | 1920x1080         |
-| max_resolution         | Maximum interface resolution, requires enabling open_filter_resolution to take effect                                                                                                                                                                                                                                                                                                                                            | 1920x1080         |
-| min_speed              | Minimum interface speed (M/s), requires enabling open_filter_speed to take effect                                                                                                                                                                                                                                                                                                                                                | 0.5               |
-| multicast_num          | The number of preferred multicast source interfaces in the results                                                                                                                                                                                                                                                                                                                                                               | 10                |
-| multicast_page_num     | Number of pages to retrieve for multicast regions                                                                                                                                                                                                                                                                                                                                                                                | 1                 |
-| multicast_region_list  | Multicast source region list, 'all' indicates all regions                                                                                                                                                                                                                                                                                                                                                                        | all               |
-| online_search_num      | The number of preferred keyword search interfaces in the results                                                                                                                                                                                                                                                                                                                                                                 | 0                 |
-| online_search_page_num | Page retrieval quantity for keyword search channels                                                                                                                                                                                                                                                                                                                                                                              | 1                 |
-| origin_type_prefer     | Preferred interface source of the result, the result is sorted according to this order, separated by commas, for example: local, hotel, multicast, subscribe, online_search; local: local source, hotel: hotel source, multicast: multicast source, subscribe: subscription source, online_search: keyword search; If not filled in, it means that the source is not specified, and it is sorted according to the interface rate |                   |
-| recent_days            | Retrieve interfaces updated within a recent time range (in days), reducing appropriately can avoid matching issues                                                                                                                                                                                                                                                                                                               | 30                |
-| request_timeout        | Query request timeout duration, in seconds (s), used to control the timeout and retry duration for querying interface text links. Adjusting this value can optimize update time.                                                                                                                                                                                                                                                 | 10                |
-| speed_test_limit       | Number of interfaces to be tested at the same time, used to control the concurrency during the speed measurement stage, the larger the value, the shorter the speed measurement time, higher load, and the result may be inaccurate; The smaller the value, the longer the speed measurement time, lower load, and more accurate results; Adjusting this value can optimize the update time                                      | 10                |
-| speed_test_timeout     | Single interface speed measurement timeout duration, unit seconds (s); The larger the value, the longer the speed measurement time, which can improve the number of interfaces obtained, but the quality will decline; The smaller the value, the shorter the speed measurement time, which can obtain low-latency interfaces with better quality; Adjusting this value can optimize the update time                             | 10                |
-| speed_test_filter_host | Use Host address for filtering during speed measurement, channels with the same Host address will share speed measurement data, enabling this can significantly reduce the time required for speed measurement, but may lead to inaccurate speed measurement results                                                                                                                                                             | False             |
-| source_file            | Template file path                                                                                                                                                                                                                                                                                                                                                                                                               | config/demo.txt   |
-| subscribe_num          | The number of preferred subscribe source interfaces in the results                                                                                                                                                                                                                                                                                                                                                               | 10                |
-| time_zone              | Time zone, can be used to control the time zone displayed by the update time, optional values: Asia/Shanghai or other time zone codes                                                                                                                                                                                                                                                                                            | Asia/Shanghai     |
-| urls_limit             | Number of interfaces per channel                                                                                                                                                                                                                                                                                                                                                                                                 | 10                |
-| update_interval        | Scheduled execution update interval, unit hours, set 0 or empty means run only once, does not apply to workflow                                                                                                                                                                                                                                                                                                                  | 12                |
-| update_time_position   | Update time display position, need to enable open_update_time to take effect, optional values: top, bottom, top: display at the top of the result, bottom: display at the bottom of the result                                                                                                                                                                                                                                   | top               |
+2. **Enable Actions**
+   - Go to your repository
+   - Click the `Actions` tab
+   - Click `I understand my workflows, go ahead and enable them`
 
-## Quick Start
+3. **Configure Permissions**
+   - Go to `Settings` → `Actions` → `General`
+   - In `Workflow permissions` select `Read and write permissions`
+   - Save settings
 
-### Workflow
+4. **Manually Trigger First Run**
+   - Go to `Actions` tab
+   - Select `Update OneTV-API` workflow
+   - Click `Run workflow` → `Run workflow`
 
-Fork this project and initiate workflow updates, detailed steps are available
-at [Detailed Tutorial](./docs/tutorial_en.md)
+5. **Get Results**
+   ```
+   https://raw.githubusercontent.com/YourUsername/OneTV-API/main/output/onetv_api_result.m3u
+   ```
 
-### Command Line
+#### ⏰ Automatic Updates
 
-```shell
-pip install pipenv
-```
+- **Scheduled Runs**: Daily at 6:00 and 18:00 Beijing time
+- **Manual Trigger**: Can be manually run anytime on the Actions page
+- **Configuration Updates**: Automatically runs after modifying configuration files
 
-```shell
-pipenv install --dev
-```
-
-Start update:
-
-```shell
-pipenv run dev
-```
-
-Start service:
-
-```shell
-pipenv run service
-```
-
-### GUI Software
-
-1. Download the [OneTV-API Update Software](https://github.com/HaoHaoKanYa/OneTV-API/releases), open the software, and click
-   Start to perform the update
-
-2. Or run the following command in the project directory to open the GUI software:
-
-```shell
-pipenv run ui
-```
-
-<img src="./docs/images/ui.png" alt="OneTV-API update software" title="OneTV-API update software" style="height:600px" />
-
-### Docker
-
-#### 1. Pull the image
-
-```bash
-docker pull haohaokanya/onetv-api:latest
-```
-
-🚀 Proxy acceleration (recommended for users in China):
-
-```bash
-docker pull docker.1ms.run/haohaokanya/onetv-api:latest
-```
-
-#### 2. Run the container
-
-```bash
-docker run -d -p 8000:8000 haohaokanya/onetv-api
-```
-
-##### Mount(Recommended):
-
-This allows synchronization of files between the host machine and the container. Modifying templates, configurations,
-and retrieving updated result files can be directly operated in the host machine's folder.
-
-Taking the host path /etc/docker as an example:
-
-```bash
--v /etc/docker/config:/onetv-api/config
--v /etc/docker/output:/onetv-api/output
-```
-
-##### Environment Variables:
-
-| Variable | Description          | Default Value      |
-|:---------|:---------------------|:-------------------|
-| APP_HOST | Service host address | "http://localhost" |
-| APP_PORT | Service port         | 8000               |
-
-#### 3. Update Results
-
-| Endpoint  | Description           |
-|:----------|:----------------------|
-| /         | Default endpoint      |
-| /m3u      | m3u format endpoint   |
-| /txt      | txt format endpoint   |
-| /ipv4     | ipv4 default endpoint |
-| /ipv6     | ipv6 default endpoint |
-| /ipv4/txt | ipv4 txt endpoint     |
-| /ipv6/txt | ipv6 txt endpoint     |
-| /ipv4/m3u | ipv4 m3u endpoint     |
-| /ipv6/m3u | ipv6 m3u endpoint     |
-| /content  | Endpoint content      |
-| /log      | Speed test log        |
-
-- RTMP Streaming:
+### Local Running
 
 > [!NOTE]
-> 1. To stream local video sources, create a `live` or `hls` (recommended) folder in the `config` directory.
-> 2. The `live` folder is used for live streaming interfaces, and the `hls` folder is used for HLS streaming interfaces.
-> 3. Place video files named after the `channel name` into these folders, and the program will automatically stream them
-     to the corresponding channels.
-> 4. Visit http://localhost:8080/stat to view real-time streaming status statistics.
+> Suitable for users who need custom configurations or local debugging
 
-| Streaming Endpoint | Description                      |
-|:-------------------|:---------------------------------|
-| /live              | live streaming endpoint          |
-| /hls               | hls streaming endpoint           |
-| /live/txt          | live txt streaming endpoint      |
-| /hls/txt           | hls txt streaming endpoint       |
-| /live/m3u          | live m3u streaming endpoint      |
-| /hls/m3u           | hls m3u streaming endpoint       |
-| /live/ipv4/txt     | live ipv4 txt streaming endpoint |
-| /hls/ipv4/txt      | hls ipv4 txt streaming endpoint  |
-| /live/ipv4/m3u     | live ipv4 m3u streaming endpoint |
-| /hls/ipv4/m3u      | hls ipv4 m3u streaming endpoint  |
-| /live/ipv6/txt     | live ipv6 txt streaming endpoint |
-| /hls/ipv6/txt      | hls ipv6 txt streaming endpoint  |
-| /live/ipv6/m3u     | live ipv6 m3u streaming endpoint |
-| /hls/ipv6/m3u      | hls ipv6 m3u streaming endpoint  |
+#### 📋 Prerequisites
 
-## Changelog
+- **Python**: Version 3.11 or higher
+- **Git**: For cloning the repository
+- **Network**: Stable internet connection
 
-[Changelog](./CHANGELOG.md)
+#### 🔧 Installation Steps
 
-## Appreciate
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/HaoHaoKanYa/OneTV-API.git
+   cd OneTV-API
+   ```
 
-<div>Development and maintenance are not easy, please buy me a coffee ~</div>
+2. **Install Dependencies**
+   ```bash
+   # Use Python 3.11
+   py -3.11 -m pip install -r requirements.txt
 
-| Alipay                                | Wechat                                    |
-|---------------------------------------|-------------------------------------------|
-| ![Alipay](./static/images/alipay.jpg) | ![Wechat](./static/images/appreciate.jpg) |
+   # Or use pip directly
+   pip install -r requirements.txt
+   ```
 
-## Follow
+3. **Configure Settings**
+   ```bash
+   # Edit configuration file
+   notepad config/onetv_api_config.ini
 
-Wechat public account search for Govin, or scan the code to receive updates and learn more tips:
+   # Edit channel template
+   notepad config/onetv_api_demo.txt
+   ```
 
-![Wechat public account](./static/images/qrcode.jpg)
+4. **Run Program**
+   ```bash
+   # Use Python 3.11
+   py -3.11 main.py
 
-## Star History
+   # Or use python directly
+   python main.py
+   ```
 
-[![Star History Chart](https://api.star-history.com/svg?repos=HaoHaoKanYa/OneTV-API&type=Date)](https://star-history.com/#HaoHaoKanYa/OneTV-API&Date)
+5. **Get Results**
+   - Generated files are in the `output/` directory
+   - Main result file: `output/onetv_api_result.m3u`
 
-## Disclaimer
+#### 🎯 Advanced Usage
 
-This project is for learning and communication purposes only. All interface data comes from the internet. If there is
-any infringement, please contact us for removal.
+- **Custom Configuration**: Modify `config/onetv_api_config.ini`
+- **Add Local Sources**: Edit `config/local.txt`
+- **Set Whitelist**: Edit `config/whitelist.txt`
+- **Modify Template**: Edit `config/onetv_api_demo.txt`
 
-## License
+### Docker Deployment
 
-[MIT](./LICENSE) License &copy; 2024-PRESENT [HaoHaoKanYa](https://github.com/HaoHaoKanYa)
+> [!TIP]
+> Docker deployment provides consistent environment and easy management
+
+#### 🐳 Quick Start
+
+```bash
+# Pull image
+docker pull haohaokanye/onetv-api:latest
+
+# Run container
+docker run -d \
+  --name onetv-api \
+  -p 8000:8000 \
+  -v $(pwd)/config:/app/config \
+  -v $(pwd)/output:/app/output \
+  haohaokanye/onetv-api:latest
+```
+
+#### 🔧 Docker Compose
+
+Create `docker-compose.yml`:
+
+```yaml
+version: '3.8'
+services:
+  onetv-api:
+    image: haohaokanye/onetv-api:latest
+    container_name: onetv-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config:/app/config
+      - ./output:/app/output
+    environment:
+      - TZ=Asia/Shanghai
+    restart: unless-stopped
+```
+
+Run with:
+```bash
+docker-compose up -d
+```
+
+#### 📊 Container Management
+
+```bash
+# View logs
+docker logs onetv-api
+
+# Enter container
+docker exec -it onetv-api bash
+
+# Stop container
+docker stop onetv-api
+
+# Remove container
+docker rm onetv-api
+```
+
+## 📖 Documentation
+
+### 📱 Supported Players
+
+OneTV-API generated playlists are compatible with various IPTV players:
+
+| Player | Platform | Support Level | Notes |
+|--------|----------|---------------|-------|
+| **VLC Media Player** | Windows/Mac/Linux | ✅ Full | Recommended, best compatibility |
+| **Kodi** | Multi-platform | ✅ Full | Perfect for media centers |
+| **Perfect Player** | Android/iOS | ✅ Full | Mobile device preferred |
+| **IPTV Smarters** | Android/iOS | ✅ Full | Feature-rich mobile app |
+| **TiviMate** | Android TV | ✅ Full | Android TV optimized |
+| **GSE Smart IPTV** | iOS/Apple TV | ✅ Full | Apple ecosystem preferred |
+
+### 🔧 Usage Instructions
+
+1. **Get Playlist URL**
+   ```
+   https://raw.githubusercontent.com/YourUsername/OneTV-API/main/output/onetv_api_result.m3u
+   ```
+
+2. **Add to Player**
+   - Open your IPTV player
+   - Add new playlist/source
+   - Paste the URL above
+   - Save and refresh
+
+3. **Enjoy Watching**
+   - Browse channel categories
+   - Select channels to watch
+   - Enjoy high-quality live streams
+
+### 📊 Channel Categories
+
+The generated playlist includes the following channel groups:
+
+- **公众号【壹来了】** - Featured channels
+- **地方频道** - Local channels
+- **电竞频道** - Esports channels
+- **体育频道** - Sports channels
+- **香港频道** - Hong Kong channels
+- **澳门频道** - Macau channels
+- **台湾频道** - Taiwan channels
+
+## 🤝 Contributing
+
+We welcome community contributions! Here's how you can help improve OneTV-API:
+
+### 🐛 Bug Reports
+
+If you encounter any issues:
+
+1. **Check existing issues** first to avoid duplicates
+2. **Create detailed bug report** with:
+   - Operating system and version
+   - Python version
+   - Error messages and logs
+   - Steps to reproduce
+
+### 💡 Feature Requests
+
+Have ideas for new features?
+
+1. **Open an issue** with the `enhancement` label
+2. **Describe the feature** in detail
+3. **Explain the use case** and benefits
+
+### 🔧 Development
+
+Want to contribute code?
+
+1. **Fork the repository**
+2. **Create feature branch**: `git checkout -b feature/amazing-feature`
+3. **Make your changes** following our coding standards
+4. **Test thoroughly** to ensure stability
+5. **Submit pull request** with detailed description
+
+### 📝 Development Standards
+
+- **Code Style**: Follow PEP 8 Python style guide
+- **Documentation**: Update README and comments for new features
+- **Testing**: Ensure all tests pass before submitting
+- **Commit Messages**: Use clear, descriptive commit messages
+
+### 🙏 Acknowledgments
+
+This project is based on the excellent work of the original [IPTV-API](https://github.com/Guovin/iptv-api) project by **Guovin**. We extend our sincere gratitude for their foundational contribution to the IPTV management community.
+
+**Original Developer**: Guovin
+**WeChat Public Account**: 【古欧文】
+**Original Repository**: https://github.com/Guovin/iptv-api
+
+While this OneTV-API project has been significantly customized and enhanced for personal use, we acknowledge and respect the original developer's innovative work that made this project possible.
+
+## 📄 License
+
+### Copyright Notice
+
+**Copyright © 2024 OneTV-API Project**
+**Repository**: https://github.com/HaoHaoKanYa/OneTV-API
+**Maintainer**: HaoHaoKanYa
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### Third-Party Acknowledgments
+
+This project incorporates and builds upon the following open-source projects:
+
+- **Original IPTV-API**: [Guovin/iptv-api](https://github.com/Guovin/iptv-api) - Foundation framework
+- **Python Libraries**: Various Python packages listed in requirements.txt
+- **Community Contributions**: Channel sources and testing feedback from the community
+
+### Usage Rights
+
+✅ **Permitted**:
+- Personal use and modification
+- Educational and research purposes
+- Commercial use with proper attribution
+- Distribution and redistribution
+
+❌ **Prohibited**:
+- Removing copyright notices
+- Using for illegal content distribution
+- Claiming original authorship
+- Warranty or liability claims
+
+---
+
+## ⚠️ Disclaimer
+
+### Legal Notice
+
+> [!IMPORTANT]
+> **Please read this disclaimer carefully before using OneTV-API**
+
+### 🔒 Content Responsibility
+
+1. **No Content Ownership**: OneTV-API does not host, store, or distribute any video content
+2. **Aggregation Tool**: This software only aggregates publicly available streaming links
+3. **User Responsibility**: Users are solely responsible for the content they access
+4. **Legal Compliance**: Users must comply with local laws and regulations
+
+### 🛡️ Service Limitations
+
+1. **No Guarantees**: No warranty for service availability, accuracy, or reliability
+2. **Third-Party Sources**: All streaming sources are provided by third parties
+3. **Service Interruption**: Service may be interrupted or discontinued without notice
+4. **Data Accuracy**: No guarantee for the accuracy of channel information
+
+### ⚖️ Legal Compliance
+
+1. **Copyright Respect**: Users must respect intellectual property rights
+2. **Local Laws**: Comply with broadcasting and copyright laws in your jurisdiction
+3. **Personal Use**: Recommended for personal, non-commercial use only
+4. **Content Filtering**: Users should implement appropriate content filtering
+
+### 🚫 Limitation of Liability
+
+The developers and contributors of OneTV-API shall not be liable for:
+- Any direct, indirect, incidental, or consequential damages
+- Loss of data, profits, or business interruption
+- Legal issues arising from content access
+- Third-party service failures or interruptions
+
+### 📞 Contact
+
+For questions about this disclaimer or the project:
+- **GitHub Issues**: [Report Issues](https://github.com/HaoHaoKanYa/OneTV-API/issues)
+- **Repository**: https://github.com/HaoHaoKanYa/OneTV-API
+
+---
+
+**By using OneTV-API, you acknowledge that you have read, understood, and agree to be bound by this disclaimer.**
