@@ -121,9 +121,7 @@ jobs:
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "### 🔗 访问地址" >> $GITHUB_STEP_SUMMARY
         if [ -n "${{ secrets.SUPABASE_URL }}" ]; then
-          echo "- **当前版本**: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/current/onetv-api-movie.json" >> $GITHUB_STEP_SUMMARY
-          echo "- **历史版本**: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/archive/$(date '+%Y-%m-%d')/onetv-api-movie.json" >> $GITHUB_STEP_SUMMARY
-          echo "- **统计信息**: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/logs/statistics-$(date '+%Y-%m-%d').json" >> $GITHUB_STEP_SUMMARY
+          echo "- **VOD配置文件**: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/onetv-api-movie.json" >> $GITHUB_STEP_SUMMARY
         else
           echo "⚠️ Supabase配置未设置，无法生成访问地址" >> $GITHUB_STEP_SUMMARY
         fi

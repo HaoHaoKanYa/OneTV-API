@@ -3,14 +3,12 @@ OneTV-API 点播源更新模块
 VOD (Video On Demand) Source Update Module
 """
 import asyncio
-import json
 import os
-import re
 import configparser
 from time import time
 from datetime import datetime
 from collections import defaultdict
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Optional
 
 import aiohttp
 from tqdm.asyncio import tqdm as tqdm_asyncio
@@ -197,7 +195,7 @@ class VODSourceManager:
         async with aiohttp.ClientSession() as session:
             tasks = [validate_with_semaphore(session, source) for source in self.sources]
             
-            for i, task in enumerate(asyncio.as_completed(tasks)):
+            for task in asyncio.as_completed(tasks):
                 result = await task
                 pbar.update(1)
                 
@@ -277,10 +275,7 @@ async def update_vod_sources(callback=None):
 
         # 3. 上传到Supabase
         print("☁️  第3步: 上传到Supabase...")
-        upload_result = upload_vod_to_supabase(
-            process_result["json_file"],
-            process_result.get("statistics")
-        )
+        upload_result = upload_vod_to_supabase(process_result["json_file"])
 
         if upload_result["success"]:
             print("✅ 点播源更新流程完成!")

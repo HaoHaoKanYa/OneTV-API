@@ -3,12 +3,7 @@ OneTV-API 点播源 Supabase 上传模块
 VOD Source Supabase Uploader Module
 """
 import os
-import json
 import requests
-from datetime import datetime
-from typing import Dict, Optional
-
-from utils.tools import resource_path
 
 
 class VODSupabaseUploader:
@@ -26,7 +21,7 @@ class VODSupabaseUploader:
             key_type = "SERVICE_KEY" if os.getenv("SUPABASE_SERVICE_KEY") else "ANON_KEY"
             print(f"🔑 使用Supabase {key_type}进行认证")
     
-    def upload_vod_file(self, file_path: str, statistics: Dict = None) -> bool:
+    def upload_vod_file(self, file_path: str) -> bool:
         """上传点播源文件到Supabase"""
         if not self.supabase_url or not self.supabase_key:
             print("❌ Supabase配置缺失，无法上传")
@@ -41,28 +36,15 @@ class VODSupabaseUploader:
             with open(file_path, "r", encoding="utf-8") as f:
                 content = f.read()
             
-            # 当前版本上传
-            current_success = self._upload_to_path("current/onetv-api-movie.json", content)
+            # 只上传当前版本文件，节约存储额度
+            current_success = self._upload_to_path("onetv-api-movie.json", content)
 
-            # 历史版本备份
-            date_str = datetime.now().strftime("%Y-%m-%d")
-            archive_success = self._upload_to_path(f"archive/{date_str}/onetv-api-movie.json", content)
-            
-            # 上传统计信息
-            stats_success = True
-            if statistics:
-                stats_content = json.dumps(statistics, ensure_ascii=False, indent=2)
-                stats_success = self._upload_to_path(f"logs/statistics-{date_str}.json", stats_content)
-            
-            if current_success and archive_success and stats_success:
+            if current_success:
                 print("✅ 点播源文件上传成功!")
-                print(f"📁 当前版本: vod-sources/current/onetv-api-movie.json")
-                print(f"📁 历史备份: vod-sources/archive/{date_str}/onetv-api-movie.json")
-                if statistics:
-                    print(f"📊 统计信息: vod-sources/logs/statistics-{date_str}.json")
+                print(f"📁 文件路径: vod-sources/onetv-api-movie.json")
                 return True
             else:
-                print("❌ 部分文件上传失败")
+                print("❌ 文件上传失败")
                 return False
                 
         except Exception as e:
@@ -107,7 +89,7 @@ class VODSupabaseUploader:
             print(f"❌ 上传路径 {path} 失败: {str(e)}")
             return False
     
-    def get_public_url(self, path: str = "current/onetv-api-movie.json") -> str:
+    def get_public_url(self, path: str = "onetv-api-movie.json") -> str:
         """获取文件访问URL（私有存储桶需要认证）"""
         if not self.supabase_url:
             return ""
@@ -165,23 +147,7 @@ class VODSupabaseUploader:
             print(f"❌ 存储桶操作失败: {str(e)}")
             return False
     
-    def upload_log(self, log_content: str, log_type: str = "update") -> bool:
-        """上传日志文件"""
-        if not self.supabase_url or not self.supabase_key:
-            return False
-        
-        try:
-            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-            log_path = f"logs/{log_type}-{timestamp}.txt"
-            
-            return self._upload_to_path(log_path, log_content)
-            
-        except Exception as e:
-            print(f"❌ 上传日志失败: {str(e)}")
-            return False
-
-
-def upload_vod_to_supabase(file_path: str, statistics: Dict = None) -> Dict:
+def upload_vod_to_supabase(file_path: str):
     """上传点播源到Supabase的主函数"""
     uploader = VODSupabaseUploader()
     
@@ -196,7 +162,7 @@ def upload_vod_to_supabase(file_path: str, statistics: Dict = None) -> Dict:
         }
     
     # 上传文件
-    upload_success = uploader.upload_vod_file(file_path, statistics)
+    upload_success = uploader.upload_vod_file(file_path)
     
     result = {
         "success": upload_success,

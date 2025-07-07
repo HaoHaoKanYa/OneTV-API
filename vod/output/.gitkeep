@@ -1,0 +1,2 @@
+# 此文件用于确保output文件夹被Git跟踪
+# onetv-api-movie.json文件将在VOD工作流运行时生成到此目录
