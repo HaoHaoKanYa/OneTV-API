@@ -105,6 +105,45 @@ jobs:
             asyncio.run(main())
         "
     
+    - name: 📤 Commit generated files to repository
+      if: success()
+      run: |
+        echo "📤 检查生成的文件..."
+        ls -la vod/output/ || echo "vod/output目录不存在"
+
+        if [ -f "vod/output/onetv-api-movie.json" ]; then
+          echo "✅ 发现生成的VOD文件，准备提交到仓库..."
+
+          # 配置Git
+          git config --local user.email "onetv-api@exple.com"
+          git config --local user.name "ONETV-API"
+
+          # 添加生成的文件
+          git add vod/output/onetv-api-movie.json
+
+          # 检查是否有变更
+          if git diff --staged --quiet; then
+            echo "📝 没有文件变更，跳过提交"
+          else
+            # 提交变更
+            git commit -m "🎬 自动更新VOD配置文件
+
+📊 更新统计:
+- 更新时间: $(date '+%Y-%m-%d %H:%M:%S')
+- 触发方式: ${{ github.event_name }}
+- 生成文件: onetv-api-movie.json
+
+🔗 Supabase访问地址:
+${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/onetv-api-movie.json"
+
+            # 推送到远程仓库
+            git push origin main
+            echo "✅ VOD文件已成功提交到GitHub仓库"
+          fi
+        else
+          echo "⚠️ 未找到生成的VOD文件，跳过提交"
+        fi
+
     - name: 📊 Generate update summary
       if: always()
       run: |
@@ -115,13 +154,14 @@ jobs:
         echo "- **触发方式**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
         echo "- **工作流**: 点播源专用更新流程" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
-        
+
         python3 scripts/generate_vod_summary.py >> $GITHUB_STEP_SUMMARY
-        
+
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "### 🔗 访问地址" >> $GITHUB_STEP_SUMMARY
         if [ -n "${{ secrets.SUPABASE_URL }}" ]; then
           echo "- **VOD配置文件**: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/onetv-api-movie.json" >> $GITHUB_STEP_SUMMARY
+          echo "- **GitHub文件**: https://github.com/${{ github.repository }}/blob/main/vod/output/onetv-api-movie.json" >> $GITHUB_STEP_SUMMARY
         else
           echo "⚠️ Supabase配置未设置，无法生成访问地址" >> $GITHUB_STEP_SUMMARY
         fi
