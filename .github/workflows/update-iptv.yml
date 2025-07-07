@@ -2,8 +2,8 @@ name: Update OneTV-API
 
 on:
   schedule:
-    # 每天北京时间 6:00 运行 (UTC时间 22:00)
-    - cron: '0 22 * * *'
+    # 每周五北京时间 6:00 运行 (UTC时间周四 22:00)
+    - cron: '0 22 * * 4'
   workflow_dispatch:  # 允许手动触发
   push:
     branches: [ main ]
