@@ -250,15 +250,22 @@ def get_vod_sources_info():
 
 
 async def update_vod_sources(callback=None):
-    """更新点播源的完整流程"""
+    """更新点播源的完整流程 - 包含全网搜索"""
     from .processor import process_vod_sources
     from .uploader import upload_vod_to_supabase
+    from .searcher import search_and_update_vod_sources
 
     print("🎬 开始OneTV-API点播源更新流程...")
 
     try:
-        # 1. 获取和验证点播源
-        print("📡 第1步: 获取和验证点播源...")
+        # 0. 全网搜索并更新配置文件
+        print("🔍 第0步: 全网搜索VOD源...")
+        config_file = "vod/config/vod_sources.txt"
+        search_count = await search_and_update_vod_sources(config_file)
+        print(f"🎯 全网搜索完成，发现并更新了 {search_count} 个VOD源到配置文件")
+
+        # 1. 获取和验证点播源 (现在基于更新后的配置文件)
+        print("📡 第1步: 验证所有发现的点播源...")
         vod_data = await get_vod_sources(callback)
 
         if not vod_data.get("valid_sources"):
@@ -284,6 +291,7 @@ async def update_vod_sources(callback=None):
             # 显示统计信息
             stats = process_result.get("statistics", {}).get("summary", {})
             print(f"📊 更新统计:")
+            print(f"   - 搜索发现源数量: {search_count}")
             print(f"   - 配置源数量: {stats.get('total_configured', 0)}")
             print(f"   - 有效源数量: {stats.get('valid_sources', 0)}")
             print(f"   - 成功率: {stats.get('success_rate', '0%')}")
