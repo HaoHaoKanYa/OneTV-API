@@ -143,7 +143,7 @@ https://cdn.jsdelivr.net/gh/HaoHaoKanYa/OneTV-API@main/output/onetv_api_result.m
 ### 🔗 VOD配置地址
 
 > [!NOTE]
-> 点播源每周日北京时间 6:00 自动更新，包含32个精选优质源
+> 点播源每周日北京时间 24:00 自动更新，包含32个精选优质源
 
 #### TVBox配置
 

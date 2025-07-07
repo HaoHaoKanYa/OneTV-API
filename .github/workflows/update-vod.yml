@@ -2,8 +2,8 @@ name: 🎬 Update VOD Sources
 
 on:
   schedule:
-    # 每周日凌晨2点执行 (北京时间周日10点)
-    - cron: '0 2 * * 0'
+    # 每周日24点执行 (北京时间周一8点)
+    - cron: '0 16 * * 0'
   workflow_dispatch:
     inputs:
       force_update:
@@ -54,27 +54,27 @@ jobs:
         echo "🔧 强制更新: ${FORCE_UPDATE:-false}"
         
         python -c "
-import asyncio
-import sys
-import os
-sys.path.append('.')
+        import asyncio
+        import sys
+        import os
+        sys.path.append('.')
 
-async def main():
-    try:
-        from updates.vod.request import update_vod_sources
-        success = await update_vod_sources()
-        if success:
-            print('✅ 点播源更新成功!')
-            exit(0)
-        else:
-            print('❌ 点播源更新失败!')
-            exit(1)
-    except Exception as e:
-        print(f'❌ 点播源更新异常: {str(e)}')
-        exit(1)
+        async def main():
+            try:
+                from updates.vod.request import update_vod_sources
+                success = await update_vod_sources()
+                if success:
+                    print('✅ 点播源更新成功!')
+                    exit(0)
+                else:
+                    print('❌ 点播源更新失败!')
+                    exit(1)
+            except Exception as e:
+                print(f'❌ 点播源更新异常: {str(e)}')
+                exit(1)
 
-if __name__ == '__main__':
-    asyncio.run(main())
+        if __name__ == '__main__':
+            asyncio.run(main())
         "
     
     - name: 📊 Generate update summary
@@ -91,24 +91,24 @@ if __name__ == '__main__':
         if [ -f "vod/output/vod_statistics.json" ]; then
           echo "### 📊 更新统计" >> $GITHUB_STEP_SUMMARY
           python -c "
-import json
-try:
-    with open('vod/output/vod_statistics.json', 'r', encoding='utf-8') as f:
-        stats = json.load(f)
-    summary = stats.get('summary', {})
-    categories = stats.get('categories', {})
-    
-    print(f'- **配置源数量**: {summary.get(\"total_configured\", 0)}')
-    print(f'- **有效源数量**: {summary.get(\"valid_sources\", 0)}')
-    print(f'- **成功率**: {summary.get(\"success_rate\", \"0%\")}')
-    print(f'- **平均质量评分**: {summary.get(\"average_quality_score\", \"0\")}')
-    print(f'- **平均响应时间**: {summary.get(\"average_response_time\", \"0s\")}')
-    print('')
-    print('### 📂 分类统计')
-    for category, count in categories.items():
-        print(f'- **{category}**: {count} 个源')
-except Exception as e:
-    print(f'统计信息读取失败: {str(e)}')
+          import json
+          try:
+              with open('vod/output/vod_statistics.json', 'r', encoding='utf-8') as f:
+                  stats = json.load(f)
+              summary = stats.get('summary', {})
+              categories = stats.get('categories', {})
+
+              print(f'- **配置源数量**: {summary.get(\"total_configured\", 0)}')
+              print(f'- **有效源数量**: {summary.get(\"valid_sources\", 0)}')
+              print(f'- **成功率**: {summary.get(\"success_rate\", \"0%\")}')
+              print(f'- **平均质量评分**: {summary.get(\"average_quality_score\", \"0\")}')
+              print(f'- **平均响应时间**: {summary.get(\"average_response_time\", \"0s\")}')
+              print('')
+              print('### 📂 分类统计')
+              for category, count in categories.items():
+                  print(f'- **{category}**: {count} 个源')
+          except Exception as e:
+              print(f'统计信息读取失败: {str(e)}')
           " >> $GITHUB_STEP_SUMMARY
         else
           echo "⚠️ 统计信息文件未生成" >> $GITHUB_STEP_SUMMARY
