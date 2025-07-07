@@ -18,7 +18,10 @@ env:
 jobs:
   update-vod-sources:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write  # 允许推送代码到仓库
+      actions: read    # 允许读取Actions
+
     steps:
     - name: 🚀 Checkout repository
       uses: actions/checkout@v4
