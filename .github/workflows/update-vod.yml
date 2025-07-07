@@ -34,7 +34,11 @@ jobs:
     - name: 📦 Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt || pip install aiohttp tqdm requests configparser
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        else
+          pip install aiohttp tqdm requests configparser bs4 async-timeout flask opencc-python-reimplemented pillow m3u8 pytz
+        fi
     
     - name: 📁 Create VOD directories
       run: |
@@ -52,16 +56,38 @@ jobs:
         echo "🎬 开始OneTV-API点播源更新..."
         echo "⏰ 执行时间: $(date '+%Y-%m-%d %H:%M:%S')"
         echo "🔧 强制更新: ${FORCE_UPDATE:-false}"
-        
+        echo "📁 当前目录: $(pwd)"
+        echo "📂 目录内容:"
+        ls -la
+        echo "🔍 检查VOD模块:"
+        ls -la updates/vod/ || echo "VOD目录不存在"
+        echo "🐍 Python版本: $(python --version)"
+        echo "📦 已安装包:"
+        pip list | grep -E "(aiohttp|tqdm|requests)"
+
         python -c "
         import asyncio
         import sys
         import os
+        import traceback
         sys.path.append('.')
+
+        print('🔍 Python路径:', sys.path)
+        print('📁 当前工作目录:', os.getcwd())
+
+        try:
+            print('📥 尝试导入VOD模块...')
+            from updates.vod.request import update_vod_sources
+            print('✅ VOD模块导入成功!')
+        except Exception as e:
+            print(f'❌ VOD模块导入失败: {str(e)}')
+            print('📋 详细错误信息:')
+            traceback.print_exc()
+            exit(1)
 
         async def main():
             try:
-                from updates.vod.request import update_vod_sources
+                print('🚀 开始执行VOD更新...')
                 success = await update_vod_sources()
                 if success:
                     print('✅ 点播源更新成功!')
@@ -71,6 +97,8 @@ jobs:
                     exit(1)
             except Exception as e:
                 print(f'❌ 点播源更新异常: {str(e)}')
+                print('📋 详细错误信息:')
+                traceback.print_exc()
                 exit(1)
 
         if __name__ == '__main__':
