@@ -1,4 +1,14 @@
-from typing import TypedDict, Literal, NotRequired
+try:
+    from typing import TypedDict, Literal, NotRequired, Union
+except ImportError:
+    # Python < 3.11 兼容性
+    from typing import TypedDict, Literal, Union
+    try:
+        from typing_extensions import NotRequired
+    except ImportError:
+        # 如果没有typing_extensions，定义一个简单的NotRequired
+        def NotRequired(tp):
+            return tp
 
 OriginType = Literal["live", "hls", "local", "whitelist", "subscribe", "hotel", "multicast", "online_search"]
 IPvType = Literal["ipv4", "ipv6", None]
@@ -11,14 +21,14 @@ class ChannelData(TypedDict):
     id: int
     url: str
     host: str
-    date: NotRequired[str | None]
-    resolution: NotRequired[str | None]
+    date: NotRequired[Union[str, None]]
+    resolution: NotRequired[Union[str, None]]
     origin: OriginType
     ipv_type: IPvType
-    location: NotRequired[str | None]
-    isp: NotRequired[str | None]
-    headers: NotRequired[dict[str, str] | None]
-    catchup: NotRequired[dict[str, str] | None]
+    location: NotRequired[Union[str, None]]
+    isp: NotRequired[Union[str, None]]
+    headers: NotRequired[Union[dict[str, str], None]]
+    catchup: NotRequired[Union[dict[str, str], None]]
     extra_info: NotRequired[str]
 
 
@@ -29,11 +39,11 @@ class TestResult(TypedDict):
     """
     Test result types, including speed, delay, resolution
     """
-    speed: int | float | None
-    delay: int | float | None
-    resolution: int | str | None
+    speed: Union[int, float, None]
+    delay: Union[int, float, None]
+    resolution: Union[int, str, None]
 
 
 TestResultCacheData = dict[str, list[TestResult]]
 
-ChannelTestResult = ChannelData | TestResult
+ChannelTestResult = Union[ChannelData, TestResult]

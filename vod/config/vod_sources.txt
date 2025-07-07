@@ -1,0 +1,67 @@
+# OneTV-API 点播源配置文件
+# VOD Sources Configuration File
+# 格式: URL|名称|分类|备注
+
+# === 拾光路线系列 ===
+http://xmbjm.fh4u.org/ck.txt|拾光趣乐屋|综合影视|拾光路线主力源
+https://qixing.myhkw.com/DC.txt|拾光多仓|多仓配置|拾光多仓聚合
+http://xmbjm.fh4u.org/tv.txt|拾光电视|直播点播|拾光电视版
+
+# === 欧歌路线系列 ===
+https://xn--xkkx-rp5imh.v.nxog.top/api.php?id=3|欧歌单线路|专业线路|欧歌官方接口
+https://github.moeyy.xyz/https://raw.githubusercontent.com/mcp2016/TVBox/main/backup/多多┃欧歌线路.json|多多欧歌线路|欧歌备用|GitHub加速版
+
+# === 饭太硬系列 ===
+http://饭太硬.top/tv|饭太硬官方|综合影视|饭太硬官方源
+http://fan.xxooo.cf/tv|饭太硬备用|综合影视|饭太硬备用源
+http://rihou.cc:55/饭太硬/日后魔改|日后魔改饭太硬|魔改版本|日后魔改版
+
+# === 肥猫系列 ===
+http://我不是.肥猫.love:63/接口|肥猫官方|综合影视|肥猫官方源
+http://肥猫.live|肥猫备用|综合影视|肥猫备用源
+http://rihou.cc:55/肥猫/日后魔改|日后魔改肥猫|魔改版本|日后魔改版
+
+# === 菜妮丝系列 ===
+https://tvbox.cainisi.cf|菜妮丝官方|综合影视|菜妮丝官方源
+http://rihou.cc:55/菜妮丝/日后魔改|日后魔改菜妮丝|魔改版本|日后魔改版
+
+# === 高天流云系列 ===
+https://raw.githubusercontent.com/gaotianliuyun/gao/master/0707.json|高天流云Fengmi|Fengmi专用|Fengmi影视多线
+https://raw.githubusercontent.com/gaotianliuyun/gao/master/0821.json|高天流云增强|大而全配置|增强版配置
+https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0821.json|高天流云加速|GitHub加速|运输车加速版
+
+# === 专业维护源 ===
+https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json|南风线路|专业维护|南风专业维护
+http://home.jundie.top:81/top98.json|俊佬线路|专业维护|俊佬专业线路
+https://100km.top/0|骚零线路|专业维护|骚零专业源
+
+# === 特色专用源 ===
+http://tv.rihou.cc/天天开心|天天开心|综合影视|天天开心源
+http://rihou.cc:88/荷城茶秀|荷城茶秀|综合影视|荷城茶秀源
+https://agit.ai/hu/hcr/raw/branch/master/短剧.json|短剧频道|短剧专用|短剧专门频道
+https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer|少儿频道|少儿专用|少儿专门频道
+
+# === 小米系列 ===
+http://xhww.fun/小米/DEMO.json|小米官方|综合影视|小米官方源
+
+# === 多仓聚合源 ===
+https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0707.json|Fengmi影视多线|多线配置|Fengmi影视专用
+https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0821.json|大而全配置|综合配置|大而全聚合配置
+
+# === GitHub优质源 ===
+https://raw.githubusercontent.com/Zhou-Li-Bin/Tvbox-QingNing/main/api.json|青宁线路|GitHub维护|青宁专业维护
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/Zhou-Li-Bin/Tvbox-QingNing/main/api.json|青宁加速|GitHub加速|青宁加速版
+
+# === 备用稳定源 ===
+https://notabug.org/laoo1976/maotv/raw/master/test.json|猫TV测试|测试配置|猫TV测试源
+https://gitee.com/tvboxjk/tvbox/raw/master/api.json|码云备用|码云托管|码云备用源
+
+# === 海外优质源 ===
+https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json|FongMi官方|海外维护|FongMi官方配置
+https://github.moeyy.xyz/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json|FongMi加速|海外加速|FongMi加速版
+
+# 配置说明:
+# 1. 以#开头的行为注释
+# 2. 格式: URL|名称|分类|备注
+# 3. 分类包括: 综合影视、专业线路、魔改版本、多仓配置、特色专用等
+# 4. 系统会自动验证所有源的可用性和质量

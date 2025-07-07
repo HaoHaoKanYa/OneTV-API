@@ -1,0 +1,152 @@
+name: 🎬 Update VOD Sources
+
+on:
+  schedule:
+    # 每周日凌晨2点执行 (北京时间周日10点)
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: '强制更新所有点播源'
+        required: false
+        default: 'false'
+        type: boolean
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  update-vod-sources:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 🚀 Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt || pip install aiohttp tqdm requests configparser
+    
+    - name: 📁 Create VOD directories
+      run: |
+        mkdir -p vod/config
+        mkdir -p vod/output
+        mkdir -p vod/cache
+        mkdir -p vod/logs
+    
+    - name: 🎬 Update VOD sources
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        FORCE_UPDATE: ${{ github.event.inputs.force_update }}
+      run: |
+        echo "🎬 开始OneTV-API点播源更新..."
+        echo "⏰ 执行时间: $(date '+%Y-%m-%d %H:%M:%S')"
+        echo "🔧 强制更新: ${FORCE_UPDATE:-false}"
+        
+        python -c "
+import asyncio
+import sys
+import os
+sys.path.append('.')
+
+async def main():
+    try:
+        from updates.vod.request import update_vod_sources
+        success = await update_vod_sources()
+        if success:
+            print('✅ 点播源更新成功!')
+            exit(0)
+        else:
+            print('❌ 点播源更新失败!')
+            exit(1)
+    except Exception as e:
+        print(f'❌ 点播源更新异常: {str(e)}')
+        exit(1)
+
+if __name__ == '__main__':
+    asyncio.run(main())
+        "
+    
+    - name: 📊 Generate update summary
+      if: always()
+      run: |
+        echo "## 🎬 OneTV-API 点播源更新报告" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 📅 更新信息" >> $GITHUB_STEP_SUMMARY
+        echo "- **更新时间**: $(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+        echo "- **触发方式**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **工作流**: 点播源专用更新流程" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ -f "vod/output/vod_statistics.json" ]; then
+          echo "### 📊 更新统计" >> $GITHUB_STEP_SUMMARY
+          python -c "
+import json
+try:
+    with open('vod/output/vod_statistics.json', 'r', encoding='utf-8') as f:
+        stats = json.load(f)
+    summary = stats.get('summary', {})
+    categories = stats.get('categories', {})
+    
+    print(f'- **配置源数量**: {summary.get(\"total_configured\", 0)}')
+    print(f'- **有效源数量**: {summary.get(\"valid_sources\", 0)}')
+    print(f'- **成功率**: {summary.get(\"success_rate\", \"0%\")}')
+    print(f'- **平均质量评分**: {summary.get(\"average_quality_score\", \"0\")}')
+    print(f'- **平均响应时间**: {summary.get(\"average_response_time\", \"0s\")}')
+    print('')
+    print('### 📂 分类统计')
+    for category, count in categories.items():
+        print(f'- **{category}**: {count} 个源')
+except Exception as e:
+    print(f'统计信息读取失败: {str(e)}')
+          " >> $GITHUB_STEP_SUMMARY
+        else
+          echo "⚠️ 统计信息文件未生成" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 🔗 访问地址" >> $GITHUB_STEP_SUMMARY
+        if [ -n "${{ secrets.SUPABASE_URL }}" ]; then
+          echo "- **当前版本**: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/current/onetv-api影视.json" >> $GITHUB_STEP_SUMMARY
+          echo "- **历史版本**: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/archive/$(date '+%Y-%m-%d')/onetv-api影视.json" >> $GITHUB_STEP_SUMMARY
+          echo "- **统计信息**: ${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/logs/statistics-$(date '+%Y-%m-%d').json" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "⚠️ Supabase配置未设置，无法生成访问地址" >> $GITHUB_STEP_SUMMARY
+        fi
+    
+    - name: 📝 Upload logs as artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: vod-update-logs-${{ github.run_number }}
+        path: |
+          vod/output/
+          vod/logs/
+        retention-days: 30
+    
+    - name: 🔔 Notify on failure
+      if: failure()
+      run: |
+        echo "❌ 点播源更新失败!"
+        echo "请检查以下可能的问题:"
+        echo "1. 网络连接问题"
+        echo "2. 点播源配置文件格式错误"
+        echo "3. Supabase配置问题"
+        echo "4. Python依赖问题"
+        
+        # 如果有日志文件，显示最后几行
+        if [ -f "vod/logs/error.log" ]; then
+          echo ""
+          echo "最近的错误日志:"
+          tail -20 vod/logs/error.log
+        fi
