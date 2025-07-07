@@ -168,7 +168,7 @@ class VODProcessor:
                 site_id += 1
         
         # 生成文件
-        output_file = os.path.join(self.output_dir, "onetv-api影视.json")
+        output_file = os.path.join(self.output_dir, "onetv-api-movie.json")
         
         try:
             with open(output_file, "w", encoding="utf-8") as f:

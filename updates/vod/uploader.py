@@ -42,11 +42,11 @@ class VODSupabaseUploader:
                 content = f.read()
             
             # 当前版本上传
-            current_success = self._upload_to_path("current/onetv-api影视.json", content)
-            
+            current_success = self._upload_to_path("current/onetv-api-movie.json", content)
+
             # 历史版本备份
             date_str = datetime.now().strftime("%Y-%m-%d")
-            archive_success = self._upload_to_path(f"archive/{date_str}/onetv-api影视.json", content)
+            archive_success = self._upload_to_path(f"archive/{date_str}/onetv-api-movie.json", content)
             
             # 上传统计信息
             stats_success = True
@@ -56,8 +56,8 @@ class VODSupabaseUploader:
             
             if current_success and archive_success and stats_success:
                 print("✅ 点播源文件上传成功!")
-                print(f"📁 当前版本: vod-sources/current/onetv-api影视.json")
-                print(f"📁 历史备份: vod-sources/archive/{date_str}/onetv-api影视.json")
+                print(f"📁 当前版本: vod-sources/current/onetv-api-movie.json")
+                print(f"📁 历史备份: vod-sources/archive/{date_str}/onetv-api-movie.json")
                 if statistics:
                     print(f"📊 统计信息: vod-sources/logs/statistics-{date_str}.json")
                 return True
@@ -107,7 +107,7 @@ class VODSupabaseUploader:
             print(f"❌ 上传路径 {path} 失败: {str(e)}")
             return False
     
-    def get_public_url(self, path: str = "current/onetv-api影视.json") -> str:
+    def get_public_url(self, path: str = "current/onetv-api-movie.json") -> str:
         """获取文件访问URL（私有存储桶需要认证）"""
         if not self.supabase_url:
             return ""
