@@ -126,15 +126,8 @@ jobs:
             echo "📝 没有文件变更，跳过提交"
           else
             # 提交变更
-            git commit -m "🎬 自动更新VOD配置文件
-
-📊 更新统计:
-- 更新时间: $(date '+%Y-%m-%d %H:%M:%S')
-- 触发方式: ${{ github.event_name }}
-- 生成文件: onetv-api-movie.json
-
-🔗 Supabase访问地址:
-${{ secrets.SUPABASE_URL }}/storage/v1/object/public/vod-sources/onetv-api-movie.json"
+            COMMIT_MSG="🎬 自动更新VOD配置文件 - $(date '+%Y-%m-%d %H:%M:%S')"
+            git commit -m "$COMMIT_MSG"
 
             # 推送到远程仓库
             git push origin main

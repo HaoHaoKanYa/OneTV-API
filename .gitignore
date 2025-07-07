@@ -45,3 +45,7 @@ MD/
 # Python installer files
 python-*.exe
 *.exe
+
+# Documentation files (not for version control)
+VOD_SEARCH_SYSTEM.md
+VOD_WORKFLOW_FIX.md
