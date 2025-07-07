@@ -1,0 +1,530 @@
+{
+  "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;a8b2e5b2b1b1b1b1b1b1b1b1b1b1b1b1",
+  "wallpaper": "http://www.kf666888.cn/api/tvbox/img",
+  "lives": [
+    {
+      "name": "OneTV-API直播源",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/output/onetv_api_result.m3u",
+      "epg": "https://live.fanmingming.com/e.xml",
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    }
+  ],
+  "sites": [
+    {
+      "key": "vod_1",
+      "name": "GitHub-tvbox-0821.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/qist/tvbox/master/0821.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/qist/tvbox/master/0821.json"
+    },
+    {
+      "key": "vod_2",
+      "name": "GitHub-myTvbox-config.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/yub168/myTvbox/master/config.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/yub168/myTvbox/master/config.json"
+    },
+    {
+      "key": "vod_3",
+      "name": "GitHub-tvurl-0821.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/ne7359/tvurl/main/0821.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/ne7359/tvurl/main/0821.json"
+    },
+    {
+      "key": "vod_4",
+      "name": "GitHub-tvbox18-tv.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/qirenzhidao/tvbox18/main/tv.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/qirenzhidao/tvbox18/main/tv.json"
+    },
+    {
+      "key": "vod_5",
+      "name": "GitHub-tvbox-0707.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/qist/tvbox/master/0707.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/qist/tvbox/master/0707.json"
+    },
+    {
+      "key": "vod_6",
+      "name": "GitHub-tvurl-0707.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/ne7359/tvurl/main/0707.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/ne7359/tvurl/main/0707.json"
+    },
+    {
+      "key": "vod_7",
+      "name": "多多欧歌线路",
+      "type": 3,
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/mcp2016/TVBox/main/backup/多多┃欧歌线路.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/mcp2016/TVBox/main/backup/多多┃欧歌线路.json"
+    },
+    {
+      "key": "vod_8",
+      "name": "高天流云增强",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/0821.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/0821.json"
+    },
+    {
+      "key": "vod_9",
+      "name": "俊佬线路",
+      "type": 3,
+      "api": "http://home.jundie.top:81/top98.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://home.jundie.top:81/top98.json"
+    },
+    {
+      "key": "vod_10",
+      "name": "大而全配置",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0821.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0821.json"
+    },
+    {
+      "key": "vod_11",
+      "name": "镜像-gao-0821.json",
+      "type": 3,
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0821.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0821.json"
+    },
+    {
+      "key": "vod_12",
+      "name": "镜像-tvbox-tvb-gd-0821.json",
+      "type": 3,
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0821.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0821.json"
+    },
+    {
+      "key": "vod_13",
+      "name": "镜像-gao-0707.json",
+      "type": 3,
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0707.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0707.json"
+    },
+    {
+      "key": "vod_14",
+      "name": "镜像-tvbox-tvb-gd-0707.json",
+      "type": 3,
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0707.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0707.json"
+    },
+    {
+      "key": "vod_15",
+      "name": "2025-tvbox-json-2025影视接口.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/HD1116/2025-tvbox-json/main/2025影视接口.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/HD1116/2025-tvbox-json/main/2025影视接口.json"
+    },
+    {
+      "key": "vod_16",
+      "name": "2025-tvbox-json-自定义接口2025.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/HD1116/2025-tvbox-json/main/自定义接口2025.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/HD1116/2025-tvbox-json/main/自定义接口2025.json"
+    },
+    {
+      "key": "vod_17",
+      "name": "tvBoxJson-tv.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/wang-7years/tvBoxJson/main/tv.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/wang-7years/tvBoxJson/main/tv.json"
+    },
+    {
+      "key": "vod_18",
+      "name": "TVBOX-CHAOJU-ChaoJu.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/YuanZiFuShengRuoMeng/TVBOX-CHAOJU/main/ChaoJu.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/YuanZiFuShengRuoMeng/TVBOX-CHAOJU/main/ChaoJu.json"
+    },
+    {
+      "key": "vod_19",
+      "name": "tvbox-json-特殊仓.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/meinvtuzai/tvbox-json/main/特殊仓.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/meinvtuzai/tvbox-json/main/特殊仓.json"
+    },
+    {
+      "key": "vod_20",
+      "name": "TvBox_Json-m.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/m.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/m.json"
+    },
+    {
+      "key": "vod_21",
+      "name": "TvBox_Json-n.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/n.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/n.json"
+    },
+    {
+      "key": "vod_22",
+      "name": "TvBox_Json-tvbox.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/tvbox.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/tvbox.json"
+    },
+    {
+      "key": "vod_23",
+      "name": "TvBox_Json-xiaoya.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/xiaoya.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/xiaoya.json"
+    },
+    {
+      "key": "vod_24",
+      "name": "TVBOX-selfuse-json-js.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/chh818/TVBOX-selfuse-json/master/js.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/chh818/TVBOX-selfuse-json/master/js.json"
+    },
+    {
+      "key": "vod_25",
+      "name": "tvbox-json-work.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/yilongym/tvbox-json/main/work.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/yilongym/tvbox-json/main/work.json"
+    },
+    {
+      "key": "vod_26",
+      "name": "TvBox_Json-XC.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/XC.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/AlanNeverStopWin/TvBox_Json/main/XC.json"
+    },
+    {
+      "key": "vod_27",
+      "name": "tvbox-json-TVBoxUpdate.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/lanceflyliuk/tvbox-json/main/TVBoxUpdate.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/lanceflyliuk/tvbox-json/main/TVBoxUpdate.json"
+    },
+    {
+      "key": "vod_28",
+      "name": "tvbox-all.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/Jioyzen/tvbox/main/all.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/Jioyzen/tvbox/main/all.json"
+    },
+    {
+      "key": "vod_29",
+      "name": "TVBoxJson-TVBoxDIY_01.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/SSP920927/TVBoxJson/master/TVBoxDIY_01.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/SSP920927/TVBoxJson/master/TVBoxDIY_01.json"
+    },
+    {
+      "key": "vod_30",
+      "name": "tvbox-tvbox.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/Jioyzen/tvbox/main/tvbox.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/Jioyzen/tvbox/main/tvbox.json"
+    },
+    {
+      "key": "vod_31",
+      "name": "tvbox-json-多线仓库.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/meinvtuzai/tvbox-json/main/多线仓库.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/meinvtuzai/tvbox-json/main/多线仓库.json"
+    },
+    {
+      "key": "vod_32",
+      "name": "tvbox-json-自用多仓.json",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/meinvtuzai/tvbox-json/main/自用多仓.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/meinvtuzai/tvbox-json/main/自用多仓.json"
+    },
+    {
+      "key": "vod_33",
+      "name": "拾光多仓",
+      "type": 3,
+      "api": "https://qixing.myhkw.com/DC.txt",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://qixing.myhkw.com/DC.txt"
+    },
+    {
+      "key": "vod_34",
+      "name": "高天流云Fengmi",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/0707.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/0707.json"
+    },
+    {
+      "key": "vod_35",
+      "name": "Fengmi影视多线",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0707.json",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://raw.githubusercontent.com/tongxunlu/tvbox-tvb-gd/master/0707.json"
+    }
+  ],
+  "parses": [
+    {
+      "name": "Json并发",
+      "type": 2,
+      "url": "Parallel"
+    },
+    {
+      "name": "Json轮询",
+      "type": 2,
+      "url": "Sequence"
+    }
+  ],
+  "flags": [
+    "youku",
+    "qq",
+    "iqiyi",
+    "qiyi",
+    "letv",
+    "sohu",
+    "tudou",
+    "pptv",
+    "mgtv",
+    "wasu"
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "enable-accurate-seek",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "dns_cache_timeout",
+          "value": "600000000"
+        }
+      ]
+    }
+  ],
+  "ads": [
+    "mimg.0c1q0l.cn",
+    "www.googletagmanager.com",
+    "www.google-analytics.com",
+    "mc.usihnbcq.cn",
+    "mg.g1mm3d.cn",
+    "mscs.svaeuzh.cn",
+    "cnzz.hhurm.cn",
+    "tp.vinuxhome.com",
+    "cnzz.mmstat.com",
+    "www.baihuillq.com",
+    "s23.cnzz.com",
+    "z3.cnzz.com",
+    "c.cnzz.com",
+    "stj.v1vo.top",
+    "z12.cnzz.com",
+    "img.mosflower.cn",
+    "tips.gamevvip.com",
+    "ehwe.yhdtns.com",
+    "xdn.cqqc3.com",
+    "www.jixunkyy.cn",
+    "sp.chemacid.cn",
+    "hm.baidu.com",
+    "s9.cnzz.com",
+    "z6.cnzz.com",
+    "um.cavuc.com",
+    "mav.mavuz.com",
+    "wofwk.aoidf3.com",
+    "z5.cnzz.com",
+    "xc.hubeijieshikj.cn",
+    "tj.tianwenhu.com",
+    "xg.gars57.cn",
+    "k.jinxiuzhilv.com",
+    "cdn.bootcss.com",
+    "ppl.xunzhuo123.com",
+    "xomk.jiangjunmh.top",
+    "img.xunzhuo123.com",
+    "z1.cnzz.com",
+    "s13.cnzz.com",
+    "xg.huataisangao.cn",
+    "z7.cnzz.com",
+    "xg.huataisangao.cn",
+    "z2.cnzz.com",
+    "s96.cnzz.com",
+    "q11.cnzz.com",
+    "thy.dacedsfa.cn",
+    "xg.whsbpw.cn",
+    "s19.cnzz.com",
+    "z8.cnzz.com",
+    "s4.cnzz.com",
+    "f5w.as12df.top",
+    "ae01.alicdn.com",
+    "www.92424.cn",
+    "k.wudejia.com",
+    "vivovip.mmszxc.top",
+    "qiu.xixiqiu.com",
+    "cdnjs.hnfenxun.com",
+    "cms.qdwght.com"
+  ]
+}
