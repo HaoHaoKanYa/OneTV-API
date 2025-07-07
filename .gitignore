@@ -49,3 +49,7 @@ python-*.exe
 # Documentation files (not for version control)
 VOD_SEARCH_SYSTEM.md
 VOD_WORKFLOW_FIX.md
+
+# Excluded VOD files
+vod/output/onetv-api-movie-optimized.json
+vod/sources/
