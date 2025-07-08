@@ -1,4 +1,10 @@
 {
+  "storeHouse": [
+    {
+      "sourceName": "OneTV-API影视仓库",
+      "sourceUrl": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/output/onetv-api-movie.json"
+    }
+  ],
   "spider": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/spider/onetv-spider.jar",
   "wallpaper": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/wallpaper.jpg",
   "logo": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/logo.png",
