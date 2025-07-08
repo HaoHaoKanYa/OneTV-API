@@ -25,12 +25,7 @@
     {
       "key": "header_douban",
       "name": "🎭豆瓣推荐系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_douban_recommend",
@@ -101,12 +96,7 @@
     {
       "key": "header_onetv_main",
       "name": "📺ONETV影视仓主线路",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_wwys",
@@ -728,12 +718,7 @@
     {
       "key": "header_ouge",
       "name": "🔥欧歌系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_ouge_woog",
@@ -1208,12 +1193,7 @@
     {
       "key": "header_feimao",
       "name": "🐱肥猫系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_feimao_uc",
@@ -1516,12 +1496,7 @@
     {
       "key": "header_nanfeng",
       "name": "🌪南风系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_gz360",
@@ -1842,12 +1817,7 @@
     {
       "key": "header_junlao",
       "name": "🎯俊佬系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_sp360",
@@ -1965,12 +1935,7 @@
     {
       "key": "header_buliangshui",
       "name": "👑不良帅系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_buliangshui_localfile",
@@ -2136,12 +2101,7 @@
     {
       "key": "header_qiaoer",
       "name": "🎨巧儿系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_rebo",
@@ -2439,12 +2399,7 @@
     {
       "key": "header_liubei",
       "name": "🎪刘备系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_liubei_ygp",
@@ -2709,12 +2664,7 @@
     {
       "key": "header_cainisi",
       "name": "🎬菜妮丝系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_jianpian",
@@ -2807,12 +2757,7 @@
     {
       "key": "header_xiangyaqing",
       "name": "🌸香雅情系列",
-      "type": 0,
-      "api": "csp_Config",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
+      "type": 0
     },
     {
       "key": "onetv_xiangyaqing_localfile",
