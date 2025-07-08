@@ -2,2917 +2,2881 @@
   "spider": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/spider/onetv-spider.jar",
   "wallpaper": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/wallpaper.jpg",
   "logo": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/logo.png",
-  "warningText": "OneTV-API影视仓库 - 包含229条优质线路",
-  "sites": [],
+  "lives": [],
+  "sites": [
+    {
+      "key": "header_豆瓣推荐系列",
+      "name": "------- 豆瓣推荐系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_douban_recommend",
+      "name": "🎭豆瓣┃推荐",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "changeable": 0
+    },
+    {
+      "key": "onetv_buliangshui_douban",
+      "name": "🎭豆瓣推荐┃不良帅",
+      "type": 3,
+      "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/libs/drpy2.min.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/douban.js"
+    },
+    {
+      "key": "onetv_liubei_douban",
+      "name": "🎭豆瓣推荐┃刘备",
+      "type": 3,
+      "api": "csp_DouDou",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_douban",
+      "name": "🎭豆瓣推荐┃欧歌",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_cainisi_douban",
+      "name": "🎭豆瓣推荐┃菜妮丝",
+      "type": 3,
+      "api": "csp_DouDouGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "changeable": 0
+    },
+    {
+      "key": "onetv_xiangyaqing_douban",
+      "name": "🎭豆瓣推荐┃香雅情",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/drpy.js"
+    },
+    {
+      "key": "header_onetv_影视仓主线路",
+      "name": "------- ONETV_影视仓主线路 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_wwys",
+      "name": "📺ONETV_影视仓主线路┃农民",
+      "type": 3,
+      "api": "csp_Wwys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://www.wwgz.cn"
+    },
+    {
+      "key": "onetv_kmeiju",
+      "name": "📺ONETV_影视仓主线路┃鸭梨",
+      "type": 3,
+      "api": "csp_KmeiJu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_fourk",
+      "name": "📺ONETV_影视仓主线路┃绝对",
+      "type": 3,
+      "api": "csp_FourK",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://www.4kvm.tv"
+    },
+    {
+      "key": "onetv_lkdy",
+      "name": "📺ONETV_影视仓主线路┃来看",
+      "type": 3,
+      "api": "csp_Lkdy",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_tvyb",
+      "name": "📺ONETV_影视仓主线路┃云播",
+      "type": 3,
+      "api": "csp_Tvyb",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_qiyou",
+      "name": "📺ONETV_影视仓主线路┃奇优",
+      "type": 3,
+      "api": "csp_Qiyou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_quanwk",
+      "name": "📺ONETV_影视仓主线路┃全看",
+      "type": 3,
+      "api": "csp_Quanwk",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://www.91qkw.com"
+    },
+    {
+      "key": "onetv_jiaozi",
+      "name": "📺ONETV_影视仓主线路┃饺子",
+      "type": 3,
+      "api": "csp_J",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_saohuo",
+      "name": "📺ONETV_影视仓主线路┃火火",
+      "type": 3,
+      "api": "csp_SaoHuo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "https://shdy5.us"
+    },
+    {
+      "key": "onetv_czsapp",
+      "name": "📺ONETV_影视仓主线路┃厂长",
+      "type": 3,
+      "api": "csp_Czsapp",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "https://www.czzymovie.com/"
+    },
+    {
+      "key": "onetv_appxy",
+      "name": "📺ONETV_影视仓主线路┃星芽短剧",
+      "type": 3,
+      "api": "csp_AppXY",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_dm84",
+      "name": "📺ONETV_影视仓主线路┃动漫巴士",
+      "type": 3,
+      "api": "csp_Dm84",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "https://dm84.net"
+    },
+    {
+      "key": "onetv_firstaid",
+      "name": "📺ONETV_影视仓主线路┃急救",
+      "type": 3,
+      "api": "csp_FirstAid",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_kugou",
+      "name": "📺ONETV_影视仓主线路┃酷狗音乐",
+      "type": 3,
+      "api": "csp_Kugou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": {
+        "filter": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/vod/config/kugou.json"
+      }
+    },
+    {
+      "key": "onetv_mtv",
+      "name": "📺ONETV_影视仓主线路┃MTV音乐",
+      "type": 3,
+      "api": "csp_MTV",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_yule",
+      "name": "📺ONETV_影视仓主线路┃娱乐直播",
+      "type": 3,
+      "api": "csp_Yule",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_kanqiu",
+      "name": "📺ONETV_影视仓主线路┃看球直播",
+      "type": 3,
+      "api": "csp_Kanqiu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_baiduqupan",
+      "name": "📺ONETV_影视仓主线路┃度趣4K",
+      "type": 3,
+      "api": "csp_BaiduQuPanGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      },
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_shuangxing",
+      "name": "📺ONETV_影视仓主线路┃双星4K",
+      "type": 3,
+      "api": "csp_Star2Guard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      },
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_erxiao",
+      "name": "📺ONETV_影视仓主线路┃二小4K弹幕",
+      "type": 3,
+      "api": "csp_ErXiaoGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_libvio",
+      "name": "📺ONETV_影视仓主线路┃立播4K弹幕",
+      "type": 3,
+      "api": "csp_LibvioGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1,
+      "ext": {
+        "site": "https://libvio.link",
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_biaoge",
+      "name": "📺ONETV_影视仓主线路┃表哥4K弹幕",
+      "type": 3,
+      "api": "csp_DbgGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_huban",
+      "name": "📺ONETV_影视仓主线路┃虎斑4K弹幕",
+      "type": 3,
+      "api": "csp_HuBanGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_seedhub",
+      "name": "📺ONETV_影视仓主线路┃Seed4K弹幕",
+      "type": 3,
+      "api": "csp_SeedHubGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_xiaozhang",
+      "name": "📺ONETV_影视仓主线路┃小章4K弹幕",
+      "type": 3,
+      "api": "csp_XiaoZhangGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_guangying",
+      "name": "📺ONETV_影视仓主线路┃光影4K弹幕",
+      "type": 3,
+      "api": "csp_GuanyingGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_yunji",
+      "name": "📺ONETV_影视仓主线路┃云集4K",
+      "type": 3,
+      "api": "csp_YunJiGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_panta",
+      "name": "📺ONETV_影视仓主线路┃盘他4K",
+      "type": 3,
+      "api": "csp_PantaGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_wencai",
+      "name": "📺ONETV_影视仓主线路┃文才弹幕",
+      "type": 3,
+      "api": "csp_JpysGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_nuomi",
+      "name": "📺ONETV_影视仓主线路┃糯米弹幕",
+      "type": 3,
+      "api": "csp_NmysGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_langku",
+      "name": "📺ONETV_影视仓主线路┃浪酷弹幕",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true,
+        "site": 2
+      }
+    },
+    {
+      "key": "onetv_subaibai",
+      "name": "📺ONETV_影视仓主线路┃素白白弹幕",
+      "type": 3,
+      "api": "csp_SubaibaiGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_xiaohong",
+      "name": "📺ONETV_影视仓主线路┃小红弹幕",
+      "type": 3,
+      "api": "csp_XiaoHongGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_xiongying",
+      "name": "📺ONETV_影视仓主线路┃雄鹰弹幕",
+      "type": 3,
+      "api": "csp_XiongYingGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_shichang",
+      "name": "📺ONETV_影视仓主线路┃时常弹幕",
+      "type": 3,
+      "api": "csp_ShiChangGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_kafei",
+      "name": "📺ONETV_影视仓主线路┃咖啡弹幕",
+      "type": 3,
+      "api": "csp_KaFeiGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_qingtian",
+      "name": "📺ONETV_影视仓主线路┃晴天弹幕",
+      "type": 3,
+      "api": "csp_Sun4kGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_cangshu_danmu",
+      "name": "📺ONETV_影视仓主线路┃仓鼠弹幕",
+      "type": 3,
+      "api": "csp_CangShuGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_liulian",
+      "name": "📺ONETV_影视仓主线路┃榴莲弹幕",
+      "type": 3,
+      "api": "csp_LiulianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_hanquan",
+      "name": "📺ONETV_影视仓主线路┃韩圈弹幕",
+      "type": 3,
+      "api": "csp_HanXiaoQuanGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "playerType": 2,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_changzhang",
+      "name": "📺ONETV_影视仓主线路┃厂长弹幕",
+      "type": 3,
+      "api": "csp_CzzyGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_aikan",
+      "name": "📺ONETV_影视仓主线路┃爱看弹幕",
+      "type": 3,
+      "api": "csp_IkanbotGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_tianquan",
+      "name": "📺ONETV_影视仓主线路┃甜圈短剧",
+      "type": 3,
+      "api": "csp_TianQuanGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "onetv_btt",
+      "name": "📺ONETV_影视仓主线路┃比特在线",
+      "type": 3,
+      "api": "csp_BttGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_yhdm",
+      "name": "📺ONETV_影视仓主线路┃樱花动漫",
+      "type": 3,
+      "api": "csp_YHDMGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 15
+    },
+    {
+      "key": "onetv_xin6v",
+      "name": "📺ONETV_影视仓主线路┃新6V磁力",
+      "type": 3,
+      "api": "csp_Xb6vGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 20,
+      "changeable": 0
+    },
+    {
+      "key": "onetv_juhe_live",
+      "name": "📺ONETV_影视仓主线路┃聚合直播",
+      "type": 3,
+      "api": "csp_LivingGuard",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "onetv_kuaishou_live",
+      "name": "📺ONETV_影视仓主线路┃快手直播",
+      "type": 3,
+      "api": "csp_KsLiveGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 10,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      }
+    },
+    {
+      "key": "onetv_huya_live",
+      "name": "📺ONETV_影视仓主线路┃虎牙直播",
+      "type": 3,
+      "api": "csp_HuyaGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 10,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      }
+    },
+    {
+      "key": "onetv_88kanqiu",
+      "name": "📺ONETV_影视仓主线路┃88看球",
+      "type": 3,
+      "api": "csp_KanqiuGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 10,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },
+    {
+      "key": "header_欧歌系列",
+      "name": "------- 欧歌系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_ouge_woog",
+      "name": "🔥欧歌┃玩偶",
+      "type": 3,
+      "api": "csp_Duopan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=og;md5;9bdec773016b12f54c065c038519055b",
+      "ext": {
+        "site_urls": [
+          "https://woog.nxog.eu.org",
+          "https://woog.nxog.fun",
+          "https://woog.xn--dkw.xn--6qq986b3xl",
+          "https://ogwo.xn--dkw.xn--6qq986b3xl"
+        ],
+        "url_key": "woog",
+        "threadinfo": {
+          "chunksize": 287,
+          "threads": 16
+        }
+      }
+    },
+    {
+      "key": "onetv_ouge_kuaikuai",
+      "name": "🔥欧歌┃夸快",
+      "type": 3,
+      "api": "csp_woog",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=a3;md5;468e5883e1e500c3003b24ee8b6d0dcd",
+      "ext": {
+        "site_urls": [
+          "https://ogkk.nxog.eu.org",
+          "https://ogkk.nxog.fun",
+          "https://ogkk.xn--dkw.xn--6qq986b3xl"
+        ],
+        "url_key": "UC",
+        "threadinfo": {
+          "chunksize": 242,
+          "threads": 60
+        }
+      }
+    },
+    {
+      "key": "onetv_ouge_qiaoji",
+      "name": "🔥欧歌┃巧技",
+      "type": 3,
+      "api": "csp_qiao2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
+      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
+    },
+    {
+      "key": "onetv_ouge_jianpian",
+      "name": "🔥欧歌┃荐片",
+      "type": 3,
+      "api": "csp_Jianpian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "https://api.ubj83.com"
+    },
+    {
+      "key": "onetv_wogg_danmu",
+      "name": "🔥欧歌系列┃4K弹幕",
+      "type": 3,
+      "api": "csp_WoggGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_qiaoer_qiaoji2",
+      "name": "🔥欧歌系列┃巧儿",
+      "type": 3,
+      "api": "csp_qiao2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
+    },
+    {
+      "key": "onetv_qiaoer_qiaoji1",
+      "name": "🔥欧歌系列┃巧儿二",
+      "type": 3,
+      "api": "csp_qiao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01igg71j3l26k2gk3i71hl81h696923gkl7i0707"
+    },
+    {
+      "key": "onetv_qiaoer_qiaoji3",
+      "name": "🔥欧歌系列┃巧儿三",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg0939795i0678i48hk312jji7g4k69h089ij36j71031154l2k91k151k138612h68842ji"
+    },
+    {
+      "key": "onetv_liubei_wogg",
+      "name": "🔥欧歌系列┃刘备",
+      "type": 3,
+      "api": "csp_WoGG",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "ext": {
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto",
+        "siteUrl": "https://www.wogg.net/",
+        "danMu": "弹"
+      }
+    },
+    {
+      "key": "onetv_ouge_woog",
+      "name": "🔥欧歌系列┃玩偶",
+      "type": 3,
+      "api": "csp_Duopan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=og;md5;9bdec773016b12f54c065c038519055b",
+      "ext": {
+        "site_urls": [
+          "https://woog.nxog.eu.org",
+          "https://woog.nxog.fun",
+          "https://woog.xn--dkw.xn--6qq986b3xl",
+          "https://ogwo.xn--dkw.xn--6qq986b3xl"
+        ],
+        "url_key": "woog",
+        "threadinfo": {
+          "chunksize": 287,
+          "threads": 16
+        }
+      }
+    },
+    {
+      "key": "onetv_ouge_config",
+      "name": "🔥欧歌系列┃配置",
+      "type": 3,
+      "api": "csp_Config",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=cf2;md5;9bdec773016b12f54c065c038519055b"
+    },
+    {
+      "key": "onetv_ouge_kuaikuai",
+      "name": "🔥欧歌系列┃夸快",
+      "type": 3,
+      "api": "csp_woog",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=a3;md5;468e5883e1e500c3003b24ee8b6d0dcd",
+      "ext": {
+        "site_urls": [
+          "https://ogkk.nxog.eu.org",
+          "https://ogkk.nxog.fun",
+          "https://ogkk.xn--dkw.xn--6qq986b3xl"
+        ],
+        "url_key": "UC",
+        "threadinfo": {
+          "chunksize": 242,
+          "threads": 60
+        }
+      }
+    },
+    {
+      "key": "onetv_ouge_woog2",
+      "name": "🔥欧歌系列┃玩偶2",
+      "type": 3,
+      "api": "csp_Duopan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=og2;md5;a842e69c0159c0a51366e873365e71f9",
+      "ext": {
+        "site_urls": [
+          "https://ogkk.nxog.eu.org",
+          "https://ogkk.nxog.fun",
+          "https://ogkk.xn--dkw.xn--6qq986b3xl"
+        ],
+        "url_key": "woog2",
+        "threadinfo": {
+          "chunksize": 248,
+          "threads": 16
+        }
+      }
+    },
+    {
+      "key": "onetv_ouge_qiaoji",
+      "name": "🔥欧歌系列┃巧技",
+      "type": 3,
+      "api": "csp_qiao2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
+      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
+    },
+    {
+      "key": "onetv_ouge_jianpian",
+      "name": "🔥欧歌系列┃荐片",
+      "type": 3,
+      "api": "csp_Jianpian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "https://api.ubj83.com"
+    },
+    {
+      "key": "onetv_ouge_yidong",
+      "name": "🔥欧歌系列┃移动",
+      "type": 3,
+      "api": "csp_YDjisu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_rebo",
+      "name": "🔥欧歌系列┃热播",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "ext": {
+        "url": "http://v.rbotv.cn"
+      }
+    },
+    {
+      "key": "onetv_ouge_tiantian",
+      "name": "🔥欧歌系列┃天天",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "ext": {
+        "url": "http://tt.ysdqjs.cn"
+      }
+    },
+    {
+      "key": "onetv_ouge_langku",
+      "name": "🔥欧歌系列┃浪酷",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "ext": {
+        "url": "http://v.lkuys.cn"
+      }
+    },
+    {
+      "key": "onetv_ouge_guazi",
+      "name": "🔥欧歌系列┃瓜子",
+      "type": 3,
+      "api": "csp_Gz360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_diduan",
+      "name": "🔥欧歌系列┃低端",
+      "type": 3,
+      "api": "csp_Ddys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_kuaikan",
+      "name": "🔥欧歌系列┃快看",
+      "type": 3,
+      "api": "csp_Kuaikan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_laikan",
+      "name": "🔥欧歌系列┃来看",
+      "type": 3,
+      "api": "csp_Lkdy",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_pingguo",
+      "name": "🔥欧歌系列┃苹果",
+      "type": 3,
+      "api": "csp_LiteApple",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_aikan",
+      "name": "🔥欧歌系列┃爱看",
+      "type": 3,
+      "api": "csp_Ikanbot",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_quanwang",
+      "name": "🔥欧歌系列┃全网",
+      "type": 3,
+      "api": "csp_Quanwk",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://www.91qkw.com"
+    },
+    {
+      "key": "onetv_ouge_360",
+      "name": "🔥欧歌系列┃360",
+      "type": 3,
+      "api": "csp_SP360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_1905",
+      "name": "🔥欧歌系列┃1905",
+      "type": 3,
+      "api": "csp_Web1905",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_baibai",
+      "name": "🔥欧歌系列┃白白",
+      "type": 3,
+      "api": "csp_SuBaiBai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://www.subaibai.com"
+    },
+    {
+      "key": "onetv_ouge_haogan",
+      "name": "🔥欧歌系列┃好感",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://cs.hgyx.vip/api2/api.php/app/"
+    },
+    {
+      "key": "onetv_ouge_nuomi",
+      "name": "🔥欧歌系列┃糯米",
+      "type": 3,
+      "api": "csp_Wwys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://www.wwgz.cn"
+    },
+    {
+      "key": "onetv_ouge_nongmin",
+      "name": "🔥欧歌系列┃农民",
+      "type": 3,
+      "api": "csp_Wwys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://wwgz.cn/"
+    },
+    {
+      "key": "onetv_ouge_yali",
+      "name": "🔥欧歌系列┃鸭梨",
+      "type": 3,
+      "api": "csp_KmeiJu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ouge_huomao",
+      "name": "🔥欧歌系列┃火猫",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
+      "ext": "7lj763gg0939790i413gi484k8058896highi4414h68l7g6hk8qiaojig9k2k289l9ik807i213k5j602"
+    },
+    {
+      "key": "onetv_ouge_baozha",
+      "name": "🔥欧歌系列┃爆炸",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
+      "ext": "7lj763gg402i79425i3l85i6h848i295l5hiji5l828g3l3jjhg6kg7410lhjkqiaojij3ig1lg475178k7h0il4ig3h753h7hi516758699jh2g5h433li30gk11g73l90312h4g7"
+    },
+    {
+      "key": "header_肥猫系列",
+      "name": "------- 肥猫系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_feimao_uc",
+      "name": "🐱肥猫┃闪电",
+      "type": 3,
+      "api": "csp_Duopan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": {
+        "site_urls": [
+          "http://1.95.79.193/"
+        ],
+        "url_key": "FeiMaoUC"
+      }
+    },
+    {
+      "key": "onetv_duopan_1",
+      "name": "🐱肥猫┃蜡笔",
+      "type": 3,
+      "api": "csp_Duopan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": {
+        "site_urls": [
+          "https://feimao666.fun",
+          "http://feimao888.fun",
+          "http://www.labi88.sbs",
+          "http://fmao.site"
+        ],
+        "url_key": "Duopan2"
+      }
+    },
+    {
+      "key": "onetv_netfixtv",
+      "name": "🐱肥猫┃至臻",
+      "type": 3,
+      "api": "csp_Duopan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": {
+        "site_urls": [
+          "http://xiaomi666.fun",
+          "https://xiaomiai.site",
+          "https://mihdr.top",
+          "https://www.zhizhenpan.fun"
+        ],
+        "url_key": "Netfixtv2"
+      }
+    },
+    {
+      "key": "onetv_wogg",
+      "name": "🐱肥猫┃玩偶",
+      "type": 3,
+      "api": "csp_Panda",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://www.wogg.one/"
+    },
+    {
+      "key": "onetv_chaoliu",
+      "name": "🐱肥猫┃潮流",
+      "type": 3,
+      "api": "csp_Chaoliu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;md5"
+    },
+    {
+      "key": "onetv_menghui",
+      "name": "🐱肥猫┃梦回",
+      "type": 3,
+      "api": "csp_Menghui",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;md5"
+    },
+    {
+      "key": "onetv_xinghui",
+      "name": "🐱肥猫┃星辉",
+      "type": 3,
+      "api": "csp_Xinghui",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_feimao",
+      "name": "🐱肥猫┃肥猫",
+      "type": 3,
+      "api": "csp_Feimao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_ganfan",
+      "name": "🐱肥猫┃干饭",
+      "type": 3,
+      "api": "csp_Ganfan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_guangpan",
+      "name": "🐱肥猫┃光盘",
+      "type": 3,
+      "api": "csp_Guangpan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_xingdong",
+      "name": "🐱肥猫┃行动",
+      "type": 3,
+      "api": "csp_Xingdong",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_zailai",
+      "name": "🐱肥猫┃再来",
+      "type": 3,
+      "api": "csp_Zailai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_yiwan",
+      "name": "🐱肥猫┃一碗",
+      "type": 3,
+      "api": "csp_Yiwan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_maozhua",
+      "name": "🐱肥猫┃猫抓",
+      "type": 3,
+      "api": "csp_Maozhua",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_cangshu",
+      "name": "🐱肥猫┃仓鼠",
+      "type": 3,
+      "api": "csp_Cangshu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_shucai",
+      "name": "🐱肥猫系列┃蔬菜",
+      "type": 3,
+      "api": "csp_Shucai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_heimao",
+      "name": "🐱肥猫系列┃黑猫",
+      "type": 3,
+      "api": "csp_Heimao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_jiongciyuan",
+      "name": "🐱肥猫系列┃囧次元",
+      "type": 3,
+      "api": "csp_Jiongciyuan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_jpys",
+      "name": "🐱肥猫系列┃金牌",
+      "type": 3,
+      "api": "csp_Jpys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_labi",
+      "name": "🐱肥猫系列┃4K弹幕",
+      "type": 3,
+      "api": "csp_LabiGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_muou",
+      "name": "🐱肥猫系列┃4K弹幕",
+      "type": 3,
+      "api": "csp_MuouGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_duoduo",
+      "name": "🐱肥猫系列┃4K弹幕",
+      "type": 3,
+      "api": "csp_DuoDuoGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_zhizhen",
+      "name": "🐱肥猫系列┃4K弹幕",
+      "type": 3,
+      "api": "csp_ZhiZhenGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_shandian",
+      "name": "🐱肥猫系列┃4K弹幕",
+      "type": 3,
+      "api": "csp_ShanDianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_leijing",
+      "name": "🐱肥猫系列┃4K",
+      "type": 3,
+      "api": "csp_LeiJingGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "changeable": 1
+    },
+    {
+      "key": "header_南风系列",
+      "name": "------- 南风系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_gz360",
+      "name": "🌪南风系列┃瓜子",
+      "type": 3,
+      "api": "csp_Gz360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_liteapple",
+      "name": "🌪南风系列┃苹果",
+      "type": 3,
+      "api": "csp_LiteApple",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_guazi",
+      "name": "🌪南风系列┃弹幕",
+      "type": 3,
+      "api": "csp_GuaziGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_xiaopingguo",
+      "name": "🌪南风系列┃小弹幕",
+      "type": 3,
+      "api": "csp_XpgGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_guazi_kanqiu",
+      "name": "🌪南风系列┃看球",
+      "type": 3,
+      "api": "csp_GzSportGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 10,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      }
+    },
+    {
+      "key": "onetv_nanfeng_gz360",
+      "name": "🌪南风┃瓜子",
+      "type": 3,
+      "api": "csp_Gz360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_nanfeng_liteapple",
+      "name": "🌪南风┃苹果",
+      "type": 3,
+      "api": "csp_LiteApple",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_nanfeng_qiaoji",
+      "name": "🌪南风┃聚搜",
+      "type": 3,
+      "api": "csp_qiao2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
+    },
+    {
+      "key": "onetv_nanfeng_ttian",
+      "name": "🌪南风┃天天",
+      "type": 3,
+      "api": "csp_TTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg09397919456493i0h44j8681highi4"
+    },
+    {
+      "key": "onetv_nanfeng_rebo",
+      "name": "🌪南风系列┃热播",
+      "type": 3,
+      "api": "csp_TTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg0939791h1l3888jig44gi291li"
+    },
+    {
+      "key": "onetv_nanfeng_zhuiju",
+      "name": "🌪南风系列┃追剧",
+      "type": 3,
+      "api": "csp_TTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg0939791h1l2681i6g94li291li"
+    },
+    {
+      "key": "onetv_nanfeng_juzi",
+      "name": "🌪南风系列┃橘子",
+      "type": 3,
+      "api": "csp_Qiji",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg0939795i0678i481k40hi2i3ghlg840i9lj166700g1449g3k5244k2017h35698h4739ih31117kigil3k02hl2jk6i5155ih9kkgl311gl37g240g85111ggg2"
+    },
+    {
+      "key": "onetv_nanfeng_huomao",
+      "name": "🌪南风系列┃火猫",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg0939790i413gi484k8058896highi4414h68l7g6hk8qiaojig9k2k289l9ik807i213k5j602"
+    },
+    {
+      "key": "onetv_nanfeng_yizhan",
+      "name": "🌪南风系列┃驿站",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg402i7942403h83i2h945858hljhji148i18k2837535112l2qiaojik9075l17028i49g192419i8g3245h3j1l9gi02h6k7732650h3h09jkg759j65hj39l50347k3gj97l4g12l7h6418h6k9j04l26i1glgj3631973hh280lkihjh"
+    },
+    {
+      "key": "onetv_nanfeng_yongye",
+      "name": "🌪南风系列┃永夜",
+      "type": 3,
+      "api": "csp_Qiji",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg402i794240208hi3g05l8181righj909i7i7282k425j21ggg13i630l378272k58l71i2h42l18g1h9glg433jll14i6071h6g5k8gj169138kl3kll1j"
+    },
+    {
+      "key": "onetv_nanfeng_qukan",
+      "name": "🌪南风系列┃趣看",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg402i7942463j9j9jg1499j87l9g9i413il8gqiaoji20g7g4919j3g019296lk9351hh3k5gg38lj0754il3jg"
+    },
+    {
+      "key": "onetv_nanfeng_gonggong",
+      "name": "🌪南风系列┃公共",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg402i7942463ji4qiaojijjh456889il6k6i35kj995h4j18li7kl2870klhg8hi647j5707k4ki7ig6953kj"
+    },
+    {
+      "key": "onetv_nanfeng_zhujue",
+      "name": "🌪南风系列┃主角",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg402i794247258k9jh6598585l3g6ij13il8g20g9qiaoji8j9i9k1g3k90h7i507i213k5j602"
+    },
+    {
+      "key": "onetv_nanfeng_youzi",
+      "name": "🌪南风系列┃柚子",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg0939790i413gi4igh94585i7g0l98449i399qiaoji20187h78327624i6j3i9lj8g09l9ig1ii3"
+    },
+    {
+      "key": "onetv_nanfeng_zhuanye",
+      "name": "🌪南风系列┃专业",
+      "type": 3,
+      "api": "csp_Shark",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "7lj763gg0939795i007ii481k008i2i3g5l8840l9kjk6670031743g2h6164h07558245g3845392972819h994k1k400khli736i0lligk9gh273ih6jkl7jg84k54lhl9i5gkl376266h9k4624548kl649676gg9k2763llkj6gj818l"
+    },
+    {
+      "key": "onetv_nanfeng_qiyou",
+      "name": "🌪南风系列┃奇优",
+      "type": 3,
+      "api": "csp_Qiyou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_nanfeng_jiaozi",
+      "name": "🌪南风系列┃饺子",
+      "type": 3,
+      "api": "csp_Jiaozi",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_nanfeng_changzhang",
+      "name": "🌪南风系列┃厂长",
+      "type": 3,
+      "api": "csp_Czsapp",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "https://www.czzymovie.com/"
+    },
+    {
+      "key": "onetv_nanfeng_nongmin",
+      "name": "🌪南风系列┃农民",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://ghfast.top/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/json/农民影视.json"
+    },
+    {
+      "key": "onetv_nanfeng_saohuo",
+      "name": "🌪南风系列┃骚火",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": {
+        "简介": "p_txt show_part\">&&</p>",
+        "副标题": "v_note\">&&</div>",
+        "分类url": "https://saohuody.com/list/{cateId}-{catePg}.html;;d1",
+        "分类": "国产剧$12#港剧$13#台剧$14#日剧$15#韩剧$16#美剧$17#海外$18#泰剧$19#动作$5#喜剧$6#爱情$7#科幻$8#恐怖$9#剧情$10#战争$11#动画$33"
+      }
+    },
+    {
+      "key": "onetv_nanfeng_keke",
+      "name": "🌪南风系列┃可可",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://ghfast.top/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/json/可可影视.json"
+    },
+    {
+      "key": "onetv_nanfeng_juquanquan",
+      "name": "🌪南风系列┃剧圈圈",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://ghfast.top/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/json/剧圈圈.json",
+      "click": "document.getElementById('playleft').children[0].contentWindow.document.getElementById('start').click()"
+    },
+    {
+      "key": "onetv_liubei_pingguo",
+      "name": "🌪南风系列┃刘备",
+      "type": 3,
+      "api": "csp_LiteApple",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1
+    },
+    {
+      "key": "header_俊佬系列",
+      "name": "------- 俊佬系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_sp360",
+      "name": "🎯俊佬系列┃360",
+      "type": 3,
+      "api": "csp_SP360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_junlao_360",
+      "name": "🎯俊佬┃360",
+      "type": 3,
+      "api": "csp_SP360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_junlao_nbys",
+      "name": "🎯俊佬┃泥巴",
+      "type": 3,
+      "api": "csp_Nbys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_junlao_alist",
+      "name": "🎯俊佬系列┃Alist",
+      "type": 3,
+      "api": "csp_Alist",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": {
+        "小雅": "http://alistxy.ganggang.live:5678",
+        "9T": "https://drive.9t.ee",
+        "晴园的宝藏库": "https://alist.52qy.repl.co",
+        "米奇妙妙屋": "https://anime.mqmmw.ga",
+        "小兵组网盘影视": "https://6vv.app",
+        "一只鱼": "https://alist.youte.ml",
+        "七米蓝": "https://al.chirmyram.com",
+        "帅盘": "https://hi.shuaipeng.wang",
+        "神族九帝": "https://alist.shenzjd.com",
+        "姬路白雪": "https://pan.jlbx.xyz",
+        "听闻网盘": "https://wangpan.sangxuesheng.com",
+        "DISK": "http://124.222.140.243:8080",
+        "云播放": "https://quanzi.laoxianghuijia.cn",
+        "星梦": "https://pan.bashroot.top",
+        "触光": "https://pan.ichuguang.com",
+        "好汉吧": "https://8023.haohanba.cn",
+        "repl": "https://ali.liucn.repl.co",
+        "秋雨分享": "https://share.laowang.me",
+        "讯维云盘": "https://pan.xwbeta.com"
+      }
+    },
+    {
+      "key": "onetv_junlao_lezhu",
+      "name": "🎯俊佬系列┃乐猪",
+      "type": 3,
+      "api": "csp_XBiu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "ext": {
+        "homeUrl": "http://www.lezhutv.com/type/{cateId}-{datePg}.html",
+        "playlist": {
+          "sort": 1
+        }
+      }
+    },
+    {
+      "key": "onetv_junlao_6080",
+      "name": "🎯俊佬系列┃6080",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "ext": {
+        "请求头": "手机",
+        "起始页": "1",
+        "二次截取": "<div class=\"module-list\">&&<div class=\"mx-lrmenu\">[替换:<div class=\"fixed_right_bar\">>><div class=\"module-item\">]||首页--最新热播&&<div  class=\"module-main\"[替换:<div class=\"module module-wrapper\">>><div class=\"module-item\">]",
+        "数组": "<div class=\"module-item-pic\">&&<div class=\"module-item\">[不包含:理论片]",
+        "副标题": "class=\"module-item-text\"&&<",
+        "线路数组": "class=\"module-tab-item tab-item\"&&</div>[排序:极速播放>在线观看]",
+        "线路标题": "<span>&&</small>[替换:</span>>>（更至]+集）",
+        "影片年代": "<a class=\"tag-link\"*>&&</a>",
+        "导演": "导演：</span>&&</a>",
+        "演员": "主演：</span>&&</div>",
+        "简介": "剧情：</span>&&</span>",
+        "播放数组": "<div class=\"sort-item\"&&</div>",
+        "播放列表": "<!--&&-->",
+        "免嗅": "1",
+        "嗅探词": ".m3u8#.mp4",
+        "过滤词": ".html#url=http",
+        "搜索模式": "0",
+        "搜索链接前缀": "/video/",
+        "搜索链接后缀": ".html",
+        "分类url": "https://www.6080dy1.com/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
+        "分类": "电影&电视剧&综艺&动漫",
+        "分类值": "1&2&3&4"
+      }
+    },
+    {
+      "key": "header_不良帅系列",
+      "name": "------- 不良帅系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_buliangshui_localfile",
+      "name": "👑不良帅系列┃本地",
+      "type": 3,
+      "api": "csp_LocalFile",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "changeable": 0
+    },
+    {
+      "key": "onetv_buliangshui_mianfei",
+      "name": "👑不良帅系列┃秒播",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/zeqaht.json"
+    },
+    {
+      "key": "onetv_buliangshui_baipiao",
+      "name": "👑不良帅系列┃白嫖",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/baipiaoys.json"
+    },
+    {
+      "key": "onetv_buliangshui_4kvm",
+      "name": "👑不良帅系列┃五楼",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/4kvm.json"
+    },
+    {
+      "key": "onetv_buliangshui_nanfang",
+      "name": "👑不良帅系列┃南坊",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/南坊.json"
+    },
+    {
+      "key": "onetv_buliangshui_heimuer",
+      "name": "👑不良帅系列┃黑木耳",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/heimuer.json"
+    },
+    {
+      "key": "onetv_buliangshui_360zy",
+      "name": "👑不良帅系列┃卫士",
+      "type": 1,
+      "api": "https://360zy.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playUrl": "",
+      "categories": [
+        "国产剧",
+        "国产动漫",
+        "香港剧",
+        "台湾剧",
+        "欧美剧",
+        "日韩动漫",
+        "NBA",
+        "短片",
+        "西部片",
+        "综艺片",
+        "动漫片",
+        "动作片",
+        "喜剧片",
+        "爱情片",
+        "科幻片",
+        "恐怖片",
+        "惊悚片",
+        "悬疑片",
+        "犯罪片",
+        "剧情片",
+        "战争片",
+        "家庭篇",
+        "记录片",
+        "历史片",
+        "动漫片",
+        "大陆综艺",
+        "港台综艺"
+      ]
+    },
+    {
+      "key": "onetv_buliangshui_365",
+      "name": "👑不良帅系列┃365",
+      "type": 3,
+      "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/js/365.js"
+    },
+    {
+      "key": "onetv_buliangshui_subaibai",
+      "name": "👑不良帅系列┃素白",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XYQHiker/素白白.json"
+    },
+    {
+      "key": "onetv_buliangshui_98ys",
+      "name": "👑不良帅系列┃酒吧",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/98影视.json"
+    },
+    {
+      "key": "onetv_buliangshui_heihu",
+      "name": "👑不良帅系列┃黑狐",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/黑狐影视.json"
+    },
+    {
+      "key": "onetv_buliangshui_2bt",
+      "name": "👑不良帅系列┃鼻涕",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/2bt.json"
+    },
+    {
+      "key": "header_巧儿系列",
+      "name": "------- 巧儿系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_rebo",
+      "name": "🎨巧儿系列┃弹幕",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true,
+        "site": 0
+      }
+    },
+    {
+      "key": "onetv_tiantian",
+      "name": "🎨巧儿系列┃弹幕",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "ext": {
+        "danmu": true,
+        "site": 1
+      }
+    },
+    {
+      "key": "onetv_qiaoer_tiantian",
+      "name": "🎨巧儿系列┃天天",
+      "type": 3,
+      "api": "csp_TTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "7lj763gg09397919456493i0h44j8681highi4"
+    },
+    {
+      "key": "onetv_qiaoer_xiuluo",
+      "name": "🎨巧儿系列┃修罗",
+      "type": 3,
+      "api": "csp_Bdys01",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "7lj763gg402i7942476492jlg94li29kk6gi8448ij"
+    },
+    {
+      "key": "onetv_qiaoer_rebo",
+      "name": "🎨巧儿系列┃热播",
+      "type": 3,
+      "api": "csp_TTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "7lj763gg0939791h1l3888jig44gi291li"
+    },
+    {
+      "key": "onetv_qiaoer_zhuiju",
+      "name": "🎨巧儿系列┃追剧",
+      "type": 3,
+      "api": "csp_TTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "7lj763gg0939791h1l2681i6g94li291li"
+    },
+    {
+      "key": "onetv_qiaoer_juping",
+      "name": "🎨巧儿系列┃剧评",
+      "type": 3,
+      "api": "csp_Jpys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "7lj763gg402i7942463j9j9jh84l8798l8gli652828g332i"
+    },
+    {
+      "key": "onetv_qiaoer_juzi",
+      "name": "🎨巧儿系列┃橘子",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg093979191l288ij5g25989jil1g6850i829j24354k134hg2gi41025i4hi708k1i100i3j56k01klj3g7g94khkg230250hh2kh99gi77j021g03llj"
+    },
+    {
+      "key": "onetv_qiaoer_yizhan",
+      "name": "🎨巧儿系列┃驿站",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i7942403h83i2h945858hljhji148i18k2837535112l2qiaojik9075l17028i49g192419i8g3245h3j1l9gi02h6k7732650h3h09jkg759j65hj39l50347k3gj97l4g12l7h6418h6k9j04l26i1glgj3631973hh280lkihjh"
+    },
+    {
+      "key": "onetv_qiaoer_zhujue",
+      "name": "🎨巧儿系列┃主角",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i794247258k9jh6598585l3g6ij13il8g20g9qiaoji8j9i9k1g3k90h7i507i213k5j602"
+    },
+    {
+      "key": "onetv_qiaoer_youzi",
+      "name": "🎨巧儿系列┃柚子",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg0939795i0678i481k40hi2i3ghlg840i98j9667qiaoji000134jg7k591gjjk9j5lg53255g2i7gl2749l3j2h8g5"
+    },
+    {
+      "key": "onetv_qiaoer_yongye",
+      "name": "🎨巧儿系列┃永夜",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg0939790i413gi4jjh545959lhighi4414qiaoji964ihg48l909l2l019kgii607i213k5j602"
+    },
+    {
+      "key": "onetv_qiaoer_qukan",
+      "name": "🎨巧儿系列┃趣看",
+      "type": 3,
+      "api": "csp_Muou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i7942463j9j9jg1499j87l9g9i413il8gqiaoji20g7g4919j3g019296lk9351hh3k5gg38lj0754il3jg"
+    },
+    {
+      "key": "onetv_qiaoer_zhuanye",
+      "name": "🎨巧儿系列┃专业",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "7lj763gg402i7942503g9gj0hj4li291k1lii113j8862i3j7g5412g5gi4k0k5i4ki513l9j61ijjig2735g88gg0g941h2g2352710ggli85h268996ig539"
+    },
+    {
+      "key": "onetv_qiaoer_xinghe",
+      "name": "🎨巧儿系列┃星河",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg0939791954248jihg5529587lig9i654j59i326l5j5208hklg19161j139753h090539gig3g11h49gk3l21hl4hk637h53ghg6ikl2219j28lj76h8430kkkklj6hkl022272g8h5g69068hli583061k3l9373hk09hg9j79l31l43h06187l37j675lhkg57k511jk"
+    },
+    {
+      "key": "onetv_qiaoer_shichang",
+      "name": "🎨巧儿系列┃时常",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg0939795i007hi482k80ii2i3ghl084099ij36j70031107l2kg105816139i56g38h03i1j06k4gkk9ll7kl1lk4k8687k55l0g19ggk72j06gg073li1j11"
+    },
+    {
+      "key": "onetv_qiaoer_qingkong",
+      "name": "🎨巧儿系列┃晴空",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i7942463j9j9jg8558j9jlgh1j913il86313j776l14ljjh3l5k383999648j9064g6h22738938il8jk30k2i6427h67jkhglji910996ig539"
+    },
+    {
+      "key": "onetv_qiaoer_shayu",
+      "name": "🎨巧儿系列┃鲨鱼",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i79425227999jg7508k90k3k6j244j6952l2557574gg6kh00480l42i05hg49i578l973l18ghj2g3kk0ll4l1392258l7h6ikk077j56l"
+    },
+    {
+      "key": "onetv_qiaoer_yudi",
+      "name": "🎨巧儿系列┃雨滴",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i794252729j81hl4gjh87g7hlij0lj6j8337942134gl0h7165707028353h48h1i9088321kh6j9g4gh40hkg97i7l07khk1jhgk25jj3lg462lk5710l5gljkg9gl787168ij416457i5lg1h7i22hkg27276h69k"
+    },
+    {
+      "key": "onetv_qiaoer_youzi2",
+      "name": "🎨巧儿系列┃优质",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i7942503g83j2g04i8090khhh8451ik902l6l53510hg9gi410i5607974jhk994283883904gk88l3k549h1g87i754kkjh3jhki2g8724k064g85411gigljkl3g620"
+    },
+    {
+      "key": "onetv_qiaoer_muye",
+      "name": "🎨巧儿系列┃木叶",
+      "type": 3,
+      "api": "csp_Xdai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg0939795i0079i487k512jki6g1k6980k9li631344h4455k7k103473i0kh8049hgg4484h0091ggjh2l8ki33lhi2755g07i880jjkh12h73gk35kg35j6hk6g296l5"
+    },
+    {
+      "key": "onetv_qiaoer_hudie",
+      "name": "🎨巧儿系列┃蝴蝶",
+      "type": 3,
+      "api": "csp_Hudie",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i794255648kj0hj539g9hl7k6jk52ji"
+    },
+    {
+      "key": "onetv_qiaoer_ningmeng",
+      "name": "🎨巧儿系列┃柠檬",
+      "type": 3,
+      "api": "csp_Nmvod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "ext": "7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g548458hh994hjj94330jk296k4l045"
+    },
+    {
+      "key": "onetv_liubei_rebo",
+      "name": "🎨巧儿系列┃刘备",
+      "type": 3,
+      "api": "csp_AppTT",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "changeable": 1,
+      "ext": "AO7TcBkd8I/B5wQc4Qma+pU="
+    },
+    {
+      "key": "header_刘备系列",
+      "name": "------- 刘备系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_liubei_ygp",
+      "name": "🎪刘备系列┃叨观",
+      "type": 3,
+      "api": "csp_YGP",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "changeable": 0
+    },
+    {
+      "key": "onetv_liubei_alllive",
+      "name": "🎪刘备系列┃一直播",
+      "type": 3,
+      "api": "csp_Alllive",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "playerType": 2,
+      "changeable": 0
+    },
+    {
+      "key": "onetv_liubei_mipanso",
+      "name": "🎪刘备系列┃米盘",
+      "type": 3,
+      "api": "csp_MIPanSo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "ext": {
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto"
+      }
+    },
+    {
+      "key": "onetv_liubei_kkss",
+      "name": "🎪刘备系列┃抠搜",
+      "type": 3,
+      "api": "csp_KkSs",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "ext": {
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto"
+      }
+    },
+    {
+      "key": "onetv_liubei_libvio",
+      "name": "🎪刘备系列┃Lib",
+      "type": 3,
+      "api": "csp_Libvio",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1,
+      "ext": {
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto"
+      }
+    },
+    {
+      "key": "onetv_liubei_wencai",
+      "name": "🎪刘备系列┃文采",
+      "type": 3,
+      "api": "csp_Jpys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_liubei_nuomi",
+      "name": "🎪刘备系列┃糯米",
+      "type": 3,
+      "api": "csp_Nmyswv",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_liubei_mengmi",
+      "name": "🎪刘备系列┃萌米",
+      "type": 3,
+      "api": "csp_AppTT",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "ext": "AO7TcBkd8Iifux0Y8Qze6tVlMg=="
+    },
+    {
+      "key": "onetv_liubei_huanshi",
+      "name": "🎪刘备系列┃欢视",
+      "type": 3,
+      "api": "csp_AppTT",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "changeable": 1,
+      "ext": "AO7TcBkd8IPB+BwH4Qma+opv"
+    },
+    {
+      "key": "onetv_liubei_nangua",
+      "name": "🎪刘备系列┃南瓜",
+      "type": 3,
+      "api": "csp_NanGua",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_liubei_keke",
+      "name": "🎪刘备系列┃可可",
+      "type": 3,
+      "api": "csp_Kekys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_liubei_zxzj",
+      "name": "🎪刘备系列┃在线",
+      "type": 3,
+      "api": "csp_Zxzj",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1,
+      "ext": "https://www.zxzjhd.com/"
+    },
+    {
+      "key": "onetv_liubei_diduan",
+      "name": "🎪刘备系列┃低端",
+      "type": 3,
+      "api": "csp_Ddrk",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_liubei_changzhang",
+      "name": "🎪刘备系列┃厂长",
+      "type": 3,
+      "api": "csp_NewCz",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "changeable": 1,
+      "ext": "https://www.czzy77.com/"
+    },
+    {
+      "key": "onetv_liubei_yuanchuang",
+      "name": "🎪刘备系列┃原创",
+      "type": 3,
+      "api": "csp_YCyz",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 1,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_liubei_bite",
+      "name": "🎪刘备系列┃比特",
+      "type": 3,
+      "api": "csp_Bttwoo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1
+    },
+    {
+      "key": "onetv_liubei_auete",
+      "name": "🎪刘备系列┃Aue",
+      "type": 3,
+      "api": "csp_Auete",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1,
+      "ext": "https://auete.pro/"
+    },
+    {
+      "key": "onetv_liubei_xin6v",
+      "name": "🎪刘备系列┃新6V",
+      "type": 3,
+      "api": "csp_SixV",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 0,
+      "ext": "https://www.xb6v.com/"
+    },
+    {
+      "key": "onetv_liubei_naikan",
+      "name": "🎪刘备系列┃耐看",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "jar": "https://raw.liucn.cc/box/libs/jar/HCCX.jar",
+      "ext": "https://raw.liucn.cc/box/libs/hccx/nkvlog.json"
+    },
+    {
+      "key": "onetv_liubei_free",
+      "name": "🎪刘备系列┃Free",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "jar": "https://raw.liucn.cc/box/libs/jar/HCCX.jar",
+      "ext": "https://raw.liucn.cc/box/libs/hccx/Free影视.json"
+    },
+    {
+      "key": "onetv_liubei_kmeiju",
+      "name": "🎪刘备系列┃美剧",
+      "type": 3,
+      "api": "csp_KmeiJu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "jar": "https://raw.liucn.cc/box/libs/jar/Panda.jar"
+    },
+    {
+      "key": "header_菜妮丝系列",
+      "name": "------- 菜妮丝系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_jianpian",
+      "name": "🎬菜妮丝系列┃荐片",
+      "type": 3,
+      "api": "csp_Jianpian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "onetv_bili",
+      "name": "🎬菜妮丝系列┃合集",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "playerType": 2,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "ext": {
+        "json": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/vod/config/bili.txt"
+      }
+    },
+    {
+      "key": "onetv_jianpian_mobile",
+      "name": "🎬菜妮丝系列┃手机",
+      "type": 3,
+      "api": "csp_JianpianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "changeable": 0,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "onetv_cainisi_jianpian",
+      "name": "🎬菜妮丝系列┃荐片",
+      "type": 3,
+      "api": "csp_Jianpian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "changeable": 1,
+      "ext": "https://tv.菜妮丝.top/json/jianpian.json",
+      "jar": "https://tv.菜妮丝.top/jar/fm0706.jar;md5;eaaa2de0f1e4946be155e3130ef4fdf3"
+    },
+    {
+      "key": "onetv_cainisi_bili",
+      "name": "🎬菜妮丝系列┃哔哩",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "ext": {
+        "json": "https://tv.菜妮丝.top/json/bili.json",
+        "type": "帕梅拉#太极拳#广场舞#演唱会",
+        "cookie": ""
+      },
+      "jar": "https://tv.菜妮丝.top/jar/fm0706.jar;md5;eaaa2de0f1e4946be155e3130ef4fdf3"
+    },
+    {
+      "key": "onetv_cainisi_local",
+      "name": "🎬菜妮丝系列┃本地",
+      "type": 3,
+      "api": "csp_Local",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "timeout": 30,
+      "changeable": 0,
+      "jar": "https://tv.菜妮丝.top/jar/fm0706.jar;md5;eaaa2de0f1e4946be155e3130ef4fdf3"
+    },
+    {
+      "key": "header_香雅情系列",
+      "name": "------- 香雅情系列 -------",
+      "type": 3,
+      "api": "",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "onetv_xiangyaqing_localfile",
+      "name": "🌸香雅情系列┃本机",
+      "type": 3,
+      "api": "csp_LocalFile",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 30,
+      "type_flag": 0
+    },
+    {
+      "key": "onetv_xiangyaqing_qizhen",
+      "name": "🌸香雅情系列┃奇珍",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/奇珍异兽.js"
+    },
+    {
+      "key": "onetv_xiangyaqing_youku",
+      "name": "🌸香雅情系列┃优酷",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/优酷.js"
+    },
+    {
+      "key": "onetv_xiangyaqing_tengyun",
+      "name": "🌸香雅情系列┃腾云",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/腾云驾雾.js"
+    },
+    {
+      "key": "onetv_xiangyaqing_baimang",
+      "name": "🌸香雅情系列┃百忙",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30,
+      "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/百忙无果.js"
+    },
+    {
+      "key": "onetv_xiangyaqing_yisou",
+      "name": "🌸香雅情系列┃易搜",
+      "type": 3,
+      "api": "csp_Yisou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "ext": "http://127.0.0.1:9978/file/XYQTVBox/alitoken.txt"
+    },
+    {
+      "key": "onetv_xiangyaqing_yunpan",
+      "name": "🌸香雅情系列┃云盘",
+      "type": 3,
+      "api": "csp_XYQHikerAL",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQHiker/云盘资源.json"
+    },
+    {
+      "key": "onetv_xiangyaqing_push",
+      "name": "🌸香雅情系列┃推送",
+      "type": 3,
+      "api": "csp_PushAgent",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "timeout": 30,
+      "ext": "http://127.0.0.1:9978/file/XYQTVBox/alitoken.txt"
+    }
+  ],
   "parses": [],
   "flags": [],
-  "doh": [],
-  "rules": [],
-  "ads": [],
-  "lives": [],
   "ijk": [],
-  "type": "3",
-  "categories": [
-    {
-      "type": 3,
-      "name": "豆瓣推荐系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_douban_recommend",
-          "name": "🎭豆瓣┃推荐",
-          "type": 3,
-          "api": "csp_Douban",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "changeable": 0
-        },
-        {
-          "key": "onetv_buliangshui_douban",
-          "name": "🎭豆瓣推荐┃不良帅",
-          "type": 3,
-          "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/libs/drpy2.min.js",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/douban.js"
-        },
-        {
-          "key": "onetv_liubei_douban",
-          "name": "🎭豆瓣推荐┃刘备",
-          "type": 3,
-          "api": "csp_DouDou",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_douban",
-          "name": "🎭豆瓣推荐┃欧歌",
-          "type": 3,
-          "api": "csp_Douban",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_cainisi_douban",
-          "name": "🎭豆瓣推荐┃菜妮丝",
-          "type": 3,
-          "api": "csp_DouDouGuard",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "changeable": 0
-        },
-        {
-          "key": "onetv_xiangyaqing_douban",
-          "name": "🎭豆瓣推荐┃香雅情",
-          "type": 3,
-          "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/drpy.js"
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "ONETV_影视仓主线路",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_wwys",
-          "name": "📺ONETV_影视仓主线路┃农民",
-          "type": 3,
-          "api": "csp_Wwys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://www.wwgz.cn"
-        },
-        {
-          "key": "onetv_kmeiju",
-          "name": "📺ONETV_影视仓主线路┃鸭梨",
-          "type": 3,
-          "api": "csp_KmeiJu",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_fourk",
-          "name": "📺ONETV_影视仓主线路┃绝对",
-          "type": 3,
-          "api": "csp_FourK",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://www.4kvm.tv"
-        },
-        {
-          "key": "onetv_lkdy",
-          "name": "📺ONETV_影视仓主线路┃来看",
-          "type": 3,
-          "api": "csp_Lkdy",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_tvyb",
-          "name": "📺ONETV_影视仓主线路┃云播",
-          "type": 3,
-          "api": "csp_Tvyb",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_qiyou",
-          "name": "📺ONETV_影视仓主线路┃奇优",
-          "type": 3,
-          "api": "csp_Qiyou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_quanwk",
-          "name": "📺ONETV_影视仓主线路┃全看",
-          "type": 3,
-          "api": "csp_Quanwk",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://www.91qkw.com"
-        },
-        {
-          "key": "onetv_jiaozi",
-          "name": "📺ONETV_影视仓主线路┃饺子",
-          "type": 3,
-          "api": "csp_J",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_saohuo",
-          "name": "📺ONETV_影视仓主线路┃火火",
-          "type": 3,
-          "api": "csp_SaoHuo",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "https://shdy5.us"
-        },
-        {
-          "key": "onetv_czsapp",
-          "name": "📺ONETV_影视仓主线路┃厂长",
-          "type": 3,
-          "api": "csp_Czsapp",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "https://www.czzymovie.com/"
-        },
-        {
-          "key": "onetv_appxy",
-          "name": "📺ONETV_影视仓主线路┃星芽短剧",
-          "type": 3,
-          "api": "csp_AppXY",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_dm84",
-          "name": "📺ONETV_影视仓主线路┃动漫巴士",
-          "type": 3,
-          "api": "csp_Dm84",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "https://dm84.net"
-        },
-        {
-          "key": "onetv_firstaid",
-          "name": "📺ONETV_影视仓主线路┃急救",
-          "type": 3,
-          "api": "csp_FirstAid",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_kugou",
-          "name": "📺ONETV_影视仓主线路┃酷狗音乐",
-          "type": 3,
-          "api": "csp_Kugou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": {
-            "filter": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/vod/config/kugou.json"
-          }
-        },
-        {
-          "key": "onetv_mtv",
-          "name": "📺ONETV_影视仓主线路┃MTV音乐",
-          "type": 3,
-          "api": "csp_MTV",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_yule",
-          "name": "📺ONETV_影视仓主线路┃娱乐直播",
-          "type": 3,
-          "api": "csp_Yule",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_kanqiu",
-          "name": "📺ONETV_影视仓主线路┃看球直播",
-          "type": 3,
-          "api": "csp_Kanqiu",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_baiduqupan",
-          "name": "📺ONETV_影视仓主线路┃度趣4K",
-          "type": 3,
-          "api": "csp_BaiduQuPanGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 0,
-          "style": {
-            "type": "list"
-          },
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_shuangxing",
-          "name": "📺ONETV_影视仓主线路┃双星4K",
-          "type": 3,
-          "api": "csp_Star2Guard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 0,
-          "style": {
-            "type": "list"
-          },
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_erxiao",
-          "name": "📺ONETV_影视仓主线路┃二小4K弹幕",
-          "type": 3,
-          "api": "csp_ErXiaoGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_libvio",
-          "name": "📺ONETV_影视仓主线路┃立播4K弹幕",
-          "type": 3,
-          "api": "csp_LibvioGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1,
-          "ext": {
-            "site": "https://libvio.link",
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_biaoge",
-          "name": "📺ONETV_影视仓主线路┃表哥4K弹幕",
-          "type": 3,
-          "api": "csp_DbgGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_huban",
-          "name": "📺ONETV_影视仓主线路┃虎斑4K弹幕",
-          "type": 3,
-          "api": "csp_HuBanGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_seedhub",
-          "name": "📺ONETV_影视仓主线路┃Seed4K弹幕",
-          "type": 3,
-          "api": "csp_SeedHubGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_xiaozhang",
-          "name": "📺ONETV_影视仓主线路┃小章4K弹幕",
-          "type": 3,
-          "api": "csp_XiaoZhangGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_guangying",
-          "name": "📺ONETV_影视仓主线路┃光影4K弹幕",
-          "type": 3,
-          "api": "csp_GuanyingGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_yunji",
-          "name": "📺ONETV_影视仓主线路┃云集4K",
-          "type": 3,
-          "api": "csp_YunJiGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_panta",
-          "name": "📺ONETV_影视仓主线路┃盘他4K",
-          "type": 3,
-          "api": "csp_PantaGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_wencai",
-          "name": "📺ONETV_影视仓主线路┃文才弹幕",
-          "type": 3,
-          "api": "csp_JpysGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_nuomi",
-          "name": "📺ONETV_影视仓主线路┃糯米弹幕",
-          "type": 3,
-          "api": "csp_NmysGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_langku",
-          "name": "📺ONETV_影视仓主线路┃浪酷弹幕",
-          "type": 3,
-          "api": "csp_TianTianGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true,
-            "site": 2
-          }
-        },
-        {
-          "key": "onetv_subaibai",
-          "name": "📺ONETV_影视仓主线路┃素白白弹幕",
-          "type": 3,
-          "api": "csp_SubaibaiGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_xiaohong",
-          "name": "📺ONETV_影视仓主线路┃小红弹幕",
-          "type": 3,
-          "api": "csp_XiaoHongGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_xiongying",
-          "name": "📺ONETV_影视仓主线路┃雄鹰弹幕",
-          "type": 3,
-          "api": "csp_XiongYingGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_shichang",
-          "name": "📺ONETV_影视仓主线路┃时常弹幕",
-          "type": 3,
-          "api": "csp_ShiChangGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_kafei",
-          "name": "📺ONETV_影视仓主线路┃咖啡弹幕",
-          "type": 3,
-          "api": "csp_KaFeiGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_qingtian",
-          "name": "📺ONETV_影视仓主线路┃晴天弹幕",
-          "type": 3,
-          "api": "csp_Sun4kGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_cangshu_danmu",
-          "name": "📺ONETV_影视仓主线路┃仓鼠弹幕",
-          "type": 3,
-          "api": "csp_CangShuGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_liulian",
-          "name": "📺ONETV_影视仓主线路┃榴莲弹幕",
-          "type": 3,
-          "api": "csp_LiulianGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_hanquan",
-          "name": "📺ONETV_影视仓主线路┃韩圈弹幕",
-          "type": 3,
-          "api": "csp_HanXiaoQuanGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "playerType": 2,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_changzhang",
-          "name": "📺ONETV_影视仓主线路┃厂长弹幕",
-          "type": 3,
-          "api": "csp_CzzyGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_aikan",
-          "name": "📺ONETV_影视仓主线路┃爱看弹幕",
-          "type": 3,
-          "api": "csp_IkanbotGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_tianquan",
-          "name": "📺ONETV_影视仓主线路┃甜圈短剧",
-          "type": 3,
-          "api": "csp_TianQuanGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10
-        },
-        {
-          "key": "onetv_btt",
-          "name": "📺ONETV_影视仓主线路┃比特在线",
-          "type": 3,
-          "api": "csp_BttGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_yhdm",
-          "name": "📺ONETV_影视仓主线路┃樱花动漫",
-          "type": 3,
-          "api": "csp_YHDMGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 15
-        },
-        {
-          "key": "onetv_xin6v",
-          "name": "📺ONETV_影视仓主线路┃新6V磁力",
-          "type": 3,
-          "api": "csp_Xb6vGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 20,
-          "changeable": 0
-        },
-        {
-          "key": "onetv_juhe_live",
-          "name": "📺ONETV_影视仓主线路┃聚合直播",
-          "type": 3,
-          "api": "csp_LivingGuard",
-          "searchable": 1,
-          "quickSearch": 0,
-          "filterable": 1,
-          "timeout": 10
-        },
-        {
-          "key": "onetv_kuaishou_live",
-          "name": "📺ONETV_影视仓主线路┃快手直播",
-          "type": 3,
-          "api": "csp_KsLiveGuard",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 1,
-          "timeout": 10,
-          "style": {
-            "type": "rect",
-            "ratio": 1.433
-          }
-        },
-        {
-          "key": "onetv_huya_live",
-          "name": "📺ONETV_影视仓主线路┃虎牙直播",
-          "type": 3,
-          "api": "csp_HuyaGuard",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 1,
-          "timeout": 10,
-          "style": {
-            "type": "rect",
-            "ratio": 1.433
-          }
-        },
-        {
-          "key": "onetv_88kanqiu",
-          "name": "📺ONETV_影视仓主线路┃88看球",
-          "type": 3,
-          "api": "csp_KanqiuGuard",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 1,
-          "timeout": 10,
-          "changeable": 0,
-          "style": {
-            "type": "list"
-          }
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "欧歌系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_ouge_woog",
-          "name": "🔥欧歌┃玩偶",
-          "type": 3,
-          "api": "csp_Duopan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=og;md5;9bdec773016b12f54c065c038519055b",
-          "ext": {
-            "site_urls": [
-              "https://woog.nxog.eu.org",
-              "https://woog.nxog.fun",
-              "https://woog.xn--dkw.xn--6qq986b3xl",
-              "https://ogwo.xn--dkw.xn--6qq986b3xl"
-            ],
-            "url_key": "woog",
-            "threadinfo": {
-              "chunksize": 287,
-              "threads": 16
-            }
-          }
-        },
-        {
-          "key": "onetv_ouge_kuaikuai",
-          "name": "🔥欧歌┃夸快",
-          "type": 3,
-          "api": "csp_woog",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=a3;md5;468e5883e1e500c3003b24ee8b6d0dcd",
-          "ext": {
-            "site_urls": [
-              "https://ogkk.nxog.eu.org",
-              "https://ogkk.nxog.fun",
-              "https://ogkk.xn--dkw.xn--6qq986b3xl"
-            ],
-            "url_key": "UC",
-            "threadinfo": {
-              "chunksize": 242,
-              "threads": 60
-            }
-          }
-        },
-        {
-          "key": "onetv_ouge_qiaoji",
-          "name": "🔥欧歌┃巧技",
-          "type": 3,
-          "api": "csp_qiao2",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
-          "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
-        },
-        {
-          "key": "onetv_ouge_jianpian",
-          "name": "🔥欧歌┃荐片",
-          "type": 3,
-          "api": "csp_Jianpian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "https://api.ubj83.com"
-        },
-        {
-          "key": "onetv_wogg_danmu",
-          "name": "🔥欧歌系列┃4K弹幕",
-          "type": 3,
-          "api": "csp_WoggGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_qiaoer_qiaoji2",
-          "name": "🔥欧歌系列┃巧儿",
-          "type": 3,
-          "api": "csp_qiao2",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
-        },
-        {
-          "key": "onetv_qiaoer_qiaoji1",
-          "name": "🔥欧歌系列┃巧儿二",
-          "type": 3,
-          "api": "csp_qiao",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01igg71j3l26k2gk3i71hl81h696923gkl7i0707"
-        },
-        {
-          "key": "onetv_qiaoer_qiaoji3",
-          "name": "🔥欧歌系列┃巧儿三",
-          "type": 3,
-          "api": "csp_AppYsV2",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg0939795i0678i48hk312jji7g4k69h089ij36j71031154l2k91k151k138612h68842ji"
-        },
-        {
-          "key": "onetv_liubei_wogg",
-          "name": "🔥欧歌系列┃刘备",
-          "type": 3,
-          "api": "csp_WoGG",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "ext": {
-            "Cloud-drive": "tvfan/Cloud-drive.txt",
-            "from": "4k|auto",
-            "siteUrl": "https://www.wogg.net/",
-            "danMu": "弹"
-          }
-        },
-        {
-          "key": "onetv_ouge_woog",
-          "name": "🔥欧歌系列┃玩偶",
-          "type": 3,
-          "api": "csp_Duopan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=og;md5;9bdec773016b12f54c065c038519055b",
-          "ext": {
-            "site_urls": [
-              "https://woog.nxog.eu.org",
-              "https://woog.nxog.fun",
-              "https://woog.xn--dkw.xn--6qq986b3xl",
-              "https://ogwo.xn--dkw.xn--6qq986b3xl"
-            ],
-            "url_key": "woog",
-            "threadinfo": {
-              "chunksize": 287,
-              "threads": 16
-            }
-          }
-        },
-        {
-          "key": "onetv_ouge_config",
-          "name": "🔥欧歌系列┃配置",
-          "type": 3,
-          "api": "csp_Config",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=cf2;md5;9bdec773016b12f54c065c038519055b"
-        },
-        {
-          "key": "onetv_ouge_kuaikuai",
-          "name": "🔥欧歌系列┃夸快",
-          "type": 3,
-          "api": "csp_woog",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=a3;md5;468e5883e1e500c3003b24ee8b6d0dcd",
-          "ext": {
-            "site_urls": [
-              "https://ogkk.nxog.eu.org",
-              "https://ogkk.nxog.fun",
-              "https://ogkk.xn--dkw.xn--6qq986b3xl"
-            ],
-            "url_key": "UC",
-            "threadinfo": {
-              "chunksize": 242,
-              "threads": 60
-            }
-          }
-        },
-        {
-          "key": "onetv_ouge_woog2",
-          "name": "🔥欧歌系列┃玩偶2",
-          "type": 3,
-          "api": "csp_Duopan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "jar": "https://jar.yy.xn--dkw.xn--6qq986b3xl/m/jar.php?id=og2;md5;a842e69c0159c0a51366e873365e71f9",
-          "ext": {
-            "site_urls": [
-              "https://ogkk.nxog.eu.org",
-              "https://ogkk.nxog.fun",
-              "https://ogkk.xn--dkw.xn--6qq986b3xl"
-            ],
-            "url_key": "woog2",
-            "threadinfo": {
-              "chunksize": 248,
-              "threads": 16
-            }
-          }
-        },
-        {
-          "key": "onetv_ouge_qiaoji",
-          "name": "🔥欧歌系列┃巧技",
-          "type": 3,
-          "api": "csp_qiao2",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
-          "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
-        },
-        {
-          "key": "onetv_ouge_jianpian",
-          "name": "🔥欧歌系列┃荐片",
-          "type": 3,
-          "api": "csp_Jianpian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "https://api.ubj83.com"
-        },
-        {
-          "key": "onetv_ouge_yidong",
-          "name": "🔥欧歌系列┃移动",
-          "type": 3,
-          "api": "csp_YDjisu",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_rebo",
-          "name": "🔥欧歌系列┃热播",
-          "type": 3,
-          "api": "csp_AppRJ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "ext": {
-            "url": "http://v.rbotv.cn"
-          }
-        },
-        {
-          "key": "onetv_ouge_tiantian",
-          "name": "🔥欧歌系列┃天天",
-          "type": 3,
-          "api": "csp_AppRJ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "ext": {
-            "url": "http://tt.ysdqjs.cn"
-          }
-        },
-        {
-          "key": "onetv_ouge_langku",
-          "name": "🔥欧歌系列┃浪酷",
-          "type": 3,
-          "api": "csp_AppRJ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "ext": {
-            "url": "http://v.lkuys.cn"
-          }
-        },
-        {
-          "key": "onetv_ouge_guazi",
-          "name": "🔥欧歌系列┃瓜子",
-          "type": 3,
-          "api": "csp_Gz360",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_diduan",
-          "name": "🔥欧歌系列┃低端",
-          "type": 3,
-          "api": "csp_Ddys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_kuaikan",
-          "name": "🔥欧歌系列┃快看",
-          "type": 3,
-          "api": "csp_Kuaikan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_laikan",
-          "name": "🔥欧歌系列┃来看",
-          "type": 3,
-          "api": "csp_Lkdy",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_pingguo",
-          "name": "🔥欧歌系列┃苹果",
-          "type": 3,
-          "api": "csp_LiteApple",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_aikan",
-          "name": "🔥欧歌系列┃爱看",
-          "type": 3,
-          "api": "csp_Ikanbot",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_quanwang",
-          "name": "🔥欧歌系列┃全网",
-          "type": 3,
-          "api": "csp_Quanwk",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://www.91qkw.com"
-        },
-        {
-          "key": "onetv_ouge_360",
-          "name": "🔥欧歌系列┃360",
-          "type": 3,
-          "api": "csp_SP360",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_1905",
-          "name": "🔥欧歌系列┃1905",
-          "type": 3,
-          "api": "csp_Web1905",
-          "searchable": 1,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_baibai",
-          "name": "🔥欧歌系列┃白白",
-          "type": 3,
-          "api": "csp_SuBaiBai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://www.subaibai.com"
-        },
-        {
-          "key": "onetv_ouge_haogan",
-          "name": "🔥欧歌系列┃好感",
-          "type": 3,
-          "api": "csp_AppYsV2",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://cs.hgyx.vip/api2/api.php/app/"
-        },
-        {
-          "key": "onetv_ouge_nuomi",
-          "name": "🔥欧歌系列┃糯米",
-          "type": 3,
-          "api": "csp_Wwys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://www.wwgz.cn"
-        },
-        {
-          "key": "onetv_ouge_nongmin",
-          "name": "🔥欧歌系列┃农民",
-          "type": 3,
-          "api": "csp_Wwys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://wwgz.cn/"
-        },
-        {
-          "key": "onetv_ouge_yali",
-          "name": "🔥欧歌系列┃鸭梨",
-          "type": 3,
-          "api": "csp_KmeiJu",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ouge_huomao",
-          "name": "🔥欧歌系列┃火猫",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
-          "ext": "7lj763gg0939790i413gi484k8058896highi4414h68l7g6hk8qiaojig9k2k289l9ik807i213k5j602"
-        },
-        {
-          "key": "onetv_ouge_baozha",
-          "name": "🔥欧歌系列┃爆炸",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749917849270/0615qj.jpg;md5;410ad21caad9e6f6d40c1ae5ca2be662",
-          "ext": "7lj763gg402i79425i3l85i6h848i295l5hiji5l828g3l3jjhg6kg7410lhjkqiaojij3ig1lg475178k7h0il4ig3h753h7hi516758699jh2g5h433li30gk11g73l90312h4g7"
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "肥猫系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_feimao_uc",
-          "name": "🐱肥猫┃闪电",
-          "type": 3,
-          "api": "csp_Duopan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": {
-            "site_urls": [
-              "http://1.95.79.193/"
-            ],
-            "url_key": "FeiMaoUC"
-          }
-        },
-        {
-          "key": "onetv_duopan_1",
-          "name": "🐱肥猫┃蜡笔",
-          "type": 3,
-          "api": "csp_Duopan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": {
-            "site_urls": [
-              "https://feimao666.fun",
-              "http://feimao888.fun",
-              "http://www.labi88.sbs",
-              "http://fmao.site"
-            ],
-            "url_key": "Duopan2"
-          }
-        },
-        {
-          "key": "onetv_netfixtv",
-          "name": "🐱肥猫┃至臻",
-          "type": 3,
-          "api": "csp_Duopan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": {
-            "site_urls": [
-              "http://xiaomi666.fun",
-              "https://xiaomiai.site",
-              "https://mihdr.top",
-              "https://www.zhizhenpan.fun"
-            ],
-            "url_key": "Netfixtv2"
-          }
-        },
-        {
-          "key": "onetv_wogg",
-          "name": "🐱肥猫┃玩偶",
-          "type": 3,
-          "api": "csp_Panda",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://www.wogg.one/"
-        },
-        {
-          "key": "onetv_chaoliu",
-          "name": "🐱肥猫┃潮流",
-          "type": 3,
-          "api": "csp_Chaoliu",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;md5"
-        },
-        {
-          "key": "onetv_menghui",
-          "name": "🐱肥猫┃梦回",
-          "type": 3,
-          "api": "csp_Menghui",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "jar": "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;md5"
-        },
-        {
-          "key": "onetv_xinghui",
-          "name": "🐱肥猫┃星辉",
-          "type": 3,
-          "api": "csp_Xinghui",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_feimao",
-          "name": "🐱肥猫┃肥猫",
-          "type": 3,
-          "api": "csp_Feimao",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_ganfan",
-          "name": "🐱肥猫┃干饭",
-          "type": 3,
-          "api": "csp_Ganfan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_guangpan",
-          "name": "🐱肥猫┃光盘",
-          "type": 3,
-          "api": "csp_Guangpan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_xingdong",
-          "name": "🐱肥猫┃行动",
-          "type": 3,
-          "api": "csp_Xingdong",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_zailai",
-          "name": "🐱肥猫┃再来",
-          "type": 3,
-          "api": "csp_Zailai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_yiwan",
-          "name": "🐱肥猫┃一碗",
-          "type": 3,
-          "api": "csp_Yiwan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_maozhua",
-          "name": "🐱肥猫┃猫抓",
-          "type": 3,
-          "api": "csp_Maozhua",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_cangshu",
-          "name": "🐱肥猫┃仓鼠",
-          "type": 3,
-          "api": "csp_Cangshu",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_shucai",
-          "name": "🐱肥猫系列┃蔬菜",
-          "type": 3,
-          "api": "csp_Shucai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_heimao",
-          "name": "🐱肥猫系列┃黑猫",
-          "type": 3,
-          "api": "csp_Heimao",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_jiongciyuan",
-          "name": "🐱肥猫系列┃囧次元",
-          "type": 3,
-          "api": "csp_Jiongciyuan",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_jpys",
-          "name": "🐱肥猫系列┃金牌",
-          "type": 3,
-          "api": "csp_Jpys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_labi",
-          "name": "🐱肥猫系列┃4K弹幕",
-          "type": 3,
-          "api": "csp_LabiGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_muou",
-          "name": "🐱肥猫系列┃4K弹幕",
-          "type": 3,
-          "api": "csp_MuouGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_duoduo",
-          "name": "🐱肥猫系列┃4K弹幕",
-          "type": 3,
-          "api": "csp_DuoDuoGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_zhizhen",
-          "name": "🐱肥猫系列┃4K弹幕",
-          "type": 3,
-          "api": "csp_ZhiZhenGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_shandian",
-          "name": "🐱肥猫系列┃4K弹幕",
-          "type": 3,
-          "api": "csp_ShanDianGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_leijing",
-          "name": "🐱肥猫系列┃4K",
-          "type": 3,
-          "api": "csp_LeiJingGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 25,
-          "changeable": 1
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "南风系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_gz360",
-          "name": "🌪南风系列┃瓜子",
-          "type": 3,
-          "api": "csp_Gz360",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_liteapple",
-          "name": "🌪南风系列┃苹果",
-          "type": 3,
-          "api": "csp_LiteApple",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_guazi",
-          "name": "🌪南风系列┃弹幕",
-          "type": 3,
-          "api": "csp_GuaziGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_xiaopingguo",
-          "name": "🌪南风系列┃小弹幕",
-          "type": 3,
-          "api": "csp_XpgGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_guazi_kanqiu",
-          "name": "🌪南风系列┃看球",
-          "type": 3,
-          "api": "csp_GzSportGuard",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 1,
-          "timeout": 10,
-          "changeable": 0,
-          "style": {
-            "type": "list"
-          }
-        },
-        {
-          "key": "onetv_nanfeng_gz360",
-          "name": "🌪南风┃瓜子",
-          "type": 3,
-          "api": "csp_Gz360",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_nanfeng_liteapple",
-          "name": "🌪南风┃苹果",
-          "type": 3,
-          "api": "csp_LiteApple",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_nanfeng_qiaoji",
-          "name": "🌪南风┃聚搜",
-          "type": 3,
-          "api": "csp_qiao2",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
-        },
-        {
-          "key": "onetv_nanfeng_ttian",
-          "name": "🌪南风┃天天",
-          "type": 3,
-          "api": "csp_TTian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg09397919456493i0h44j8681highi4"
-        },
-        {
-          "key": "onetv_nanfeng_rebo",
-          "name": "🌪南风系列┃热播",
-          "type": 3,
-          "api": "csp_TTian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg0939791h1l3888jig44gi291li"
-        },
-        {
-          "key": "onetv_nanfeng_zhuiju",
-          "name": "🌪南风系列┃追剧",
-          "type": 3,
-          "api": "csp_TTian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg0939791h1l2681i6g94li291li"
-        },
-        {
-          "key": "onetv_nanfeng_juzi",
-          "name": "🌪南风系列┃橘子",
-          "type": 3,
-          "api": "csp_Qiji",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg0939795i0678i481k40hi2i3ghlg840i9lj166700g1449g3k5244k2017h35698h4739ih31117kigil3k02hl2jk6i5155ih9kkgl311gl37g240g85111ggg2"
-        },
-        {
-          "key": "onetv_nanfeng_huomao",
-          "name": "🌪南风系列┃火猫",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg0939790i413gi484k8058896highi4414h68l7g6hk8qiaojig9k2k289l9ik807i213k5j602"
-        },
-        {
-          "key": "onetv_nanfeng_yizhan",
-          "name": "🌪南风系列┃驿站",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg402i7942403h83i2h945858hljhji148i18k2837535112l2qiaojik9075l17028i49g192419i8g3245h3j1l9gi02h6k7732650h3h09jkg759j65hj39l50347k3gj97l4g12l7h6418h6k9j04l26i1glgj3631973hh280lkihjh"
-        },
-        {
-          "key": "onetv_nanfeng_yongye",
-          "name": "🌪南风系列┃永夜",
-          "type": 3,
-          "api": "csp_Qiji",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg402i794240208hi3g05l8181righj909i7i7282k425j21ggg13i630l378272k58l71i2h42l18g1h9glg433jll14i6071h6g5k8gj169138kl3kll1j"
-        },
-        {
-          "key": "onetv_nanfeng_qukan",
-          "name": "🌪南风系列┃趣看",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg402i7942463j9j9jg1499j87l9g9i413il8gqiaoji20g7g4919j3g019296lk9351hh3k5gg38lj0754il3jg"
-        },
-        {
-          "key": "onetv_nanfeng_gonggong",
-          "name": "🌪南风系列┃公共",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg402i7942463ji4qiaojijjh456889il6k6i35kj995h4j18li7kl2870klhg8hi647j5707k4ki7ig6953kj"
-        },
-        {
-          "key": "onetv_nanfeng_zhujue",
-          "name": "🌪南风系列┃主角",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg402i794247258k9jh6598585l3g6ij13il8g20g9qiaoji8j9i9k1g3k90h7i507i213k5j602"
-        },
-        {
-          "key": "onetv_nanfeng_youzi",
-          "name": "🌪南风系列┃柚子",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg0939790i413gi4igh94585i7g0l98449i399qiaoji20187h78327624i6j3i9lj8g09l9ig1ii3"
-        },
-        {
-          "key": "onetv_nanfeng_zhuanye",
-          "name": "🌪南风系列┃专业",
-          "type": 3,
-          "api": "csp_Shark",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "7lj763gg0939795i007ii481k008i2i3g5l8840l9kjk6670031743g2h6164h07558245g3845392972819h994k1k400khli736i0lligk9gh273ih6jkl7jg84k54lhl9i5gkl376266h9k4624548kl649676gg9k2763llkj6gj818l"
-        },
-        {
-          "key": "onetv_nanfeng_qiyou",
-          "name": "🌪南风系列┃奇优",
-          "type": 3,
-          "api": "csp_Qiyou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_nanfeng_jiaozi",
-          "name": "🌪南风系列┃饺子",
-          "type": 3,
-          "api": "csp_Jiaozi",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_nanfeng_changzhang",
-          "name": "🌪南风系列┃厂长",
-          "type": 3,
-          "api": "csp_Czsapp",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "https://www.czzymovie.com/"
-        },
-        {
-          "key": "onetv_nanfeng_nongmin",
-          "name": "🌪南风系列┃农民",
-          "type": 3,
-          "api": "csp_XYQHiker",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://ghfast.top/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/json/农民影视.json"
-        },
-        {
-          "key": "onetv_nanfeng_saohuo",
-          "name": "🌪南风系列┃骚火",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": {
-            "简介": "p_txt show_part\">&&</p>",
-            "副标题": "v_note\">&&</div>",
-            "分类url": "https://saohuody.com/list/{cateId}-{catePg}.html;;d1",
-            "分类": "国产剧$12#港剧$13#台剧$14#日剧$15#韩剧$16#美剧$17#海外$18#泰剧$19#动作$5#喜剧$6#爱情$7#科幻$8#恐怖$9#剧情$10#战争$11#动画$33"
-          }
-        },
-        {
-          "key": "onetv_nanfeng_keke",
-          "name": "🌪南风系列┃可可",
-          "type": 3,
-          "api": "csp_XYQHiker",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://ghfast.top/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/json/可可影视.json"
-        },
-        {
-          "key": "onetv_nanfeng_juquanquan",
-          "name": "🌪南风系列┃剧圈圈",
-          "type": 3,
-          "api": "csp_XYQHiker",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://ghfast.top/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/json/剧圈圈.json",
-          "click": "document.getElementById('playleft').children[0].contentWindow.document.getElementById('start').click()"
-        },
-        {
-          "key": "onetv_liubei_pingguo",
-          "name": "🌪南风系列┃刘备",
-          "type": 3,
-          "api": "csp_LiteApple",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "俊佬系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_sp360",
-          "name": "🎯俊佬系列┃360",
-          "type": 3,
-          "api": "csp_SP360",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_junlao_360",
-          "name": "🎯俊佬┃360",
-          "type": 3,
-          "api": "csp_SP360",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_junlao_nbys",
-          "name": "🎯俊佬┃泥巴",
-          "type": 3,
-          "api": "csp_Nbys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_junlao_alist",
-          "name": "🎯俊佬系列┃Alist",
-          "type": 3,
-          "api": "csp_Alist",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": {
-            "小雅": "http://alistxy.ganggang.live:5678",
-            "9T": "https://drive.9t.ee",
-            "晴园的宝藏库": "https://alist.52qy.repl.co",
-            "米奇妙妙屋": "https://anime.mqmmw.ga",
-            "小兵组网盘影视": "https://6vv.app",
-            "一只鱼": "https://alist.youte.ml",
-            "七米蓝": "https://al.chirmyram.com",
-            "帅盘": "https://hi.shuaipeng.wang",
-            "神族九帝": "https://alist.shenzjd.com",
-            "姬路白雪": "https://pan.jlbx.xyz",
-            "听闻网盘": "https://wangpan.sangxuesheng.com",
-            "DISK": "http://124.222.140.243:8080",
-            "云播放": "https://quanzi.laoxianghuijia.cn",
-            "星梦": "https://pan.bashroot.top",
-            "触光": "https://pan.ichuguang.com",
-            "好汉吧": "https://8023.haohanba.cn",
-            "repl": "https://ali.liucn.repl.co",
-            "秋雨分享": "https://share.laowang.me",
-            "讯维云盘": "https://pan.xwbeta.com"
-          }
-        },
-        {
-          "key": "onetv_junlao_lezhu",
-          "name": "🎯俊佬系列┃乐猪",
-          "type": 3,
-          "api": "csp_XBiu",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "ext": {
-            "homeUrl": "http://www.lezhutv.com/type/{cateId}-{datePg}.html",
-            "playlist": {
-              "sort": 1
-            }
-          }
-        },
-        {
-          "key": "onetv_junlao_6080",
-          "name": "🎯俊佬系列┃6080",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "ext": {
-            "请求头": "手机",
-            "起始页": "1",
-            "二次截取": "<div class=\"module-list\">&&<div class=\"mx-lrmenu\">[替换:<div class=\"fixed_right_bar\">>><div class=\"module-item\">]||首页--最新热播&&<div  class=\"module-main\"[替换:<div class=\"module module-wrapper\">>><div class=\"module-item\">]",
-            "数组": "<div class=\"module-item-pic\">&&<div class=\"module-item\">[不包含:理论片]",
-            "副标题": "class=\"module-item-text\"&&<",
-            "线路数组": "class=\"module-tab-item tab-item\"&&</div>[排序:极速播放>在线观看]",
-            "线路标题": "<span>&&</small>[替换:</span>>>（更至]+集）",
-            "影片年代": "<a class=\"tag-link\"*>&&</a>",
-            "导演": "导演：</span>&&</a>",
-            "演员": "主演：</span>&&</div>",
-            "简介": "剧情：</span>&&</span>",
-            "播放数组": "<div class=\"sort-item\"&&</div>",
-            "播放列表": "<!--&&-->",
-            "免嗅": "1",
-            "嗅探词": ".m3u8#.mp4",
-            "过滤词": ".html#url=http",
-            "搜索模式": "0",
-            "搜索链接前缀": "/video/",
-            "搜索链接后缀": ".html",
-            "分类url": "https://www.6080dy1.com/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
-            "分类": "电影&电视剧&综艺&动漫",
-            "分类值": "1&2&3&4"
-          }
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "不良帅系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_buliangshui_localfile",
-          "name": "👑不良帅系列┃本地",
-          "type": 3,
-          "api": "csp_LocalFile",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "changeable": 0
-        },
-        {
-          "key": "onetv_buliangshui_mianfei",
-          "name": "👑不良帅系列┃秒播",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/zeqaht.json"
-        },
-        {
-          "key": "onetv_buliangshui_baipiao",
-          "name": "👑不良帅系列┃白嫖",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/baipiaoys.json"
-        },
-        {
-          "key": "onetv_buliangshui_4kvm",
-          "name": "👑不良帅系列┃五楼",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/4kvm.json"
-        },
-        {
-          "key": "onetv_buliangshui_nanfang",
-          "name": "👑不良帅系列┃南坊",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/南坊.json"
-        },
-        {
-          "key": "onetv_buliangshui_heimuer",
-          "name": "👑不良帅系列┃黑木耳",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/heimuer.json"
-        },
-        {
-          "key": "onetv_buliangshui_360zy",
-          "name": "👑不良帅系列┃卫士",
-          "type": 1,
-          "api": "https://360zy.com/api.php/provide/vod",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playUrl": "",
-          "categories": [
-            "国产剧",
-            "国产动漫",
-            "香港剧",
-            "台湾剧",
-            "欧美剧",
-            "日韩动漫",
-            "NBA",
-            "短片",
-            "西部片",
-            "综艺片",
-            "动漫片",
-            "动作片",
-            "喜剧片",
-            "爱情片",
-            "科幻片",
-            "恐怖片",
-            "惊悚片",
-            "悬疑片",
-            "犯罪片",
-            "剧情片",
-            "战争片",
-            "家庭篇",
-            "记录片",
-            "历史片",
-            "动漫片",
-            "大陆综艺",
-            "港台综艺"
-          ]
-        },
-        {
-          "key": "onetv_buliangshui_365",
-          "name": "👑不良帅系列┃365",
-          "type": 3,
-          "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/libs/drpy2.min.js",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/js/365.js"
-        },
-        {
-          "key": "onetv_buliangshui_subaibai",
-          "name": "👑不良帅系列┃素白",
-          "type": 3,
-          "api": "csp_XYQHiker",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XYQHiker/素白白.json"
-        },
-        {
-          "key": "onetv_buliangshui_98ys",
-          "name": "👑不良帅系列┃酒吧",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/98影视.json"
-        },
-        {
-          "key": "onetv_buliangshui_heihu",
-          "name": "👑不良帅系列┃黑狐",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/黑狐影视.json"
-        },
-        {
-          "key": "onetv_buliangshui_2bt",
-          "name": "👑不良帅系列┃鼻涕",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/2bt.json"
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "巧儿系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_rebo",
-          "name": "🎨巧儿系列┃弹幕",
-          "type": 3,
-          "api": "csp_TianTianGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true,
-            "site": 0
-          }
-        },
-        {
-          "key": "onetv_tiantian",
-          "name": "🎨巧儿系列┃弹幕",
-          "type": 3,
-          "api": "csp_TianTianGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "ext": {
-            "danmu": true,
-            "site": 1
-          }
-        },
-        {
-          "key": "onetv_qiaoer_tiantian",
-          "name": "🎨巧儿系列┃天天",
-          "type": 3,
-          "api": "csp_TTian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "7lj763gg09397919456493i0h44j8681highi4"
-        },
-        {
-          "key": "onetv_qiaoer_xiuluo",
-          "name": "🎨巧儿系列┃修罗",
-          "type": 3,
-          "api": "csp_Bdys01",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "7lj763gg402i7942476492jlg94li29kk6gi8448ij"
-        },
-        {
-          "key": "onetv_qiaoer_rebo",
-          "name": "🎨巧儿系列┃热播",
-          "type": 3,
-          "api": "csp_TTian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "7lj763gg0939791h1l3888jig44gi291li"
-        },
-        {
-          "key": "onetv_qiaoer_zhuiju",
-          "name": "🎨巧儿系列┃追剧",
-          "type": 3,
-          "api": "csp_TTian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "7lj763gg0939791h1l2681i6g94li291li"
-        },
-        {
-          "key": "onetv_qiaoer_juping",
-          "name": "🎨巧儿系列┃剧评",
-          "type": 3,
-          "api": "csp_Jpys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "7lj763gg402i7942463j9j9jh84l8798l8gli652828g332i"
-        },
-        {
-          "key": "onetv_qiaoer_juzi",
-          "name": "🎨巧儿系列┃橘子",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg093979191l288ij5g25989jil1g6850i829j24354k134hg2gi41025i4hi708k1i100i3j56k01klj3g7g94khkg230250hh2kh99gi77j021g03llj"
-        },
-        {
-          "key": "onetv_qiaoer_yizhan",
-          "name": "🎨巧儿系列┃驿站",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i7942403h83i2h945858hljhji148i18k2837535112l2qiaojik9075l17028i49g192419i8g3245h3j1l9gi02h6k7732650h3h09jkg759j65hj39l50347k3gj97l4g12l7h6418h6k9j04l26i1glgj3631973hh280lkihjh"
-        },
-        {
-          "key": "onetv_qiaoer_zhujue",
-          "name": "🎨巧儿系列┃主角",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i794247258k9jh6598585l3g6ij13il8g20g9qiaoji8j9i9k1g3k90h7i507i213k5j602"
-        },
-        {
-          "key": "onetv_qiaoer_youzi",
-          "name": "🎨巧儿系列┃柚子",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg0939795i0678i481k40hi2i3ghlg840i98j9667qiaoji000134jg7k591gjjk9j5lg53255g2i7gl2749l3j2h8g5"
-        },
-        {
-          "key": "onetv_qiaoer_yongye",
-          "name": "🎨巧儿系列┃永夜",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg0939790i413gi4jjh545959lhighi4414qiaoji964ihg48l909l2l019kgii607i213k5j602"
-        },
-        {
-          "key": "onetv_qiaoer_qukan",
-          "name": "🎨巧儿系列┃趣看",
-          "type": 3,
-          "api": "csp_Muou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i7942463j9j9jg1499j87l9g9i413il8gqiaoji20g7g4919j3g019296lk9351hh3k5gg38lj0754il3jg"
-        },
-        {
-          "key": "onetv_qiaoer_zhuanye",
-          "name": "🎨巧儿系列┃专业",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "7lj763gg402i7942503g9gj0hj4li291k1lii113j8862i3j7g5412g5gi4k0k5i4ki513l9j61ijjig2735g88gg0g941h2g2352710ggli85h268996ig539"
-        },
-        {
-          "key": "onetv_qiaoer_xinghe",
-          "name": "🎨巧儿系列┃星河",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg0939791954248jihg5529587lig9i654j59i326l5j5208hklg19161j139753h090539gig3g11h49gk3l21hl4hk637h53ghg6ikl2219j28lj76h8430kkkklj6hkl022272g8h5g69068hli583061k3l9373hk09hg9j79l31l43h06187l37j675lhkg57k511jk"
-        },
-        {
-          "key": "onetv_qiaoer_shichang",
-          "name": "🎨巧儿系列┃时常",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg0939795i007hi482k80ii2i3ghl084099ij36j70031107l2kg105816139i56g38h03i1j06k4gkk9ll7kl1lk4k8687k55l0g19ggk72j06gg073li1j11"
-        },
-        {
-          "key": "onetv_qiaoer_qingkong",
-          "name": "🎨巧儿系列┃晴空",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i7942463j9j9jg8558j9jlgh1j913il86313j776l14ljjh3l5k383999648j9064g6h22738938il8jk30k2i6427h67jkhglji910996ig539"
-        },
-        {
-          "key": "onetv_qiaoer_shayu",
-          "name": "🎨巧儿系列┃鲨鱼",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i79425227999jg7508k90k3k6j244j6952l2557574gg6kh00480l42i05hg49i578l973l18ghj2g3kk0ll4l1392258l7h6ikk077j56l"
-        },
-        {
-          "key": "onetv_qiaoer_yudi",
-          "name": "🎨巧儿系列┃雨滴",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i794252729j81hl4gjh87g7hlij0lj6j8337942134gl0h7165707028353h48h1i9088321kh6j9g4gh40hkg97i7l07khk1jhgk25jj3lg462lk5710l5gljkg9gl787168ij416457i5lg1h7i22hkg27276h69k"
-        },
-        {
-          "key": "onetv_qiaoer_youzi2",
-          "name": "🎨巧儿系列┃优质",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i7942503g83j2g04i8090khhh8451ik902l6l53510hg9gi410i5607974jhk994283883904gk88l3k549h1g87i754kkjh3jhki2g8724k064g85411gigljkl3g620"
-        },
-        {
-          "key": "onetv_qiaoer_muye",
-          "name": "🎨巧儿系列┃木叶",
-          "type": 3,
-          "api": "csp_Xdai",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg0939795i0079i487k512jki6g1k6980k9li631344h4455k7k103473i0kh8049hgg4484h0091ggjh2l8ki33lhi2755g07i880jjkh12h73gk35kg35j6hk6g296l5"
-        },
-        {
-          "key": "onetv_qiaoer_hudie",
-          "name": "🎨巧儿系列┃蝴蝶",
-          "type": 3,
-          "api": "csp_Hudie",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i794255648kj0hj539g9hl7k6jk52ji"
-        },
-        {
-          "key": "onetv_qiaoer_ningmeng",
-          "name": "🎨巧儿系列┃柠檬",
-          "type": 3,
-          "api": "csp_Nmvod",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "ext": "7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g548458hh994hjj94330jk296k4l045"
-        },
-        {
-          "key": "onetv_liubei_rebo",
-          "name": "🎨巧儿系列┃刘备",
-          "type": 3,
-          "api": "csp_AppTT",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "changeable": 1,
-          "ext": "AO7TcBkd8I/B5wQc4Qma+pU="
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "刘备系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_liubei_ygp",
-          "name": "🎪刘备系列┃叨观",
-          "type": 3,
-          "api": "csp_YGP",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "changeable": 0
-        },
-        {
-          "key": "onetv_liubei_alllive",
-          "name": "🎪刘备系列┃一直播",
-          "type": 3,
-          "api": "csp_Alllive",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "playerType": 2,
-          "changeable": 0
-        },
-        {
-          "key": "onetv_liubei_mipanso",
-          "name": "🎪刘备系列┃米盘",
-          "type": 3,
-          "api": "csp_MIPanSo",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "ext": {
-            "Cloud-drive": "tvfan/Cloud-drive.txt",
-            "from": "4k|auto"
-          }
-        },
-        {
-          "key": "onetv_liubei_kkss",
-          "name": "🎪刘备系列┃抠搜",
-          "type": 3,
-          "api": "csp_KkSs",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "ext": {
-            "Cloud-drive": "tvfan/Cloud-drive.txt",
-            "from": "4k|auto"
-          }
-        },
-        {
-          "key": "onetv_liubei_libvio",
-          "name": "🎪刘备系列┃Lib",
-          "type": 3,
-          "api": "csp_Libvio",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1,
-          "ext": {
-            "Cloud-drive": "tvfan/Cloud-drive.txt",
-            "from": "4k|auto"
-          }
-        },
-        {
-          "key": "onetv_liubei_wencai",
-          "name": "🎪刘备系列┃文采",
-          "type": 3,
-          "api": "csp_Jpys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_liubei_nuomi",
-          "name": "🎪刘备系列┃糯米",
-          "type": 3,
-          "api": "csp_Nmyswv",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_liubei_mengmi",
-          "name": "🎪刘备系列┃萌米",
-          "type": 3,
-          "api": "csp_AppTT",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "ext": "AO7TcBkd8Iifux0Y8Qze6tVlMg=="
-        },
-        {
-          "key": "onetv_liubei_huanshi",
-          "name": "🎪刘备系列┃欢视",
-          "type": 3,
-          "api": "csp_AppTT",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "changeable": 1,
-          "ext": "AO7TcBkd8IPB+BwH4Qma+opv"
-        },
-        {
-          "key": "onetv_liubei_nangua",
-          "name": "🎪刘备系列┃南瓜",
-          "type": 3,
-          "api": "csp_NanGua",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_liubei_keke",
-          "name": "🎪刘备系列┃可可",
-          "type": 3,
-          "api": "csp_Kekys",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_liubei_zxzj",
-          "name": "🎪刘备系列┃在线",
-          "type": 3,
-          "api": "csp_Zxzj",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1,
-          "ext": "https://www.zxzjhd.com/"
-        },
-        {
-          "key": "onetv_liubei_diduan",
-          "name": "🎪刘备系列┃低端",
-          "type": 3,
-          "api": "csp_Ddrk",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_liubei_changzhang",
-          "name": "🎪刘备系列┃厂长",
-          "type": 3,
-          "api": "csp_NewCz",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "changeable": 1,
-          "ext": "https://www.czzy77.com/"
-        },
-        {
-          "key": "onetv_liubei_yuanchuang",
-          "name": "🎪刘备系列┃原创",
-          "type": 3,
-          "api": "csp_YCyz",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 1,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_liubei_bite",
-          "name": "🎪刘备系列┃比特",
-          "type": 3,
-          "api": "csp_Bttwoo",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1
-        },
-        {
-          "key": "onetv_liubei_auete",
-          "name": "🎪刘备系列┃Aue",
-          "type": 3,
-          "api": "csp_Auete",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1,
-          "ext": "https://auete.pro/"
-        },
-        {
-          "key": "onetv_liubei_xin6v",
-          "name": "🎪刘备系列┃新6V",
-          "type": 3,
-          "api": "csp_SixV",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 0,
-          "ext": "https://www.xb6v.com/"
-        },
-        {
-          "key": "onetv_liubei_naikan",
-          "name": "🎪刘备系列┃耐看",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "jar": "https://raw.liucn.cc/box/libs/jar/HCCX.jar",
-          "ext": "https://raw.liucn.cc/box/libs/hccx/nkvlog.json"
-        },
-        {
-          "key": "onetv_liubei_free",
-          "name": "🎪刘备系列┃Free",
-          "type": 3,
-          "api": "csp_XBPQ",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "jar": "https://raw.liucn.cc/box/libs/jar/HCCX.jar",
-          "ext": "https://raw.liucn.cc/box/libs/hccx/Free影视.json"
-        },
-        {
-          "key": "onetv_liubei_kmeiju",
-          "name": "🎪刘备系列┃美剧",
-          "type": 3,
-          "api": "csp_KmeiJu",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "jar": "https://raw.liucn.cc/box/libs/jar/Panda.jar"
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "菜妮丝系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_jianpian",
-          "name": "🎬菜妮丝系列┃荐片",
-          "type": 3,
-          "api": "csp_Jianpian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30
-        },
-        {
-          "key": "onetv_bili",
-          "name": "🎬菜妮丝系列┃合集",
-          "type": 3,
-          "api": "csp_Bili",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "playerType": 2,
-          "style": {
-            "type": "rect",
-            "ratio": 1.433
-          },
-          "ext": {
-            "json": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/vod/config/bili.txt"
-          }
-        },
-        {
-          "key": "onetv_jianpian_mobile",
-          "name": "🎬菜妮丝系列┃手机",
-          "type": 3,
-          "api": "csp_JianpianGuard",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 10,
-          "changeable": 0,
-          "ext": {
-            "danmu": true
-          }
-        },
-        {
-          "key": "onetv_cainisi_jianpian",
-          "name": "🎬菜妮丝系列┃荐片",
-          "type": 3,
-          "api": "csp_Jianpian",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "changeable": 1,
-          "ext": "https://tv.菜妮丝.top/json/jianpian.json",
-          "jar": "https://tv.菜妮丝.top/jar/fm0706.jar;md5;eaaa2de0f1e4946be155e3130ef4fdf3"
-        },
-        {
-          "key": "onetv_cainisi_bili",
-          "name": "🎬菜妮丝系列┃哔哩",
-          "type": 3,
-          "api": "csp_Bili",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "changeable": 0,
-          "style": {
-            "type": "rect",
-            "ratio": 1.433
-          },
-          "ext": {
-            "json": "https://tv.菜妮丝.top/json/bili.json",
-            "type": "帕梅拉#太极拳#广场舞#演唱会",
-            "cookie": ""
-          },
-          "jar": "https://tv.菜妮丝.top/jar/fm0706.jar;md5;eaaa2de0f1e4946be155e3130ef4fdf3"
-        },
-        {
-          "key": "onetv_cainisi_local",
-          "name": "🎬菜妮丝系列┃本地",
-          "type": 3,
-          "api": "csp_Local",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 0,
-          "timeout": 30,
-          "changeable": 0,
-          "jar": "https://tv.菜妮丝.top/jar/fm0706.jar;md5;eaaa2de0f1e4946be155e3130ef4fdf3"
-        }
-      ]
-    },
-    {
-      "type": 3,
-      "name": "香雅情系列",
-      "api": "",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "",
-      "jar": "",
-      "sites": [
-        {
-          "key": "onetv_xiangyaqing_localfile",
-          "name": "🌸香雅情系列┃本机",
-          "type": 3,
-          "api": "csp_LocalFile",
-          "searchable": 0,
-          "quickSearch": 0,
-          "filterable": 1,
-          "timeout": 30,
-          "type_flag": 0
-        },
-        {
-          "key": "onetv_xiangyaqing_qizhen",
-          "name": "🌸香雅情系列┃奇珍",
-          "type": 3,
-          "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/奇珍异兽.js"
-        },
-        {
-          "key": "onetv_xiangyaqing_youku",
-          "name": "🌸香雅情系列┃优酷",
-          "type": 3,
-          "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/优酷.js"
-        },
-        {
-          "key": "onetv_xiangyaqing_tengyun",
-          "name": "🌸香雅情系列┃腾云",
-          "type": 3,
-          "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/腾云驾雾.js"
-        },
-        {
-          "key": "onetv_xiangyaqing_baimang",
-          "name": "🌸香雅情系列┃百忙",
-          "type": 3,
-          "api": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/libs/drpy2.min.js",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "timeout": 30,
-          "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/百忙无果.js"
-        },
-        {
-          "key": "onetv_xiangyaqing_yisou",
-          "name": "🌸香雅情系列┃易搜",
-          "type": 3,
-          "api": "csp_Yisou",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "ext": "http://127.0.0.1:9978/file/XYQTVBox/alitoken.txt"
-        },
-        {
-          "key": "onetv_xiangyaqing_yunpan",
-          "name": "🌸香雅情系列┃云盘",
-          "type": 3,
-          "api": "csp_XYQHikerAL",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQHiker/云盘资源.json"
-        },
-        {
-          "key": "onetv_xiangyaqing_push",
-          "name": "🌸香雅情系列┃推送",
-          "type": 3,
-          "api": "csp_PushAgent",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 0,
-          "timeout": 30,
-          "ext": "http://127.0.0.1:9978/file/XYQTVBox/alitoken.txt"
-        }
-      ]
-    }
-  ]
+  "ads": [],
+  "rules": [],
+  "warningText": "OneTV-API影视仓库 - 包含优质线路"
 }
