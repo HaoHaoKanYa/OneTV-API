@@ -1,15 +1,7 @@
 {
-  "author": "OneTV-API",
-  "name": "OneTV-API影视仓库",
-  "url": "https://github.com/HaoHaoKanYa/OneTV-API",
-  "version": "2.0.0",
   "spider": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/spider/onetv-spider.jar",
   "wallpaper": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/wallpaper.jpg",
   "logo": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/logo.png",
-  "warningText": "OneTV-API影视仓库 - 免费开源项目，严禁商业用途！",
-  "homepage": "https://github.com/HaoHaoKanYa/OneTV-API",
-  "dr_count": 229,
-  "mode": 1,
   "lives": [],
   "doh": [
     {
@@ -27,7 +19,7 @@
     {
       "key": "header_douban",
       "name": "🎭═══ 豆瓣推荐系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -102,7 +94,7 @@
     {
       "key": "header_onetv_main",
       "name": "📺═══ ONETV影视仓主线路 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -729,7 +721,7 @@
     {
       "key": "header_ouge",
       "name": "🔥═══ 欧歌系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -1209,7 +1201,7 @@
     {
       "key": "header_feimao",
       "name": "🐱═══ 肥猫系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -1517,7 +1509,7 @@
     {
       "key": "header_nanfeng",
       "name": "🌪═══ 南风系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -1843,7 +1835,7 @@
     {
       "key": "header_junlao",
       "name": "🎯═══ 俊佬系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -1966,7 +1958,7 @@
     {
       "key": "header_buliangshui",
       "name": "👑═══ 不良帅系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -2137,7 +2129,7 @@
     {
       "key": "header_qiaoer",
       "name": "🎨═══ 巧儿系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -2440,7 +2432,7 @@
     {
       "key": "header_liubei",
       "name": "🎪═══ 刘备系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -2710,7 +2702,7 @@
     {
       "key": "header_cainisi",
       "name": "🎬═══ 菜妮丝系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
@@ -2808,7 +2800,7 @@
     {
       "key": "header_xiangyaqing",
       "name": "🌸═══ 香雅情系列 ═══",
-      "type": 3,
+      "type": 0,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
