@@ -1,17 +1,38 @@
 {
+  "author": "OneTV-API",
+  "name": "OneTV-API影视仓库",
+  "url": "https://github.com/HaoHaoKanYa/OneTV-API",
+  "version": "2.0.0",
   "spider": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/spider/onetv-spider.jar",
   "wallpaper": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/wallpaper.jpg",
   "logo": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/logo.png",
+  "warningText": "OneTV-API影视仓库 - 免费开源项目，严禁商业用途！",
+  "homepage": "https://github.com/HaoHaoKanYa/OneTV-API",
+  "dr_count": 229,
+  "mode": 1,
   "lives": [],
+  "doh": [
+    {
+      "name": "Google",
+      "url": "https://dns.google/dns-query",
+      "ips": ["8.8.4.4", "8.8.8.8"]
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare-dns.com/dns-query",
+      "ips": ["1.1.1.1", "1.0.0.1", "2606:4700:4700::1111", "2606:4700:4700::1001"]
+    }
+  ],
   "sites": [
     {
-      "key": "header_豆瓣推荐系列",
-      "name": "------- 豆瓣推荐系列 -------",
+      "key": "header_douban",
+      "name": "🎭═══ 豆瓣推荐系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_douban_recommend",
@@ -79,13 +100,14 @@
       "ext": "https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/dr_py/js/drpy.js"
     },
     {
-      "key": "header_onetv_影视仓主线路",
-      "name": "------- ONETV_影视仓主线路 -------",
+      "key": "header_onetv_main",
+      "name": "📺═══ ONETV影视仓主线路 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_wwys",
@@ -705,13 +727,14 @@
       }
     },
     {
-      "key": "header_欧歌系列",
-      "name": "------- 欧歌系列 -------",
+      "key": "header_ouge",
+      "name": "🔥═══ 欧歌系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_ouge_woog",
@@ -1184,13 +1207,14 @@
       "ext": "7lj763gg402i79425i3l85i6h848i295l5hiji5l828g3l3jjhg6kg7410lhjkqiaojij3ig1lg475178k7h0il4ig3h753h7hi516758699jh2g5h433li30gk11g73l90312h4g7"
     },
     {
-      "key": "header_肥猫系列",
-      "name": "------- 肥猫系列 -------",
+      "key": "header_feimao",
+      "name": "🐱═══ 肥猫系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_feimao_uc",
@@ -1491,13 +1515,14 @@
       "changeable": 1
     },
     {
-      "key": "header_南风系列",
-      "name": "------- 南风系列 -------",
+      "key": "header_nanfeng",
+      "name": "🌪═══ 南风系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_gz360",
@@ -1816,13 +1841,14 @@
       "changeable": 1
     },
     {
-      "key": "header_俊佬系列",
-      "name": "------- 俊佬系列 -------",
+      "key": "header_junlao",
+      "name": "🎯═══ 俊佬系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_sp360",
@@ -1938,13 +1964,14 @@
       }
     },
     {
-      "key": "header_不良帅系列",
-      "name": "------- 不良帅系列 -------",
+      "key": "header_buliangshui",
+      "name": "👑═══ 不良帅系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_buliangshui_localfile",
@@ -2108,13 +2135,14 @@
       "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/XBPQ/2bt.json"
     },
     {
-      "key": "header_巧儿系列",
-      "name": "------- 巧儿系列 -------",
+      "key": "header_qiaoer",
+      "name": "🎨═══ 巧儿系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_rebo",
@@ -2410,13 +2438,14 @@
       "ext": "AO7TcBkd8I/B5wQc4Qma+pU="
     },
     {
-      "key": "header_刘备系列",
-      "name": "------- 刘备系列 -------",
+      "key": "header_liubei",
+      "name": "🎪═══ 刘备系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_liubei_ygp",
@@ -2679,13 +2708,14 @@
       "jar": "https://raw.liucn.cc/box/libs/jar/Panda.jar"
     },
     {
-      "key": "header_菜妮丝系列",
-      "name": "------- 菜妮丝系列 -------",
+      "key": "header_cainisi",
+      "name": "🎬═══ 菜妮丝系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_jianpian",
@@ -2776,13 +2806,14 @@
       "jar": "https://tv.菜妮丝.top/jar/fm0706.jar;md5;eaaa2de0f1e4946be155e3130ef4fdf3"
     },
     {
-      "key": "header_香雅情系列",
-      "name": "------- 香雅情系列 -------",
+      "key": "header_xiangyaqing",
+      "name": "🌸═══ 香雅情系列 ═══",
       "type": 3,
       "api": "",
       "searchable": 0,
       "quickSearch": 0,
-      "filterable": 0
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "onetv_xiangyaqing_localfile",
@@ -2873,10 +2904,75 @@
       "ext": "http://127.0.0.1:9978/file/XYQTVBox/alitoken.txt"
     }
   ],
-  "parses": [],
-  "flags": [],
-  "ijk": [],
-  "ads": [],
-  "rules": [],
-  "warningText": "OneTV-API影视仓库 - 包含优质线路"
+  "parses": [
+    {
+      "name": "解析聚合",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "Json并发",
+      "type": 2,
+      "url": "Parallel"
+    },
+    {
+      "name": "Json轮询",
+      "type": 2,
+      "url": "Sequence"
+    },
+    {
+      "name": "全站资源",
+      "type": 1,
+      "url": "https://yparse.jn1.cc/index.php?url=",
+      "ext": {
+        "flag": ["youku", "优酷", "mgtv", "芒果", "qq", "腾讯", "qiyi", "爱奇艺", "qq", "奇艺"]
+      }
+    }
+  ],
+  "flags": [
+    "youku", "qq", "iqiyi", "qiyi", "letv", "sohu", "tudou", "pptv", "mgtv", "wasu",
+    "bilibili", "renrenmi", "优酷", "芒果", "腾讯", "爱奇艺", "奇艺", "ltnb", "rx",
+    "CL4K", "xfyun", "wuduzy"
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {"category": 4, "name": "opensles", "value": "0"},
+        {"category": 4, "name": "overlay-format", "value": "842225234"},
+        {"category": 4, "name": "framedrop", "value": "1"},
+        {"category": 4, "name": "soundtouch", "value": "1"},
+        {"category": 4, "name": "start-on-prepared", "value": "1"},
+        {"category": 1, "name": "http-detect-range-support", "value": "0"},
+        {"category": 1, "name": "fflags", "value": "fastseek"},
+        {"category": 2, "name": "skip_loop_filter", "value": "48"},
+        {"category": 4, "name": "reconnect", "value": "1"},
+        {"category": 4, "name": "max-buffer-size", "value": "5242880"},
+        {"category": 4, "name": "enable-accurate-seek", "value": "0"},
+        {"category": 4, "name": "mediacodec", "value": "0"},
+        {"category": 4, "name": "mediacodec-auto-rotate", "value": "0"},
+        {"category": 4, "name": "mediacodec-handle-resolution-change", "value": "0"},
+        {"category": 4, "name": "mediacodec-hevc", "value": "0"},
+        {"category": 1, "name": "dns_cache_timeout", "value": "600000000"}
+      ]
+    }
+  ],
+  "ads": [
+    "mimg.0c1q0l.cn", "www.googletagmanager.com", "www.google-analytics.com",
+    "mc.usihnbcq.cn", "mg.g1mm3d.cn", "mscs.svaeuzh.cn", "cnzz.hhttm.top",
+    "tp.vinuxhome.com", "cnzz.mmstat.com", "www.baihuillq.com", "s23.cnzz.com",
+    "z3.cnzz.com", "c.cnzz.com", "stj.v1vo.top", "z12.cnzz.com", "img.mosflower.cn"
+  ],
+  "rules": [
+    {
+      "name": "量子广告",
+      "hosts": ["vip.lz", "hd.lz"],
+      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY", "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"]
+    },
+    {
+      "name": "非凡广告",
+      "hosts": ["vip.ffzy", "hd.ffzy"],
+      "regex": ["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY", "#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"]
+    }
+  ]
 }

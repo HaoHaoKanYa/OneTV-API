@@ -1,0 +1,14 @@
+{
+  "urls": [
+    {
+      "url": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/output/onetv-api-movie.json",
+      "name": "OneTV-API影视仓库完整版",
+      "time": "更新时间：2025年1月8日"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/output/onetv-api-movie-simple.json",
+      "name": "OneTV-API影视仓库简化版",
+      "time": "更新时间：2025年1月8日"
+    }
+  ]
+}
