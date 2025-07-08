@@ -53,3 +53,7 @@ VOD_WORKFLOW_FIX.md
 # Excluded VOD files
 vod/output/onetv-api-movie-optimized.json
 vod/sources/
+
+# Spider upload script and documentation (not for version control)
+upload_spider_to_supabase.py
+vod/spider/README.md
