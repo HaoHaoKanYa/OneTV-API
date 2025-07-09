@@ -126,6 +126,99 @@ class VODProcessor:
                 return f"🔌{name}"
             else:
                 return f"🔗{name}"
+
+    def _format_unified_source_name(self, source: Dict, index: int) -> str:
+        """统一格式化源名称：图标+序号+线路名称"""
+        source_type = source.get("source_type", "search")
+        url = source.get("url", "")
+
+        # 白名单源已经有图标和序号，直接返回
+        if source_type == "whitelist":
+            return source.get("name", "未知源")
+
+        # 搜索源需要添加图标和序号
+        # 获取基础名称（去掉技术性前缀）
+        base_name = self._get_clean_source_name(source)
+
+        # 根据源特征选择图标
+        icon = self._get_source_icon(source, base_name)
+
+        # 格式化序号（两位数）
+        sequence = f"{index:02d}"
+
+        return f"{icon}{sequence}·{base_name}"
+
+    def _get_clean_source_name(self, source: Dict) -> str:
+        """获取清理后的源名称"""
+        name = source.get("name", "未知源")
+        url = source.get("url", "")
+
+        # 移除常见的技术性前缀
+        name = name.replace("GitHub-", "").replace("已知域名-", "").replace("镜像-", "")
+        name = name.replace("社区-", "").replace("API-", "").replace("config", "配置")
+        name = name.replace(".json", "").replace("-", "·").replace("_", "·")
+
+        # 根据URL特征优化命名
+        if "gaotianliuyun" in url or "gao" in url:
+            if "js.json" in url:
+                return "高天流云JS版"
+            elif "0821" in url:
+                return "高天流云增强版"
+            elif "XC.json" in url:
+                return "高天流云XC版"
+            elif "0707" in url:
+                return "高天流云经典版"
+            else:
+                return "高天流云"
+        elif "dudu526" in url or "alan" in url:
+            if "X.json" in url:
+                return "Alan综合仓库"
+            elif "jsm.json" in url:
+                return "Alan精简仓库"
+            else:
+                return "Alan仓库"
+        elif "fongmi" in url.lower() or "fengmi" in name.lower():
+            return "FongMi影视"
+        else:
+            return name
+
+    def _get_source_icon(self, source: Dict, name: str) -> str:
+        """根据源特征获取图标"""
+        url = source.get("url", "")
+        name_lower = name.lower()
+
+        # 特定开发者图标
+        if any(keyword in name_lower for keyword in ["饭太硬"]):
+            return "🍚"
+        elif any(keyword in name_lower for keyword in ["肥猫"]):
+            return "🐱"
+        elif any(keyword in name_lower for keyword in ["菜妮丝"]):
+            return "🥬"
+        elif any(keyword in name_lower for keyword in ["欧歌"]):
+            return "🎵"
+        elif any(keyword in name_lower for keyword in ["南风"]):
+            return "🌪"
+        elif any(keyword in name_lower for keyword in ["高天流云", "gao"]):
+            return "🌟"
+        elif any(keyword in name_lower for keyword in ["alan"]):
+            return "📚"
+        elif any(keyword in name_lower for keyword in ["fongmi", "fengmi"]):
+            return "🎯"
+        # 通用分类图标
+        elif any(keyword in name_lower for keyword in ["影视", "电影", "tv", "movie"]):
+            return "🎬"
+        elif any(keyword in name_lower for keyword in ["直播", "live"]):
+            return "📡"
+        elif any(keyword in name_lower for keyword in ["网盘", "云盘", "pan"]):
+            return "☁️"
+        elif "tvbox" in name_lower:
+            return "📺"
+        elif any(keyword in name_lower for keyword in ["config", "配置"]):
+            return "⚙️"
+        elif "api" in name_lower:
+            return "🔌"
+        else:
+            return "🔗"
     
     def generate_vod_json(self, vod_data: Dict) -> str:
         """生成点播源JSON文件 - 多仓库格式"""
@@ -155,19 +248,19 @@ class VODProcessor:
             print("❌ 没有有效的点播源数据!")
             return ""
 
-        # 按质量评分排序，但确保搜索源和白名单源混合
-        # 取前30个源，但至少包含10个搜索源（如果有的话）
-        sorted_sources = sorted(all_sources,
-                               key=lambda x: x.get("quality_score", 0),
-                               reverse=True)
 
-        # 智能选择：确保搜索源和白名单源的平衡
-        whitelist_sources_final = [s for s in sorted_sources if s.get("source_type") == "whitelist"][:15]
-        search_sources_final = [s for s in sorted_sources if s.get("source_type") == "search"][:15]
 
-        # 合并并按评分重新排序
-        top_sources = (whitelist_sources_final + search_sources_final)[:30]
-        top_sources = sorted(top_sources, key=lambda x: x.get("quality_score", 0), reverse=True)
+        # 按用户要求排序：白名单源按白名单文件顺序在前，搜索源在后
+        # 1. 白名单源保持原有顺序（已经按白名单文件顺序加载）
+        whitelist_sources_final = [s for s in all_sources if s.get("source_type") == "whitelist"][:15]
+
+        # 2. 搜索源按质量评分排序
+        search_sources_sorted = sorted([s for s in all_sources if s.get("source_type") == "search"],
+                                     key=lambda x: x.get("quality_score", 0), reverse=True)
+        search_sources_final = search_sources_sorted[:15]
+
+        # 3. 按用户要求的顺序合并：白名单在前，搜索源在后
+        top_sources = whitelist_sources_final + search_sources_final
 
         print(f"📊 源统计: 白名单 {len(self.whitelist_sources)} 个, 搜索发现 {search_sources_added} 个")
         print(f"📊 最终选择: 白名单 {len(whitelist_sources_final)} 个, 搜索 {len(search_sources_final)} 个, 总计 {len(top_sources)} 个")
@@ -204,8 +297,8 @@ class VODProcessor:
             ]
         }
 
-        # 将有效源转换为多仓库格式
-        for source in top_sources:
+        # 将有效源转换为多仓库格式 - 按用户要求统一格式：图标+序号+线路名称
+        for index, source in enumerate(top_sources, 1):
             # 根据质量评分添加星级标识
             quality_score = source.get("quality_score", 0)
             if quality_score >= 95:
@@ -219,8 +312,8 @@ class VODProcessor:
             else:
                 stars = "⭐"
 
-            # 规范化源名称
-            formatted_name = self._normalize_source_name(source)
+            # 统一格式化源名称：图标+序号+线路名称
+            formatted_name = self._format_unified_source_name(source, index)
 
             url_config = {
                 "url": source["url"],
