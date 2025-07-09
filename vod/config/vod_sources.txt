@@ -10,15 +10,17 @@ http://xmbjm.fh4u.org/tv.txt|拾光电视|直播点播|拾光电视版
 # === 欧歌路线系列 ===
 https://xn--xkkx-rp5imh.v.nxog.top/api.php?id=3|欧歌单线路|专业线路|欧歌官方接口
 https://github.moeyy.xyz/https://raw.githubusercontent.com/mcp2016/TVBox/main/backup/多多┃欧歌线路.json|多多欧歌线路|欧歌备用|GitHub加速版
+https://vip.nxog.top|欧歌单线路|专业线路|欧歌官方接口
 
 # === 饭太硬系列 ===
 http://饭太硬.top/tv|饭太硬官方|综合影视|饭太硬官方源
+http://www.饭太硬.com/tv|饭太硬主线|综合影视|饭太硬主要线路
 http://fan.xxooo.cf/tv|饭太硬备用|综合影视|饭太硬备用源
 http://rihou.cc:55/饭太硬/日后魔改|日后魔改饭太硬|魔改版本|日后魔改版
 
 # === 肥猫系列 ===
-http://我不是.肥猫.love:63/接口|肥猫官方|综合影视|肥猫官方源
-http://肥猫.live|肥猫备用|综合影视|肥猫备用源
+http://我不是.肥猫.live/接口禁止贩卖|肥猫官方|综合影视|肥猫官方完整版
+http://肥猫.live|肥猫简化|综合影视|肥猫简化版源
 http://rihou.cc:55/肥猫/日后魔改|日后魔改肥猫|魔改版本|日后魔改版
 
 # === 菜妮丝系列 ===

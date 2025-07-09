@@ -5,7 +5,7 @@ VOD Source Processor Module
 import json
 import os
 from datetime import datetime
-from typing import Dict
+from typing import Dict, List
 
 from utils.tools import resource_path
 
@@ -15,26 +15,73 @@ class VODProcessor:
     
     def __init__(self):
         self.output_dir = resource_path("vod/output")
+        self.whitelist_sources = self._load_whitelist()
         self.ensure_output_dir()
     
     def ensure_output_dir(self):
         """确保输出目录存在"""
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir, exist_ok=True)
+
+    def _load_whitelist(self) -> List[Dict]:
+        """加载白名单源"""
+        whitelist_file = resource_path("vod/config/vod_whitelist.txt")
+        whitelist_sources = []
+
+        if not os.path.exists(whitelist_file):
+            print("⚠️ 白名单文件不存在，跳过白名单加载")
+            return whitelist_sources
+
+        try:
+            with open(whitelist_file, "r", encoding="utf-8") as f:
+                for line_num, line in enumerate(f, 1):
+                    line = line.strip()
+                    if not line or line.startswith("#"):
+                        continue
+
+                    parts = line.split("|")
+                    if len(parts) >= 4:
+                        source = {
+                            "url": parts[0].strip(),
+                            "name": parts[1].strip(),
+                            "category": parts[2].strip(),
+                            "description": parts[3].strip(),
+                            "quality_score": 100,  # 白名单源默认最高评分
+                            "source": "whitelist"
+                        }
+                        whitelist_sources.append(source)
+
+            print(f"✅ 加载白名单源: {len(whitelist_sources)} 个")
+            return whitelist_sources
+
+        except Exception as e:
+            print(f"❌ 加载白名单失败: {str(e)}")
+            return []
     
     def generate_vod_json(self, vod_data: Dict) -> str:
         """生成点播源JSON文件 - 多仓库格式"""
         valid_sources = vod_data.get("valid_sources", [])
         total_sources = vod_data.get("total_sources", 0)
 
-        if not valid_sources:
+        # 合并白名单源和搜索到的源
+        all_sources = self.whitelist_sources.copy()
+
+        # 添加搜索到的源，但排除已在白名单中的URL
+        whitelist_urls = {source["url"] for source in self.whitelist_sources}
+        for source in valid_sources:
+            if source["url"] not in whitelist_urls:
+                all_sources.append(source)
+
+        if not all_sources:
             print("❌ 没有有效的点播源数据!")
             return ""
 
         # 按质量评分排序，取前30个最优质源
-        top_sources = sorted(valid_sources,
+        top_sources = sorted(all_sources,
                             key=lambda x: x.get("quality_score", 0),
                             reverse=True)[:30]
+
+        print(f"📊 源统计: 白名单 {len(self.whitelist_sources)} 个, 搜索 {len(valid_sources)} 个, 最终选择 {len(top_sources)} 个")
 
         # 构建多仓库格式的JSON配置 - 带品牌识别
         multi_repo_config = {

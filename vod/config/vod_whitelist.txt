@@ -1,0 +1,37 @@
+# OneTV-API VOD白名单配置文件
+# VOD Whitelist Configuration File
+# 格式: URL|名称|分类|备注
+# 这些源不参与自动更新，保持稳定配置
+
+# === 多仓线路系列 ===
+https://vip.nxog.top|讴歌多仓|多仓配置|讴歌官方多仓线路
+https://tv.youdu.fan:666|毒盒多仓|多仓配置|毒盒官方多仓线路
+
+# === 直播源系列 ===
+https://安卓哥.com/ZB|安卓哥直播源|直播源|安卓哥官方直播源
+https://盒子迷.top/ZB|盒子迷直播源|直播源|盒子迷官方直播源
+https://盒子迷.top/春盈天下|春盈天下|直播源|春盈天下直播源
+
+# === 知名稳定线路 ===
+https://盒子迷.top/禁止贩卖|盒子迷|综合影视|盒子迷官方线路
+https://安卓哥.com/|安卓哥|综合影视|安卓哥官方线路
+https://hezi.tvboxhz.top/TVBOX盒子|TVBOX盒子|综合影视|TVBOX盒子官方线路
+https://盒子迷.top/4k|盒子迷4K|4K影视|盒子迷4K专线
+http://我不是.肥猫.live/接口禁止贩卖|肥猫|综合影视|肥猫官方线路
+http://饭太硬.top/tv|饭太硬|综合影视|饭太硬官方线路
+https://agit.ai/cyl518/yl/raw/branch/master/ml.json|香雅情|综合影视|香雅情官方线路
+https://tvbox.cainisi.cf|菜泥丝|综合影视|菜泥丝官方线路
+https://tvbox.meitufu.com/TVBox/tv.json|太阳|综合影视|太阳线路
+
+# === 当前配置中的稳定源 ===
+http://www.饭太硬.com/tv|饭太硬主线|综合影视|饭太硬主要线路
+http://fan.xxooo.cf/tv|饭太硬备用|综合影视|饭太硬备用线路
+http://xhww.fun/小米/DEMO.json|小米|综合影视|小米官方线路
+http://肥猫.live|肥猫简化|综合影视|肥猫简化线路
+https://tvbox.cainisi.cf|菜妮丝|综合影视|菜妮丝官方线路
+https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json|南风|综合影视|南风线路
+https://100km.top/0|骚零|综合影视|骚零线路
+http://tv.rihou.cc/天天开心|天天开心|综合影视|天天开心线路
+http://rihou.cc:88/荷城茶秀|荷城茶秀|综合影视|荷城茶秀线路
+https://agit.ai/hu/hcr/raw/branch/master/短剧.json|短剧频道|短剧|短剧专门频道
+https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer|少儿频道|少儿|少儿专门频道
