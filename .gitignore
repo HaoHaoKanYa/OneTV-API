@@ -65,7 +65,7 @@ test_script.py
 tvbox_fix_log_v2.txt
 reorder_log.txt
 reorder_categories.py
-vod/output/onetv-api-movie-V1.json
+
 vod/output/onetv-api-movie-V2 copy.json
 vod/output/onetv-api-movie.json.bak
 vod/output/onetv-api-movie (1).json
