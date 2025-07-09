@@ -137,7 +137,7 @@ class VODSourceSearcher:
 
             # 海外优质源
             {"url": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json", "name": "FongMi官方", "category": "海外维护", "description": "FongMi官方配置"},
-            {"url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json", "name": "FongMi加速", "category": "海外加速", "description": "FongMi加速版"},
+            {"url": "https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json", "name": "FongMi加速", "category": "海外加速", "description": "FongMi加速版"},
         ]
 
         return community_sources
@@ -372,7 +372,11 @@ class VODSourceSearcher:
                 ]
                 
                 for config_file in config_files:
-                    url = f"{mirror}https://raw.githubusercontent.com/{repo}/{config_file}"
+                    # 构建正确的镜像URL，避免双重协议
+                    if mirror.endswith('/'):
+                        url = f"{mirror}https://raw.githubusercontent.com/{repo}/{config_file}"
+                    else:
+                        url = f"{mirror}/https://raw.githubusercontent.com/{repo}/{config_file}"
                     
                     source = {
                         "url": url,

@@ -267,9 +267,9 @@ class VODProcessor:
 
         # 构建多仓库格式的JSON配置 - 基于alan仓库标准优化
         multi_repo_config = {
-            "spider": "https://gh.tryxd.cn/https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/spider/pg.jar",
-            "wallpaper": "https://深色壁纸.xxooo.cf/",
-            "logo": "https://gh.tryxd.cn/https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/logo.png",
+            "spider": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/vod/spider/onetv-spider.jar",
+            "wallpaper": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/wallpaper.jpg",
+            "logo": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/logo.png",
             "storeHouse": [
                 {
                     "sourceName": "OneTV影视仓库",
