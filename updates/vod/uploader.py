@@ -36,12 +36,13 @@ class VODSupabaseUploader:
             with open(file_path, "r", encoding="utf-8") as f:
                 content = f.read()
             
-            # 只上传当前版本文件，节约存储额度
+            # 上传多仓库配置文件
             current_success = self._upload_to_path("onetv-api-movie.json", content)
 
             if current_success:
-                print("✅ 点播源文件上传成功!")
+                print("✅ 多仓库配置文件上传成功!")
                 print(f"📁 文件路径: vod-sources/onetv-api-movie.json")
+                print(f"🔗 访问地址: {self.supabase_url}/storage/v1/object/public/vod-sources/onetv-api-movie.json")
                 return True
             else:
                 print("❌ 文件上传失败")

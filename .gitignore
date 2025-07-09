@@ -57,3 +57,14 @@ vod/sources/
 # Spider upload script and documentation (not for version control)
 upload_spider_to_supabase.py
 vod/spider/README.md
+categories_log.txt
+fix_all_categories.py
+fix_tvbox_format_v2.py
+fix_tvbox_format.py
+test_script.py
+tvbox_fix_log_v2.txt
+reorder_log.txt
+reorder_categories.py
+vod/output/onetv-api-movie-V1.json
+vod/output/onetv-api-movie-V2 copy.json
+vod/output/onetv-api-movie.json.bak

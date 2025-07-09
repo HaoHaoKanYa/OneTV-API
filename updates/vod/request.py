@@ -127,38 +127,73 @@ class VODSourceManager:
             return None
     
     def calculate_quality_score(self, content: str, response_time: float, status_code: int) -> int:
-        """计算质量评分"""
+        """计算质量评分 - 优化版"""
         score = 0
-        
+
         # 连通性评分 (40分)
         if status_code == 200:
             score += 40
         elif status_code in [301, 302]:
             score += 35
-        
-        # 响应时间评分 (20分)
-        if response_time < 3:
+
+        # 响应时间评分 (20分) - 更严格的标准
+        if response_time < 1.0:
             score += 20
-        elif response_time < 5:
+        elif response_time < 2.0:
+            score += 18
+        elif response_time < 3.0:
             score += 15
-        elif response_time < 10:
-            score += 10
-        
-        # 内容质量评分 (25分)
+        elif response_time < 5.0:
+            score += 12
+        elif response_time < 10.0:
+            score += 8
+
+        # 内容质量评分 (25分) - 更精确的判断
         content_lower = content.lower()
-        if any(field in content_lower for field in ['sites', 'spider', 'lives']):
-            score += 15
-        if content.strip().startswith('{') and content.strip().endswith('}'):
-            score += 10
-        
-        # 内容大小评分 (15分)
-        if len(content) > 10000:
-            score += 15
-        elif len(content) > 5000:
-            score += 10
-        elif len(content) > 1000:
+
+        # 检查关键字段
+        has_sites = '"sites"' in content_lower or '"urls"' in content_lower
+        has_spider = '"spider"' in content_lower
+        has_lives = '"lives"' in content_lower
+
+        if has_sites:
+            score += 12
+        if has_spider:
+            score += 8
+        if has_lives:
             score += 5
-        
+
+        # JSON格式验证
+        if content.strip().startswith('{') and content.strip().endswith('}'):
+            score += 5
+
+        # 内容大小评分 (15分) - 更合理的分级
+        content_length = len(content)
+        if content_length > 50000:  # 大型配置
+            score += 15
+        elif content_length > 20000:  # 中型配置
+            score += 12
+        elif content_length > 10000:  # 小型配置
+            score += 10
+        elif content_length > 5000:   # 基础配置
+            score += 8
+        elif content_length > 1000:   # 最小配置
+            score += 5
+
+        # 域名信誉度加分 (额外5分)
+        high_reputation_domains = ['github.com', 'gitee.com', 'gitlab.com']
+        medium_reputation_domains = ['agit.ai', 'jihulab.com', 'coding.net']
+
+        for domain in high_reputation_domains:
+            if domain in content_lower:
+                score += 5
+                break
+        else:
+            for domain in medium_reputation_domains:
+                if domain in content_lower:
+                    score += 3
+                    break
+
         return min(score, 100)
     
     async def get_vod_sources(self, callback=None) -> Dict:

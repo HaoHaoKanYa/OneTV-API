@@ -16,9 +16,17 @@ class VODSourceSearcher:
         self.found_sources = []
         self.processed_urls = set()
         self.search_keywords = [
-            "tvbox", "catvodspider", "影视", "点播", "vod", "json",
+            # 基础关键词
+            "tvbox", "catvodspider", "影视", "点播", "vod", "json", "config", "api",
+            # 知名开发者/线路
             "饭太硬", "肥猫", "菜妮丝", "拾光", "欧歌", "高天流云",
-            "南风", "俊佬", "骚零", "青宁", "猫TV", "FongMi"
+            "南风", "俊佬", "骚零", "青宁", "猫TV", "FongMi", "不良帅",
+            "巧儿", "刘备", "香雅情", "多多", "小米", "荷城茶秀",
+            # 质量关键词
+            "4K", "蓝光", "高清", "在线", "免费", "最新", "更新", "稳定", "快速",
+            "直播", "电影", "电视剧", "综艺", "动漫", "短剧", "少儿",
+            # 技术关键词
+            "spider", "jar", "drpy", "xpath", "cms", "app", "web"
         ]
         
     async def search_all_sources(self) -> List[Dict]:
@@ -400,7 +408,15 @@ class VODSourceSearcher:
             "agit.ai",
             "gitlab.com",
             "coding.net",
-            "jihulab.com"
+            "jihulab.com",
+            # 新增专业域名
+            "raw.gitmirror.com",
+            "ghproxy.com",
+            "github.moeyy.xyz",
+            "mirror.ghproxy.com",
+            "ghfast.top",
+            "notabug.org",
+            "bitbucket.org"
         ]
 
         # 常见的路径模式
@@ -422,7 +438,16 @@ class VODSourceSearcher:
             "tongxunlu/tvbox-tvb-gd",
             "Zhou-Li-Bin/Tvbox-QingNing",
             "takagen99/Box",
-            "q215613905/TVBoxOS"
+            "q215613905/TVBoxOS",
+            # 新增知名账户
+            "Yoursmile7/TVBox",
+            "mygoww/xoxo",
+            "yoursmile66/TVBox",
+            "dudu526/alan",
+            "xyq254245/xyqonlinerule",
+            "laoo1976/maotv",
+            "hu/hcr",
+            "ymz1231/xymz"
         ]
 
         for domain in known_domains:

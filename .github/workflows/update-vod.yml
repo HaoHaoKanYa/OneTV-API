@@ -115,7 +115,12 @@ jobs:
         ls -la vod/output/ || echo "vod/output目录不存在"
 
         if [ -f "vod/output/onetv-api-movie.json" ]; then
-          echo "✅ 发现生成的VOD文件，准备提交到仓库..."
+          echo "✅ 发现生成的多仓库配置文件，准备提交到仓库..."
+
+          # 显示文件信息
+          echo "📊 文件大小: $(wc -c < vod/output/onetv-api-movie.json) bytes"
+          echo "📝 文件内容预览:"
+          head -20 vod/output/onetv-api-movie.json
 
           # 配置Git
           git config --local user.email "onetv-api@exple.com"
@@ -129,15 +134,15 @@ jobs:
             echo "📝 没有文件变更，跳过提交"
           else
             # 提交变更
-            COMMIT_MSG="🎬 自动更新VOD配置文件 - $(date '+%Y-%m-%d %H:%M:%S')"
+            COMMIT_MSG="🎬 自动更新多仓库VOD配置 - $(date '+%Y-%m-%d %H:%M:%S')"
             git commit -m "$COMMIT_MSG"
 
             # 推送到远程仓库
             git push origin main
-            echo "✅ VOD文件已成功提交到GitHub仓库"
+            echo "✅ 多仓库配置文件已成功提交到GitHub仓库"
           fi
         else
-          echo "⚠️ 未找到生成的VOD文件，跳过提交"
+          echo "⚠️ 未找到生成的多仓库配置文件，跳过提交"
         fi
 
     - name: 📊 Generate update summary
