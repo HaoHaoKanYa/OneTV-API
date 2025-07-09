@@ -1,7 +1,7 @@
 {
-    "spider": "https://gh.tryxd.cn/https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/spider/pg.jar",
-    "wallpaper": "https://深色壁纸.xxooo.cf/",
-    "logo": "https://gh.tryxd.cn/https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/logo.png",
+    "spider": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/vod/spider/onetv-spider.jar",
+    "wallpaper": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/wallpaper.jpg",
+    "logo": "https://sjlmgylmcxrapwxjfzhy.supabase.co/storage/v1/object/onetv-images/logo.png",
     "storeHouse": [
         {
             "sourceName": "OneTV影视仓库",
@@ -9,39 +9,129 @@
         }
     ],
     "urls": [
-        { "url": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/output/onetv-api-movie-V1.json", "name": "📺01·ONETV_影视仓主线路⭐⭐⭐⭐⭐" },
-        { "url": "https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh", "name": "🎵02·欧歌线路⭐⭐⭐⭐⭐" },
-        { "url": "https://盒子迷.top/禁止贩卖", "name": "📦03·盒子迷⭐⭐⭐⭐⭐" },
-        { "url": "http://www.饭太硬.com/tv", "name": "🍚04·饭太硬主线⭐⭐⭐⭐⭐" },
-        { "url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer", "name": "👶05·少儿频道⭐⭐⭐⭐⭐" },
-        { "url": "http://ok321.top/ok", "name": "✅06·OK线路⭐⭐⭐⭐⭐" },
-        { "url": "http://tvbox.王二小放牛娃.top", "name": "👦07·王二小线路⭐⭐⭐⭐⭐" },
-        { "url": "http://肥猫.com", "name": "🐱08·肥猫线路⭐⭐⭐⭐⭐" },
-        { "url": "https://fmbox.cc", "name": "⭐09·星辰线路⭐⭐⭐⭐⭐" },
-        { "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json", "name": "🌟10·高天流云JS版⭐⭐⭐⭐⭐" },
-        { "url": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/0821.json", "name": "🌟11·高天流云增强版⭐⭐⭐⭐" }
+        {
+            "url": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/output/onetv-api-movie-V1.json",
+            "name": "📺01·ONETV_影视仓主线路⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh",
+            "name": "🎵02·欧歌线路⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://盒子迷.top/禁止贩卖",
+            "name": "📦03·盒子迷⭐⭐⭐⭐"
+        },
+        {
+            "url": "http://www.饭太硬.com/tv",
+            "name": "🍚04·饭太硬主线⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer",
+            "name": "👶05·少儿频道⭐⭐⭐⭐"
+        },
+        {
+            "url": "http://ok321.top/ok",
+            "name": "✅06·OK线路⭐⭐⭐⭐"
+        },
+        {
+            "url": "http://tvbox.王二小放牛娃.top",
+            "name": "👦07·王二小线路⭐⭐⭐⭐"
+        },
+        {
+            "url": "http://肥猫.com",
+            "name": "🐱08·肥猫线路⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://fmbox.cc",
+            "name": "⭐09·星辰线路⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/0821.json",
+            "name": "🎬10·tvurl·0821⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/0825.json",
+            "name": "🎬11·tvurl·0825⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/0826.json",
+            "name": "🎬12·tvurl·0826⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/367.json",
+            "name": "🎬13·tvurl·367⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/9918.json",
+            "name": "🎬14·tvurl·9918⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/99188.json",
+            "name": "🎬15·tvurl·99188⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/XYQ.json",
+            "name": "🎬16·tvurl·XYQ⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/dianshi.json",
+            "name": "🎬17·tvurl·dianshi⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/js.json",
+            "name": "🎬18·tvurl·js⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ne7359/tvurl/main/jsm.json",
+            "name": "🎬19·tvurl·jsm⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/qist/tvbox/master/0821.json",
+            "name": "🎬20·tvbox·0821⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/qist/tvbox/master/0825.json",
+            "name": "🎬21·tvbox·0825⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/qist/tvbox/master/0826.json",
+            "name": "🎬22·tvbox·0826⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/qist/tvbox/master/367.json",
+            "name": "🎬23·tvbox·367⭐⭐⭐⭐⭐"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/qist/tvbox/master/99188.json",
+            "name": "🎬24·tvbox·99188⭐⭐⭐⭐⭐"
+        }
     ],
     "doh": [
         {
             "name": "Google",
             "url": "https://dns.google/dns-query",
-            "ips": ["8.8.4.4", "8.8.8.8"]
+            "ips": [
+                "8.8.4.4",
+                "8.8.8.8"
+            ]
         },
         {
             "name": "Cloudflare",
             "url": "https://cloudflare-dns.com/dns-query",
-            "ips": ["1.1.1.1", "1.0.0.1"]
-        },
-        {
-            "name": "AdGuard",
-            "url": "https://dns.adguard.com/dns-query",
-            "ips": ["94.140.14.140", "94.140.14.141"]
+            "ips": [
+                "1.1.1.1",
+                "1.0.0.1"
+            ]
         }
     ],
     "rules": [
         {
             "name": "proxy",
-            "hosts": ["raw.githubusercontent.com", "googlevideo.com", "cdn.v82u1l.com", "cdn.iz8qkg.com"]
+            "hosts": [
+                "raw.githubusercontent.com",
+                "googlevideo.com",
+                "cdn.v82u1l.com"
+            ]
         }
     ]
 }
