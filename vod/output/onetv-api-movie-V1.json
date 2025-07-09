@@ -1248,16 +1248,6 @@
       "timeout": 30
     },
     {
-      "key": "onetv_feimao",
-      "name": "📺ONETV_影视仓主线路┃肥猫",
-      "type": 3,
-      "api": "csp_Feimao",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 30
-    },
-    {
       "key": "onetv_ganfan",
       "name": "📺ONETV_影视仓主线路┃干饭",
       "type": 3,
