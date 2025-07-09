@@ -180,19 +180,40 @@ class VODSourceManager:
         elif content_length > 1000:   # 最小配置
             score += 5
 
-        # 域名信誉度加分 (额外5分)
+        # 域名信誉度加分 (额外5分) - 基于alan仓库优化
         high_reputation_domains = ['github.com', 'gitee.com', 'gitlab.com']
         medium_reputation_domains = ['agit.ai', 'jihulab.com', 'coding.net']
+
+        # alan仓库中验证的优质域名
+        alan_verified_domains = ['wogg.888484.xyz', 'mucpan.cc', 'mihdr.top', 'goimg.asia',
+                                '91muou.icu', 'hmxz.org', 'leijing.xyz', 'xzyshd.com',
+                                'ddys.pro', 'meijumi.net', 'libvio.fun', 'gaoqing.la']
 
         for domain in high_reputation_domains:
             if domain in content_lower:
                 score += 5
                 break
         else:
-            for domain in medium_reputation_domains:
+            for domain in alan_verified_domains:
                 if domain in content_lower:
-                    score += 3
+                    score += 4  # alan验证的优质域名
                     break
+            else:
+                for domain in medium_reputation_domains:
+                    if domain in content_lower:
+                        score += 3
+                        break
+
+        # 知名品牌/开发者加分 - 基于alan仓库分析
+        quality_brands = ['饭太硬', '肥猫', '玩偶', '豆瓣', '小米', '欧歌', '南风', '至臻']
+        for brand in quality_brands:
+            if brand in content:
+                score += 2
+                break
+
+        # 网盘源特殊加分 - alan仓库重点推荐类型
+        if any(keyword in content_lower for keyword in ['网盘', '云盘', 'pan', 'drive', 'disk']):
+            score += 3
 
         return min(score, 100)
     

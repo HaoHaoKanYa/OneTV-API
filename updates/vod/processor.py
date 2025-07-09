@@ -83,15 +83,36 @@ class VODProcessor:
 
         print(f"📊 源统计: 白名单 {len(self.whitelist_sources)} 个, 搜索 {len(valid_sources)} 个, 最终选择 {len(top_sources)} 个")
 
-        # 构建多仓库格式的JSON配置 - 带品牌识别
+        # 构建多仓库格式的JSON配置 - 基于alan仓库标准优化
         multi_repo_config = {
+            "spider": "https://gh.tryxd.cn/https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/spider/pg.jar",
+            "wallpaper": "https://深色壁纸.xxooo.cf/",
+            "logo": "https://gh.tryxd.cn/https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/main/logo.png",
             "storeHouse": [
                 {
                     "sourceName": "OneTV影视仓库",
                     "sourceUrl": "https://raw.githubusercontent.com/HaoHaoKanYa/OneTV-API/refs/heads/main/vod/output/onetv-api-movie.json"
                 }
             ],
-            "urls": []
+            "urls": [],
+            "doh": [
+                {
+                    "name": "Google",
+                    "url": "https://dns.google/dns-query",
+                    "ips": ["8.8.4.4", "8.8.8.8"]
+                },
+                {
+                    "name": "Cloudflare",
+                    "url": "https://cloudflare-dns.com/dns-query",
+                    "ips": ["1.1.1.1", "1.0.0.1"]
+                }
+            ],
+            "rules": [
+                {
+                    "name": "proxy",
+                    "hosts": ["raw.githubusercontent.com", "googlevideo.com", "cdn.v82u1l.com"]
+                }
+            ]
         }
 
         # 将有效源转换为多仓库格式
