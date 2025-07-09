@@ -23,71 +23,6 @@
   ],
   "sites": [
     {
-      "key": "_header_douban",
-      "name": "📺ONETV_影视仓主线路系列",
-      "type": 0,
-      "api": "",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
-      "key": "_onetv_douban_recommend",
-      "name": "📺ONETV_影视仓主线路┃推荐",
-      "type": 3,
-      "api": "csp_DouDouGuard",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 30,
-      "changeable": 0
-    },
-    {
-      "key": "_onetv_buliangshui_douban",
-      "name": "📺ONETV_影视仓主线路┃豆瓣推荐",
-      "type": 3,
-      "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/libs/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 1,
-      "timeout": 30,
-      "changeable": 1,
-      "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/mygoww/xoxo/main/douban.js"
-    },
-    {
-      "key": "_onetv_liubei_douban",
-      "name": "📺ONETV_影视仓主线路┃豆瓣推荐",
-      "type": 3,
-      "api": "csp_DouDou",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 30
-    },
-    {
-      "key": "_onetv_ouge_douban",
-      "name": "📺ONETV_影视仓主线路┃豆瓣推荐",
-      "type": 3,
-      "api": "csp_DouDouGuard",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 30,
-      "changeable": 0
-    },
-    {
-      "key": "_onetv_cainisi_douban",
-      "name": "📺ONETV_影视仓主线路┃豆瓣推荐",
-      "type": 3,
-      "api": "csp_DouDouGuard",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 30,
-      "changeable": 0
-    },
-    {
       "key": "onetv_xiangyaqing_douban",
       "name": "📺ONETV_影视仓主线路┃豆瓣推荐",
       "type": 3,
@@ -833,7 +768,7 @@
       "filterable": 1,
       "timeout": 30,
       "playerType": 2,
-      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
+      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01igg71j3l26k2gk3i71hl81h696923gkl7i0707"
     },
     {
       "key": "onetv_qiaoer_qiaoji1",
@@ -845,7 +780,7 @@
       "filterable": 1,
       "timeout": 30,
       "playerType": 2,
-      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01igg71j3l26k2gk3i71hl81h696923gkl7i0707"
+      "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
     },
     {
       "key": "onetv_qiaoer_qiaoji3",
