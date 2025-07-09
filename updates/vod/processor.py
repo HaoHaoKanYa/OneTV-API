@@ -63,25 +63,45 @@ class VODProcessor:
         valid_sources = vod_data.get("valid_sources", [])
         total_sources = vod_data.get("total_sources", 0)
 
-        # 合并白名单源和搜索到的源
-        all_sources = self.whitelist_sources.copy()
+        # 合并白名单源和搜索到的源 - 修复逻辑确保搜索源被包含
+        all_sources = []
 
-        # 添加搜索到的源，但排除已在白名单中的URL
+        # 首先添加白名单源，但降低其评分优势
+        for source in self.whitelist_sources:
+            # 白名单源评分设为85分，给搜索源留出空间
+            source["quality_score"] = 85
+            source["source_type"] = "whitelist"
+            all_sources.append(source)
+
+        # 添加搜索到的源，排除已在白名单中的URL
         whitelist_urls = {source["url"] for source in self.whitelist_sources}
+        search_sources_added = 0
         for source in valid_sources:
             if source["url"] not in whitelist_urls:
+                source["source_type"] = "search"
                 all_sources.append(source)
+                search_sources_added += 1
 
         if not all_sources:
             print("❌ 没有有效的点播源数据!")
             return ""
 
-        # 按质量评分排序，取前30个最优质源
-        top_sources = sorted(all_sources,
-                            key=lambda x: x.get("quality_score", 0),
-                            reverse=True)[:30]
+        # 按质量评分排序，但确保搜索源和白名单源混合
+        # 取前30个源，但至少包含10个搜索源（如果有的话）
+        sorted_sources = sorted(all_sources,
+                               key=lambda x: x.get("quality_score", 0),
+                               reverse=True)
 
-        print(f"📊 源统计: 白名单 {len(self.whitelist_sources)} 个, 搜索 {len(valid_sources)} 个, 最终选择 {len(top_sources)} 个")
+        # 智能选择：确保搜索源和白名单源的平衡
+        whitelist_sources_final = [s for s in sorted_sources if s.get("source_type") == "whitelist"][:15]
+        search_sources_final = [s for s in sorted_sources if s.get("source_type") == "search"][:15]
+
+        # 合并并按评分重新排序
+        top_sources = (whitelist_sources_final + search_sources_final)[:30]
+        top_sources = sorted(top_sources, key=lambda x: x.get("quality_score", 0), reverse=True)
+
+        print(f"📊 源统计: 白名单 {len(self.whitelist_sources)} 个, 搜索发现 {search_sources_added} 个")
+        print(f"📊 最终选择: 白名单 {len(whitelist_sources_final)} 个, 搜索 {len(search_sources_final)} 个, 总计 {len(top_sources)} 个")
 
         # 构建多仓库格式的JSON配置 - 基于alan仓库标准优化
         multi_repo_config = {
