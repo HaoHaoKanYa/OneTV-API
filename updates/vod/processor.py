@@ -57,6 +57,75 @@ class VODProcessor:
         except Exception as e:
             print(f"❌ 加载白名单失败: {str(e)}")
             return []
+
+    def _normalize_source_name(self, source: Dict) -> str:
+        """规范化源名称"""
+        name = source.get("name", "未知源")
+        url = source.get("url", "")
+        source_type = source.get("source_type", "search")
+
+        # 白名单源保持原名（已经有图标和序号）
+        if source_type == "whitelist":
+            return name
+
+        # 搜索源规范化命名
+        # 移除常见的技术性前缀
+        name = name.replace("GitHub-", "").replace("已知域名-", "").replace("镜像-", "")
+        name = name.replace("社区-", "").replace("API-", "").replace("config", "配置")
+
+        # 根据URL特征优化命名
+        if "gaotianliuyun" in url or "gao" in url:
+            if "js.json" in url:
+                return "🌟高天流云JS版"
+            elif "0821" in url:
+                return "🌟高天流云增强版"
+            elif "XC.json" in url:
+                return "🌟高天流云XC版"
+            elif "0707" in url:
+                return "🌟高天流云经典版"
+            else:
+                return "🌟高天流云"
+        elif "dudu526" in url or "alan" in url:
+            if "X.json" in url:
+                return "📚Alan综合仓库"
+            elif "jsm.json" in url:
+                return "📚Alan精简仓库"
+            else:
+                return "📚Alan仓库"
+        elif "fongmi" in url.lower() or "fengmi" in name.lower():
+            return "🎯FongMi影视"
+        elif any(keyword in name.lower() for keyword in ["饭太硬", "肥猫", "菜妮丝", "欧歌", "南风"]):
+            # 知名开发者源保持原名但添加图标
+            if "饭太硬" in name:
+                return f"🍚{name}"
+            elif "肥猫" in name:
+                return f"🐱{name}"
+            elif "菜妮丝" in name:
+                return f"🥬{name}"
+            elif "欧歌" in name:
+                return f"🎵{name}"
+            elif "南风" in name:
+                return f"🌪{name}"
+            else:
+                return name
+        else:
+            # 通用规范化
+            name = name.replace('.json', '').replace('-', '·').replace('_', '·')
+            # 添加适当的图标
+            if any(keyword in name.lower() for keyword in ["影视", "电影", "tv", "movie"]):
+                return f"🎬{name}"
+            elif any(keyword in name.lower() for keyword in ["直播", "live"]):
+                return f"📡{name}"
+            elif any(keyword in name.lower() for keyword in ["网盘", "云盘", "pan"]):
+                return f"☁️{name}"
+            elif "tvbox" in name.lower():
+                return f"📺{name}"
+            elif "config" in name.lower():
+                return f"⚙️{name}"
+            elif "api" in name.lower():
+                return f"🔌{name}"
+            else:
+                return f"🔗{name}"
     
     def generate_vod_json(self, vod_data: Dict) -> str:
         """生成点播源JSON文件 - 多仓库格式"""
@@ -150,9 +219,12 @@ class VODProcessor:
             else:
                 stars = "⭐"
 
+            # 规范化源名称
+            formatted_name = self._normalize_source_name(source)
+
             url_config = {
                 "url": source["url"],
-                "name": f"{source['name']}{stars}"
+                "name": f"{formatted_name}{stars}"
             }
             multi_repo_config["urls"].append(url_config)
 

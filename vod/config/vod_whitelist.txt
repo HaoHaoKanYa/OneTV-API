@@ -3,32 +3,14 @@
 # 格式: URL|名称|分类|备注
 # 这些源不参与自动更新，保持稳定配置
 
-# === 保留的稳定源 ===
-https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh|欧歌线路|综合影视|欧歌官方线路
-https://盒子迷.top/禁止贩卖|盒子迷|综合影视|盒子迷官方线路
-http://www.饭太硬.com/tv|饭太硬主线|综合影视|饭太硬主要线路
-https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer|少儿频道|少儿|少儿专门频道
+# === OneTV-API 精选白名单源 ===
+https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh|🎵01·欧歌线路|综合影视|欧歌官方线路
+https://盒子迷.top/禁止贩卖|📦02·盒子迷|综合影视|盒子迷官方线路
+http://www.饭太硬.com/tv|🍚03·饭太硬主线|综合影视|饭太硬主要线路
+https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer|👶04·少儿频道|少儿|少儿专门频道
+http://ok321.top/ok|✅05·OK线路|综合影视|OK官方线路
+http://tvbox.王二小放牛娃.top|👦06·王二小线路|综合影视|王二小官方线路
+http://肥猫.com|🐱07·肥猫线路|综合影视|肥猫官方线路
+https://fmbox.cc|⭐08·星辰线路|综合影视|星辰官方线路
 
-# === 新增优质线路（保留有效源）===
-http://ok321.top/ok|OK线路|综合影视|OK官方线路
-http://tvbox.王二小放牛娃.top|王二小线路|综合影视|王二小官方线路
-http://肥猫.com|肥猫线路|综合影视|肥猫官方线路
-https://fmbox.cc|星辰线路|综合影视|星辰官方线路
 
-# === 基于alan仓库分析的优质源（经过筛选验证）===
-https://raw.githubusercontent.com/dudu526/alan/main/X.json|Alan综合仓库|综合影视|Alan官方多源仓库
-https://raw.githubusercontent.com/dudu526/alan/main/jsm.json|Alan精简仓库|综合影视|Alan精简版仓库
-http://wogg.888484.xyz/|玩偶哥哥|网盘影视|玩偶哥哥网盘源
-https://www.mucpan.cc/|小米网盘|网盘影视|小米官方网盘源
-https://mihdr.top/|至臻网盘|网盘影视|至臻官方网盘源
-https://www.goimg.asia/|蜡笔网盘|网盘影视|蜡笔官方网盘源
-http://tv.91muou.icu/|木偶哥哥|网盘影视|木偶哥哥网盘源
-https://www.hmxz.org/|海绵网盘|网盘影视|海绵官方网盘源
-https://leijing.xyz/|雷鲸网盘|网盘影视|雷鲸官方网盘源
-https://xzyshd.com|校长影视|网盘影视|校长影视官方源
-https://ddys.pro/|低端影视|网盘影视|低端影视官方源
-https://www.meijumi.net/|美剧迷|网盘影视|美剧迷官方源
-https://www.libvio.fun/|LIBVIO|网盘影视|LIBVIO官方源
-https://gaoqing.la/|中国高清网|网盘影视|中国高清网官方源
-https://www.yinfans.me/|音范丝|磁力影视|音范丝官方源
-https://hdhive.online|鸟窝网盘|网盘影视|鸟窝官方网盘源
